@@ -37,6 +37,7 @@ function erp_hr_create_department( $args = [] ) {
         $dept = $department->create( $fields );
 
         do_action( 'erp_hr_dept_new', $dept->id, $fields );
+        erp_hrm_purge_cache( [ 'list' => 'department', 'department_id' => $dept->id ] );
 
         return $dept->id;
     } else {
@@ -45,11 +46,10 @@ function erp_hr_create_department( $args = [] ) {
         $department->find( $dept_id )->update( $fields );
 
         do_action( 'erp_hr_dept_after_updated', $dept_id, $fields );
+        erp_hrm_purge_cache( [ 'list' => 'department', 'department_id' => $dept_id ] );
 
         return $dept_id;
     }
-
-    erp_hrm_purge_cache( [ 'list' => 'department', 'department_id' => $dept_id ] );
 
     return false;
 }
@@ -291,4 +291,16 @@ function erp_hr_match_user_dept_lead_with_current_user( $user_id ) {
     }
 
     return false;
+}
+
+
+/**
+ * Get all departments with title and id
+ * example output: [1 => 'Department 1', 2 => 'Department 2']
+ * @return array
+ */
+function erp_hr_get_departments_fresh() {
+    $departments = \WeDevs\ERP\HRM\Models\Department::all(['id', 'title']);
+    return array_column( $departments->toArray(), 'title', 'id');
+
 }

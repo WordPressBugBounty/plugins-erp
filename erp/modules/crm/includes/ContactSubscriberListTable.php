@@ -191,11 +191,14 @@ class ContactSubscriberListTable extends \WP_List_Table {
         $actions    = [];
         $edit_url   = '';
         $group_id   = isset( $_GET['filter_contact_group'] ) ? sanitize_text_field( wp_unslash( $_GET['filter_contact_group'] ) ) : 0;
-        $delete_url = add_query_arg( [ 'page'=>'erp-crm', 'section'=> 'contact-groups', 'action' => 'delete', 'group_id' => $group_id, 'id' => $subscriber_contact->user_id ], admin_url( 'admin.php' ) );
+        $delete_url = add_query_arg( [ 'page'=>'erp-crm', 'section'=> 'contact-groups', 'action' => 'delete', 'group_id' => intval( $group_id ), 'id' => $subscriber_contact->user_id ], admin_url( 'admin.php' ) );
 
         if ( current_user_can( 'erp_crm_delete_contact', $contact->id ) ) {
             $actions['edit']   = sprintf( '<a href="%s" data-id="%d" data-name="%s" title="%s">%s</a>', $edit_url, $subscriber_contact->user_id, $contact->get_full_name(), esc_html__( 'Edit this item', 'erp' ), esc_html__( 'Edit', 'erp' ) );
-            $actions['delete'] = sprintf( '<a href="%s" class="submitdelete" data-id="%d" data-group_id="%d" title="%s">%s</a>', $delete_url, $subscriber_contact->user_id, $group_id, esc_html__( 'Delete this item', 'erp' ), esc_html__( 'Delete', 'erp' ) );
+
+            if( apply_filters( 'erp_crm_contact_can_delete_subscriber', true ) ) {
+                $actions['delete'] = sprintf( '<a href="%s" class="submitdelete" data-id="%d" data-group_id="%d" title="%s">%s</a>', $delete_url, $subscriber_contact->user_id, $group_id, esc_html__( 'Delete this item', 'erp' ), esc_html__( 'Delete', 'erp' ) );
+            }
         }
 
         $full_name = $contact->get_full_name();

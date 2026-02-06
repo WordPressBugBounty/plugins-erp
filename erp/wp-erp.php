@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: WP ERP
+ * Plugin Name: ERP
  * Description: An Open Source ERP Solution for WordPress. Built-in HR, CRM and Accounting system for WordPress
  * Plugin URI: https://wperp.com
  * Author: weDevs
  * Author URI: https://wedevs.com
- * Version: 1.13.2
+ * Version: 1.16.10
  * License: GPL2
  * Text Domain: erp
  * Domain Path: /i18n/languages/
@@ -59,6 +59,16 @@ use WeDevs\ERP\Framework\Modules;
 use WeDevs\ERP\Admin\UserProfile;
 use WeDevs\ERP\WeDevsERPInstaller;
 
+require_once __DIR__ . '/vendor/autoload.php';
+define( 'WPERP_VERSION', '1.16.10' );
+define( 'WPERP_FILE', __FILE__ );
+define( 'WPERP_PATH', dirname( WPERP_FILE ) );
+define( 'WPERP_INCLUDES', WPERP_PATH . '/includes' );
+define( 'WPERP_MODULES', WPERP_PATH . '/modules' );
+define( 'WPERP_URL', plugins_url( '', WPERP_FILE ) );
+define( 'WPERP_ASSETS', WPERP_URL . '/assets' );
+define( 'WPERP_VIEWS', WPERP_INCLUDES . '/Admin/views' );
+
 /**
  * WeDevs_ERP class
  *
@@ -71,14 +81,14 @@ final class WeDevs_ERP {
      *
      * @var string
      */
-    public $version = '1.13.2';
+    public $version = WPERP_VERSION;
 
     /**
      * Minimum PHP version required
      *
      * @var string
      */
-    private $min_php = '7.2';
+    private $min_php = '7.4';
 
     /**
      * Holds various class instances
@@ -88,7 +98,7 @@ final class WeDevs_ERP {
     private $container = [];
 
     /**
-     * @var object
+     * @var WeDevs_ERP
      *
      * @since 1.2.1
      */
@@ -103,7 +113,7 @@ final class WeDevs_ERP {
      * Checks for an existing WeDevs_ERP() instance
      * and if it doesn't find one, creates it.
      *
-     * @return object
+     * @return WeDevs_ERP A single instance of this class.
      */
     public static function init() {
         if ( ! isset( self::$instance ) && ! ( self::$instance instanceof WeDevs_ERP ) ) {
@@ -132,7 +142,7 @@ final class WeDevs_ERP {
         }
 
         // Define constants
-        $this->define_constants();
+        // $this->define_constants();
 
         // Include required files
         $this->includes();
@@ -221,7 +231,7 @@ final class WeDevs_ERP {
 
         $error  = __( '<h1>An Error Occured</h1>', 'erp' );
         $error .= __( '<h2>Your installed PHP Version is: ', 'erp' ) . PHP_VERSION . '</h2>';
-        $error .= __( '<p>The <strong>WP ERP</strong> plugin requires PHP version <strong>', 'erp' ) . $this->min_php . __( '</strong> or greater', 'erp' );
+        $error .= __( '<p>The <strong>ERP</strong> plugin requires PHP version <strong>', 'erp' ) . $this->min_php . __( '</strong> or greater', 'erp' );
         $error .= __( '<p>The version of your PHP is ', 'erp' ) . '<a href="http://php.net/supported-versions.php" target="_blank"><strong>' . __( 'unsupported and old', 'erp' ) . '</strong></a>.';
         $error .= __( 'You should update your PHP software or contact your host regarding this matter.</p>', 'erp' );
         wp_die(
@@ -232,22 +242,6 @@ final class WeDevs_ERP {
                 'back_link' => true,
             ]
         );
-    }
-
-    /**
-     * Define the plugin constants
-     *
-     * @return void
-     */
-    private function define_constants() {
-        define( 'WPERP_VERSION', $this->version );
-        define( 'WPERP_FILE', __FILE__ );
-        define( 'WPERP_PATH', dirname( WPERP_FILE ) );
-        define( 'WPERP_INCLUDES', WPERP_PATH . '/includes' );
-        define( 'WPERP_MODULES', WPERP_PATH . '/modules' );
-        define( 'WPERP_URL', plugins_url( '', WPERP_FILE ) );
-        define( 'WPERP_ASSETS', WPERP_URL . '/assets' );
-        define( 'WPERP_VIEWS', WPERP_INCLUDES . '/Admin/views' );
     }
 
     /**
@@ -291,7 +285,6 @@ final class WeDevs_ERP {
     private function instantiate() {
         $this->setup_database();
 
-        new WeDevsERPInstaller();
         new AdminMenu();
 
         $this->container['modules'] = new Modules();
@@ -316,8 +309,8 @@ final class WeDevs_ERP {
 
         $this->container['emailer']     = Emailer::init();
         $this->container['integration'] = Integration::init();
-        $this->container['google_auth'] = new stdClass();
-        $this->container['google_sync'] = new stdClass();
+        $this->container['google_auth'] = GoogleAuth::init();
+        $this->container['google_sync'] = GmailSync::init();
     }
 
     /**
@@ -358,6 +351,8 @@ final class WeDevs_ERP {
     public function plugin_action_links( $links ) {
         $links[] = '<a href="' . admin_url( 'admin.php?page=erp-settings' ) . '">' . __( 'Settings', 'erp' ) . '</a>';
         $links[] = '<a target="_blank" href="https://wperp.com/documentation/?utm_source=Free+Plugin&utm_medium=CTA&utm_content=Backend&utm_campaign=Docs">' . __( 'Docs', 'erp' ) . '</a>';
+        $links[] = '<a target="_blank" href="https://wperp.com/pricing/?nocache=&utm_source=plugindashboard&utm_medium=upgradetopro&utm_campaign=pluginlist" style="font-weight:bold; color:#17b517;">' . __( 'Upgrade to Pro', 'erp' ) . '</a>';
+        $links[] = '<a target="_blank" href="https://wperp.com/contact/">' . __( 'Get Support', 'erp' ) . '</a>';
 
         return $links;
     }
@@ -442,5 +437,13 @@ function wperp() {
     return WeDevs_ERP::init();
 }
 
-// kick it off
-wperp();
+
+add_action('init', function(){
+    wperp();
+}, 1);
+
+register_activation_hook( __FILE__, function() {
+
+    $installer = new WeDevsERPInstaller();
+    $installer->activate();
+} );
