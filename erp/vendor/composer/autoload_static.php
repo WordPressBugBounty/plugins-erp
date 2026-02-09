@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit5f0587bf3efb7d54ac8e72b21db5ce48
+class ComposerStaticInit682261ccab0954ac517aab25221b14f9
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -1688,6 +1688,14 @@ class ComposerStaticInit5f0587bf3efb7d54ac8e72b21db5ce48
         'WeDevs\\ERP\\CRM\\Admin\\UserProfile' => __DIR__ . '/../..' . '/modules/crm/includes/Admin/UserProfile.php',
         'WeDevs\\ERP\\CRM\\AjaxHandler' => __DIR__ . '/../..' . '/modules/crm/includes/AjaxHandler.php',
         'WeDevs\\ERP\\CRM\\CLI\\Commands' => __DIR__ . '/../..' . '/modules/crm/includes/CLI/Commands.php',
+        'WeDevs\\ERP\\CRM\\CLI\\Seed\\AbstractCrmSeeder' => __DIR__ . '/../..' . '/modules/crm/includes/CLI/Seed/AbstractCrmSeeder.php',
+        'WeDevs\\ERP\\CRM\\CLI\\Seed\\CrmDataProvider' => __DIR__ . '/../..' . '/modules/crm/includes/CLI/Seed/CrmDataProvider.php',
+        'WeDevs\\ERP\\CRM\\CLI\\Seed\\SeedActivities' => __DIR__ . '/../..' . '/modules/crm/includes/CLI/Seed/SeedActivities.php',
+        'WeDevs\\ERP\\CRM\\CLI\\Seed\\SeedCommand' => __DIR__ . '/../..' . '/modules/crm/includes/CLI/Seed/SeedCommand.php',
+        'WeDevs\\ERP\\CRM\\CLI\\Seed\\SeedCompanies' => __DIR__ . '/../..' . '/modules/crm/includes/CLI/Seed/SeedCompanies.php',
+        'WeDevs\\ERP\\CRM\\CLI\\Seed\\SeedContactGroups' => __DIR__ . '/../..' . '/modules/crm/includes/CLI/Seed/SeedContactGroups.php',
+        'WeDevs\\ERP\\CRM\\CLI\\Seed\\SeedContacts' => __DIR__ . '/../..' . '/modules/crm/includes/CLI/Seed/SeedContacts.php',
+        'WeDevs\\ERP\\CRM\\CLI\\Seed\\SeedDeals' => __DIR__ . '/../..' . '/modules/crm/includes/CLI/Seed/SeedDeals.php',
         'WeDevs\\ERP\\CRM\\CampaignListTable' => __DIR__ . '/../..' . '/modules/crm/includes/CampaignListTable.php',
         'WeDevs\\ERP\\CRM\\Contact' => __DIR__ . '/../..' . '/modules/crm/includes/Contact.php',
         'WeDevs\\ERP\\CRM\\ContactForms\\CF7' => __DIR__ . '/../..' . '/modules/crm/includes/ContactForms/CF7.php',
@@ -1752,6 +1760,25 @@ class ComposerStaticInit5f0587bf3efb7d54ac8e72b21db5ce48
         'WeDevs\\ERP\\HRM\\Announcement' => __DIR__ . '/../..' . '/modules/hrm/includes/Announcement.php',
         'WeDevs\\ERP\\HRM\\AnnouncementListTable' => __DIR__ . '/../..' . '/modules/hrm/includes/AnnouncementListTable.php',
         'WeDevs\\ERP\\HRM\\CLI\\Commands' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Commands.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\AbstractSeeder' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/AbstractSeeder.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\DataProvider' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/DataProvider.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedAnnouncements' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedAnnouncements.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedAssets' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedAssets.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedAttendance' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedAttendance.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedCommand' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedCommand.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedDepartments' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedDepartments.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedDesignations' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedDesignations.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedEmployees' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedEmployees.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedFinancialYears' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedFinancialYears.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedHolidays' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedHolidays.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedLeaveApprovals' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedLeaveApprovals.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedLeaveEntitlements' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedLeaveEntitlements.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedLeavePolicies' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedLeavePolicies.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedLeaveRequests' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedLeaveRequests.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedLeaveTypes' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedLeaveTypes.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedPayroll' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedPayroll.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedShifts' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedShifts.php',
+        'WeDevs\\ERP\\HRM\\CLI\\Seed\\SeedTraining' => __DIR__ . '/../..' . '/modules/hrm/includes/CLI/Seed/SeedTraining.php',
         'WeDevs\\ERP\\HRM\\Department' => __DIR__ . '/../..' . '/modules/hrm/includes/Department.php',
         'WeDevs\\ERP\\HRM\\DepartmentListTable' => __DIR__ . '/../..' . '/modules/hrm/includes/DepartmentListTable.php',
         'WeDevs\\ERP\\HRM\\DepartmentWalker' => __DIR__ . '/../..' . '/modules/hrm/includes/DepartmentWalker.php',
@@ -2167,10 +2194,10 @@ class ComposerStaticInit5f0587bf3efb7d54ac8e72b21db5ce48
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit5f0587bf3efb7d54ac8e72b21db5ce48::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit5f0587bf3efb7d54ac8e72b21db5ce48::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit5f0587bf3efb7d54ac8e72b21db5ce48::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit5f0587bf3efb7d54ac8e72b21db5ce48::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit682261ccab0954ac517aab25221b14f9::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit682261ccab0954ac517aab25221b14f9::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit682261ccab0954ac517aab25221b14f9::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit682261ccab0954ac517aab25221b14f9::$classMap;
 
         }, null, ClassLoader::class);
     }
