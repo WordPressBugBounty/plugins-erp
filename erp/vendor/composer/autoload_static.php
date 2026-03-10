@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit682261ccab0954ac517aab25221b14f9
+class ComposerStaticInit89176e4eb478cd89e165ecdb10bde8a4
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -1826,6 +1826,12 @@ class ComposerStaticInit682261ccab0954ac517aab25221b14f9
         'WeDevs\\ERP\\HRM\\Models\\LeavesUnpaid' => __DIR__ . '/../..' . '/modules/hrm/includes/Models/LeavesUnpaid.php',
         'WeDevs\\ERP\\HRM\\Models\\Performance' => __DIR__ . '/../..' . '/modules/hrm/includes/Models/Performance.php',
         'WeDevs\\ERP\\HRM\\Models\\WorkExperience' => __DIR__ . '/../..' . '/modules/hrm/includes/Models/WorkExperience.php',
+        'WeDevs\\ERP\\HRM\\PushNotification\\AbstractNotification' => __DIR__ . '/../..' . '/modules/hrm/includes/PushNotification/AbstractNotification.php',
+        'WeDevs\\ERP\\HRM\\PushNotification\\Module' => __DIR__ . '/../..' . '/modules/hrm/includes/PushNotification/Module.php',
+        'WeDevs\\ERP\\HRM\\PushNotification\\NotificationHandler' => __DIR__ . '/../..' . '/modules/hrm/includes/PushNotification/NotificationHandler.php',
+        'WeDevs\\ERP\\HRM\\PushNotification\\NotificationInterface' => __DIR__ . '/../..' . '/modules/hrm/includes/PushNotification/NotificationInterface.php',
+        'WeDevs\\ERP\\HRM\\PushNotification\\OneSignal' => __DIR__ . '/../..' . '/modules/hrm/includes/PushNotification/OneSignal.php',
+        'WeDevs\\ERP\\HRM\\PushNotification\\Settings' => __DIR__ . '/../..' . '/modules/hrm/includes/PushNotification/Settings.php',
         'WeDevs\\ERP\\HRM\\Settings' => __DIR__ . '/../..' . '/modules/hrm/includes/Settings.php',
         'WeDevs\\ERP\\Imap' => __DIR__ . '/../..' . '/includes/Imap.php',
         'WeDevs\\ERP\\Integration' => __DIR__ . '/../..' . '/includes/Integration.php',
@@ -2194,10 +2200,10 @@ class ComposerStaticInit682261ccab0954ac517aab25221b14f9
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit682261ccab0954ac517aab25221b14f9::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit682261ccab0954ac517aab25221b14f9::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit682261ccab0954ac517aab25221b14f9::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit682261ccab0954ac517aab25221b14f9::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit89176e4eb478cd89e165ecdb10bde8a4::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit89176e4eb478cd89e165ecdb10bde8a4::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit89176e4eb478cd89e165ecdb10bde8a4::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit89176e4eb478cd89e165ecdb10bde8a4::$classMap;
 
         }, null, ClassLoader::class);
     }

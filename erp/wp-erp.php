@@ -5,7 +5,7 @@
  * Plugin URI: https://wperp.com
  * Author: weDevs
  * Author URI: https://wedevs.com
- * Version: 1.16.11
+ * Version: 1.17.0
  * License: GPL2
  * Text Domain: erp
  * Domain Path: /i18n/languages/
@@ -60,7 +60,7 @@ use WeDevs\ERP\Admin\UserProfile;
 use WeDevs\ERP\WeDevsERPInstaller;
 
 require_once __DIR__ . '/vendor/autoload.php';
-define( 'WPERP_VERSION', '1.16.11' );
+define( 'WPERP_VERSION', '1.17.0' );
 define( 'WPERP_FILE', __FILE__ );
 define( 'WPERP_PATH', dirname( WPERP_FILE ) );
 define( 'WPERP_INCLUDES', WPERP_PATH . '/includes' );
@@ -257,6 +257,11 @@ final class WeDevs_ERP {
         require_once WPERP_INCLUDES . '/functions-html.php';
         require_once WPERP_INCLUDES . '/functions-company.php';
         require_once WPERP_INCLUDES . '/functions-people.php';
+
+        // Load CRM capabilities functions early to prevent fatal errors with ERP PRO
+        if ( file_exists( WPERP_MODULES . '/crm/includes/functions-capabilities.php' ) ) {
+            require_once WPERP_MODULES . '/crm/includes/functions-capabilities.php';
+        }
 //        require_once WPERP_INCLUDES . '/api/class-api-registrar.php';
 //        require_once WPERP_INCLUDES . '/class-i18n.php';
         require_once WPERP_INCLUDES . '/functions-cache-helper.php';
