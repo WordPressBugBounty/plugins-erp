@@ -2,9 +2,9 @@
 # This file is distributed under the GPL2.
 msgid ""
 msgstr ""
-"Project-Id-Version: ERP 1.16.11\n"
+"Project-Id-Version: ERP 1.17.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-erp\n"
-"POT-Creation-Date: 2026-03-10 05:13:11+00:00\n"
+"POT-Creation-Date: 2026-06-18 13:57:18+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,6 +28,253 @@ msgstr ""
 
 #: modules/crm/views/js-templates/customer-import-users.php:111
 msgid "100"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/base/Dropdown.vue:8
+#: modules/accounting/assets/src/admin/components/base/Dropdown.vue:8
+msgid "Dropdown"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/select/MultiSelect.vue:18
+msgid "Oops! No item found."
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/menu/SettingsSubMenu.vue:14
+#: modules/accounting/assets/src/admin/components/menu/AccountingMenu.vue:73
+msgid "More"
+msgstr ""
+
+#: assets/js/erp-settings.js:1 includes/Framework/ERP_Settings_Page.php:474
+#: includes/Settings/Template.php:499
+#: includes/Settings/assets/src/components/base/ImagePicker.vue:7
+#: includes/Settings/assets/src/components/base/ImagePicker.vue:16
+#: modules/accounting/assets/src/admin/components/base/Media.vue:28
+msgid "Upload Image"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/layouts/BaseContentLayout.vue:76
+msgid "Select date"
+msgstr ""
+
+#: assets/js/erp-settings.js:1 includes/Admin/views/tools/general.php:64
+#: includes/Settings/assets/src/components/act/financial-year/AcFinancialYears.vue:42
+#: includes/Settings/assets/src/components/crm/contact-forms/CrmContactFormSingle.vue:94
+#: includes/Settings/assets/src/components/hr/leave-years/HRLeaveYears.vue:41
+#: includes/Settings/assets/src/components/layouts/BaseContentLayout.vue:121
+#: includes/Settings/assets/src/components/license/License.vue:34
+msgid "Save Changes"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/woocommerce/WooCommerce.vue:83
+msgid "Get WooCommerce Extension"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/woocommerce/WooCommerce.vue:85
+msgid "Activate WooCommerce"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/woocommerce/WooCommerce.vue:89
+msgid "Get WP ERP Pro"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/email/email-connect/ImapEmail.vue:14
+#: includes/Settings/assets/src/components/email/email-connect/ImapEmail.vue:39
+msgid "Test Connection"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/email/email-connect/ImapEmail.vue:50
+msgid "Testing Connection"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/email/email-connect/ImapEmail.vue:69
+msgid " Test Connection"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/email/email-connect/ImapEmail.vue:75
+msgid " OK"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/email/templates/EmailTemplate.vue:227
+#: includes/Settings/assets/src/components/email/templates/EmailTemplate.vue:233
+#: modules/accounting/assets/src/admin/components/people/People.vue:97
+#: modules/accounting/assets/src/admin/components/people/PeopleTransaction.vue:109
+#: modules/accounting/assets/src/admin/components/product-category/ProductCategory.vue:94
+#: modules/accounting/assets/src/admin/components/tax/SingleTaxRate.vue:89
+#: modules/accounting/assets/src/admin/components/tax/TaxAgencies.vue:74
+#: modules/accounting/assets/src/admin/components/tax/TaxCategories.vue:74
+#: modules/accounting/assets/src/admin/components/tax/TaxRates.vue:84
+#: modules/accounting/assets/src/admin/components/tax/TaxZones.vue:78
+#: modules/crm/assets/js/crm-contacts.js:306
+#: modules/crm/assets/js/crm-contacts.js:1157
+#: modules/crm/includes/CampaignListTable.php:89
+#: modules/crm/includes/CampaignListTable.php:115
+#: modules/crm/includes/ContactGroupListTable.php:123
+#: modules/crm/includes/ContactGroupListTable.php:159
+#: modules/crm/includes/ContactSubscriberListTable.php:200
+#: modules/crm/includes/ContactSubscriberListTable.php:219
+#: modules/crm/includes/functions-localize.php:14
+#: modules/hrm/assets/js/requests.js:311
+#: modules/hrm/includes/DepartmentListTable.php:216
+#: modules/hrm/includes/DepartmentWalker.php:43
+#: modules/hrm/includes/DesignationListTable.php:85
+#: modules/hrm/includes/DesignationListTable.php:110
+#: modules/hrm/includes/EmployeeListTable.php:231
+#: modules/hrm/includes/EntitlementListTable.php:228
+#: modules/hrm/includes/EntitlementListTable.php:268
+#: modules/hrm/includes/LeavePoliciesListTable.php:214
+#: modules/hrm/includes/LeavePoliciesListTable.php:261
+#: modules/hrm/includes/LeavePolicyNameListTable.php:41
+#: modules/hrm/includes/LeavePolicyNameListTable.php:113
+#: modules/hrm/includes/LeaveRequestsListTable.php:274
+#: modules/hrm/includes/LeaveRequestsListTable.php:301
+#: modules/hrm/views/employee/tab-notes-row.php:19
+#: modules/hrm/views/employee/tab-notes.php:48
+#: modules/hrm/views/js-templates/row-dept.php:11
+#: modules/hrm/views/js-templates/row-desig.php:11
+#: modules/hrm/views/js-templates/row-employee.php:12
+#: modules/hrm/views/leave/holiday.php:114
+#: modules/hrm/views/leave/holiday.php:155
+msgid "Delete"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/email/templates/EmailTemplate.vue:228
+msgid "Are you sure to delete this ?"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/email/notifications/EmailNotification.vue:119
+#: includes/Settings/assets/src/components/email/templates/EmailTemplate.vue:83
+#: includes/Settings/assets/src/components/email/templates/EmailTemplate.vue:231
+#: includes/Settings/assets/src/components/integration/Integration.vue:99
+#: modules/accounting/assets/src/admin/components/email/SendMail.vue:48
+#: modules/accounting/assets/src/admin/components/people/ExportModal.vue:56
+#: modules/accounting/assets/src/admin/components/people/ImportModal.vue:61
+#: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:140
+#: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:252
+#: modules/accounting/assets/src/admin/components/people/PeopleTransaction.vue:33
+#: modules/accounting/assets/src/admin/components/product-category/ProductCategory.vue:51
+#: modules/accounting/assets/src/admin/components/products/ExportModal.vue:59
+#: modules/accounting/assets/src/admin/components/products/ImportModal.vue:158
+#: modules/accounting/assets/src/admin/components/transactions/TransactionsFilter.vue:67
+#: modules/crm/assets/js/crm-contacts.js:742
+#: modules/crm/assets/js/vue-table.js:402
+#: modules/crm/views/company/single.php:155
+#: modules/crm/views/contact/single.php:162
+#: modules/crm/views/js-templates/customer-email-note.php:66
+#: modules/crm/views/js-templates/customer-log-activity.php:77
+#: modules/crm/views/js-templates/customer-newnote.php:42
+#: modules/crm/views/js-templates/customer-schedule-note.php:141
+#: modules/crm/views/js-templates/customer-tasks-note.php:68
+#: modules/hrm/HRM.php:241 modules/hrm/assets/js/requests.js:582
+#: modules/hrm/includes/AnnouncementListTable.php:259
+#: modules/hrm/includes/EmployeeListTable.php:93
+#: modules/hrm/includes/LeaveRequestsListTable.php:666
+#: modules/hrm/includes/functions-employee.php:1332
+#: modules/hrm/includes/functions-employee.php:1417
+#: modules/hrm/views/requests.php:42
+msgid "Cancel"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/email/notifications/EmailNotification.vue:160
+#: includes/Settings/assets/src/components/email/templates/EmailTemplate.vue:18
+msgid "Template Name"
+msgstr ""
+
+#: assets/js/erp-settings.js:1 includes/Settings/Email.php:458
+#: includes/Settings/assets/src/components/email/notifications/EmailNotification.vue:164
+#: includes/Settings/assets/src/components/integration/Integration.vue:148
+#: modules/accounting/assets/src/admin/components/bill/BillCreate.vue:61
+#: modules/accounting/assets/src/admin/components/check/CheckCreate.vue:61
+#: modules/accounting/assets/src/admin/components/expense/ExpenseCreate.vue:75
+#: modules/accounting/assets/src/admin/components/opening-balance/OpeningBalance.vue:277
+#: modules/accounting/assets/src/admin/components/tax/NewTaxCategory.vue:23
+#: modules/accounting/assets/src/admin/components/tax/TaxCategories.vue:62
+#: modules/crm/includes/SubscriptionWidget.php:71
+#: modules/crm/views/js-templates/new-contact-group.php:16
+#: modules/hrm/includes/LeavePoliciesListTable.php:167
+#: modules/hrm/includes/LeavePolicyNameListTable.php:80
+#: modules/hrm/views/employee/tab-leave.php:134
+#: modules/hrm/views/js-templates/holiday.php:49
+#: modules/hrm/views/js-templates/new-dept.php:11
+#: modules/hrm/views/js-templates/new-designation.php:9
+#: modules/hrm/views/leave/holiday.php:97
+#: modules/hrm/views/leave/new-policy.php:120
+#: modules/hrm/views/leave/policy-name.php:50
+msgid "Description"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/email/notifications/EmailNotification.vue:168
+msgid "Disable / Enable"
+msgstr ""
+
+#: assets/js/erp-settings.js:1 includes/Settings/Integration.php:15
+#: includes/Settings/assets/src/components/integration/Integration.vue:147
+msgid "Integration"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/license/License.vue:59
+msgid "Extension"
+msgstr ""
+
+#: assets/js/erp-settings.js:1 includes/Framework/views/status-report.php:643
+#: includes/Settings/assets/src/components/license/License.vue:60
+msgid "Version"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/license/License.vue:61
+msgid "License Key"
+msgstr ""
+
+#: assets/js/erp-settings.js:1 includes/Admin/views/tools.php:37
+#: includes/Settings/assets/src/components/license/License.vue:62
+#: modules/accounting/assets/src/admin/components/transactions/TransactionsFilter.vue:33
+#: modules/accounting/assets/src/admin/components/transactions/expenses/ExpensesList.vue:70
+#: modules/accounting/assets/src/admin/components/transactions/expenses/ExpensesStats.vue:17
+#: modules/accounting/assets/src/admin/components/transactions/purchases/PurchasesList.vue:99
+#: modules/accounting/assets/src/admin/components/transactions/purchases/PurchasesStats.vue:17
+#: modules/accounting/assets/src/admin/components/transactions/sales/SalesList.vue:96
+#: modules/accounting/assets/src/admin/components/transactions/sales/SalesStats.vue:17
+#: modules/crm/includes/ContactSubscriberListTable.php:174
+#: modules/hrm/assets/js/requests.js:135 modules/hrm/assets/js/requests.js:172
+#: modules/hrm/assets/js/requests.js:181 modules/hrm/assets/js/requests.js:190
+#: modules/hrm/includes/EmployeeListTable.php:214
+#: modules/hrm/includes/LeaveRequestsListTable.php:77
+#: modules/hrm/views/employee/tab-leave.php:136
+#: modules/hrm/views/reporting/headcount.php:151
+msgid "Status"
+msgstr ""
+
+#: assets/js/erp-settings.js:1 includes/Admin/AddProMenu.php:187
+#: includes/Admin/AddProMenu.php:280 includes/Admin/AddProMenu.php:435
+#: includes/Admin/AdminMenu.php:132 includes/Admin/AdminMenu.php:138
+#: includes/Settings/assets/src/components/menu/SettingsMenu.vue:3
+#: modules/accounting/includes/Classes/Admin.php:155 wp-erp.php:359
+msgid "Settings"
+msgstr ""
+
+#: assets/js/erp-settings.js:1
+#: includes/Settings/assets/src/components/searchbar/SearchBar.vue:5
+#: modules/accounting/assets/src/admin/components/people/PeopleSearch.vue:9
+#: modules/accounting/assets/src/admin/components/products/Search.vue:9
+#: modules/crm/views/contact-groups.php:20 modules/hrm/views/employee.php:36
+msgid "Search"
 msgstr ""
 
 #: i18n/countries.php:14
@@ -954,7 +1201,7 @@ msgstr ""
 msgid "United Kingdom (UK)"
 msgstr ""
 
-#: i18n/countries.php:245 includes/Settings/Email.php:809
+#: i18n/countries.php:245 includes/Settings/Email.php:810
 msgid "United States (US)"
 msgstr ""
 
@@ -15899,14 +16146,14 @@ msgstr ""
 #: includes/API/ActivitiesController.php:493
 #: includes/API/REST_Controller.php:94
 #: modules/accounting/includes/API/EmployeesController.php:399
-#: modules/hrm/includes/API/EmployeesController.php:1918
+#: modules/hrm/includes/API/EmployeesController.php:2068
 msgid "Current page of the collection."
 msgstr ""
 
 #: includes/API/ActivitiesController.php:501
 #: includes/API/REST_Controller.php:102
 #: modules/accounting/includes/API/EmployeesController.php:407
-#: modules/hrm/includes/API/EmployeesController.php:1926
+#: modules/hrm/includes/API/EmployeesController.php:2076
 msgid "Maximum number of items to be returned in result set."
 msgstr ""
 
@@ -15995,19 +16242,19 @@ msgstr ""
 #: modules/hrm/includes/API/EmployeesController.php:718
 #: modules/hrm/includes/API/EmployeesController.php:821
 #: modules/hrm/includes/API/EmployeesController.php:924
-#: modules/hrm/includes/API/EmployeesController.php:1029
-#: modules/hrm/includes/API/EmployeesController.php:1126
-#: modules/hrm/includes/API/EmployeesController.php:1352
+#: modules/hrm/includes/API/EmployeesController.php:1088
+#: modules/hrm/includes/API/EmployeesController.php:1185
+#: modules/hrm/includes/API/EmployeesController.php:1442
 #: modules/hrm/includes/API/LeaveEntitlementsController.php:113
 #: modules/hrm/includes/API/LeaveHolidaysController.php:121
 #: modules/hrm/includes/API/LeaveHolidaysController.php:165
 #: modules/hrm/includes/API/LeavePoliciesController.php:139
 #: modules/hrm/includes/API/LeavePoliciesController.php:184
-#: modules/hrm/includes/API/LeaveRequestsController.php:241
-#: modules/hrm/includes/API/LeaveRequestsController.php:291
-#: modules/hrm/includes/API/LeaveRequestsController.php:334
-#: modules/hrm/includes/API/LeaveRequestsController.php:368
-#: modules/hrm/includes/API/LeaveRequestsController.php:409
+#: modules/hrm/includes/API/LeaveRequestsController.php:385
+#: modules/hrm/includes/API/LeaveRequestsController.php:435
+#: modules/hrm/includes/API/LeaveRequestsController.php:478
+#: modules/hrm/includes/API/LeaveRequestsController.php:512
+#: modules/hrm/includes/API/LeaveRequestsController.php:553
 msgid "Invalid resource id."
 msgstr ""
 
@@ -16070,7 +16317,7 @@ msgstr ""
 #: modules/hrm/includes/API/LeaveEntitlementsController.php:254
 #: modules/hrm/includes/API/LeaveHolidaysController.php:270
 #: modules/hrm/includes/API/LeavePoliciesController.php:356
-#: modules/hrm/includes/API/LeaveRequestsController.php:723
+#: modules/hrm/includes/API/LeaveRequestsController.php:884
 msgid "Unique identifier for the resource."
 msgstr ""
 
@@ -16226,7 +16473,7 @@ msgstr ""
 
 #: includes/API/REST_Controller.php:111
 #: modules/accounting/includes/API/EmployeesController.php:416
-#: modules/hrm/includes/API/EmployeesController.php:1935
+#: modules/hrm/includes/API/EmployeesController.php:2085
 msgid "Limit results to those matching a string."
 msgstr ""
 
@@ -16289,14 +16536,6 @@ msgstr ""
 
 #: includes/Admin/AddProMenu.php:176
 msgid "Assign Bulk Shift"
-msgstr ""
-
-#: includes/Admin/AddProMenu.php:187 includes/Admin/AddProMenu.php:280
-#: includes/Admin/AddProMenu.php:435 includes/Admin/AdminMenu.php:132
-#: includes/Admin/AdminMenu.php:138
-#: includes/Settings/assets/src/components/menu/SettingsMenu.vue:3
-#: modules/accounting/includes/Classes/Admin.php:155 wp-erp.php:357
-msgid "Settings"
 msgstr ""
 
 #: includes/Admin/AddProMenu.php:220 includes/Framework/Modules.php:443
@@ -16379,7 +16618,7 @@ msgid "All Deals"
 msgstr ""
 
 #: includes/Admin/AddProMenu.php:425
-#: modules/crm/includes/functions-customer.php:4334
+#: modules/crm/includes/functions-customer.php:4343
 msgid "Activities"
 msgstr ""
 
@@ -16455,7 +16694,7 @@ msgstr ""
 #: modules/crm/includes/AjaxHandler.php:1993
 #: modules/crm/includes/AjaxHandler.php:2023
 #: modules/crm/includes/Subscription.php:258
-#: modules/crm/includes/functions-customer.php:3506
+#: modules/crm/includes/functions-customer.php:3515
 #: modules/hrm/includes/AjaxHandler.php:173
 #: modules/hrm/includes/AjaxHandler.php:203
 #: modules/hrm/includes/AjaxHandler.php:233
@@ -16625,19 +16864,19 @@ msgid "Error: Nonce verification failed"
 msgstr ""
 
 #: includes/Admin/Ajax.php:678 includes/Admin/Ajax.php:734
-#: includes/Settings/Ajax.php:337 modules/hrm/includes/AjaxHandler.php:1374
+#: includes/Settings/Ajax.php:338 modules/hrm/includes/AjaxHandler.php:1374
 msgid "No email address provided"
 msgstr ""
 
-#: includes/Admin/Ajax.php:730 includes/Settings/Ajax.php:326
+#: includes/Admin/Ajax.php:730 includes/Settings/Ajax.php:327
 msgid "No host address provided"
 msgstr ""
 
-#: includes/Admin/Ajax.php:738 includes/Settings/Ajax.php:341
+#: includes/Admin/Ajax.php:738 includes/Settings/Ajax.php:342
 msgid "No email password provided"
 msgstr ""
 
-#: includes/Admin/Ajax.php:742 includes/Settings/Ajax.php:330
+#: includes/Admin/Ajax.php:742 includes/Settings/Ajax.php:331
 msgid "No port address provided"
 msgstr ""
 
@@ -16849,7 +17088,7 @@ msgstr ""
 #: includes/Admin/FormHandler.php:104 includes/Admin/views/address.php:37
 #: includes/Admin/views/company-editor.php:75
 #: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:95
-#: modules/crm/includes/functions-customer.php:3321
+#: modules/crm/includes/functions-customer.php:3330
 #: modules/crm/views/company/single.php:98
 #: modules/crm/views/contact/single.php:101
 #: modules/crm/views/js-templates/new-customer.php:222
@@ -16953,8 +17192,8 @@ msgid "Basic Settings"
 msgstr ""
 
 #: includes/Admin/SetupWizard.php:239
-#: modules/crm/includes/functions-customer.php:2089
-#: modules/crm/includes/functions-customer.php:3281
+#: modules/crm/includes/functions-customer.php:2098
+#: modules/crm/includes/functions-customer.php:3290
 #: modules/crm/views/js-templates/new-assign-company.php:6
 #: modules/crm/views/js-templates/new-customer.php:74
 msgid "Company Name"
@@ -17569,7 +17808,7 @@ msgstr ""
 #: includes/Admin/views/address.php:30
 #: includes/Admin/views/company-editor.php:64 includes/Company.php:44
 #: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:91
-#: modules/crm/includes/functions-customer.php:1867
+#: modules/crm/includes/functions-customer.php:1876
 #: modules/crm/views/company/single.php:96
 #: modules/crm/views/contact/single.php:99
 #: modules/crm/views/js-templates/new-customer.php:215
@@ -17624,7 +17863,6 @@ msgstr ""
 #: modules/hrm/views/leave/leave-entitlements.php:147
 #: modules/hrm/views/leave/leave-entitlements.php:159
 #: modules/hrm/views/leave/leave-entitlements.php:181
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:322
 msgid "- Select -"
 msgstr ""
 
@@ -17669,8 +17907,8 @@ msgstr ""
 #: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:47
 #: modules/accounting/assets/src/admin/components/userinfo/UserBasic.vue:22
 #: modules/crm/assets/js/crm-contacts.js:282
-#: modules/crm/includes/functions-customer.php:1825
-#: modules/crm/includes/functions-customer.php:3291
+#: modules/crm/includes/functions-customer.php:1834
+#: modules/crm/includes/functions-customer.php:3300
 #: modules/crm/views/company/single.php:91
 #: modules/crm/views/contact/single.php:94
 #: modules/hrm/views/js-templates/new-employee.php:375
@@ -17680,7 +17918,7 @@ msgstr ""
 #: includes/Admin/views/company-editor.php:134
 #: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:79
 #: modules/accounting/assets/src/admin/components/userinfo/UserBasic.vue:34
-#: modules/crm/includes/functions-customer.php:3306
+#: modules/crm/includes/functions-customer.php:3315
 #: modules/crm/views/company/single.php:92
 #: modules/crm/views/contact/single.php:95
 msgid "Fax"
@@ -17690,8 +17928,8 @@ msgstr ""
 #: modules/accounting/assets/src/admin/components/people/EmployeeDetails.vue:29
 #: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:67
 #: modules/accounting/assets/src/admin/components/userinfo/UserBasic.vue:26
-#: modules/crm/includes/functions-customer.php:1839
-#: modules/crm/includes/functions-customer.php:3296
+#: modules/crm/includes/functions-customer.php:1848
+#: modules/crm/includes/functions-customer.php:3305
 #: modules/crm/views/js-templates/new-customer.php:175
 #: modules/hrm/views/js-templates/new-employee.php:365
 msgid "Mobile"
@@ -17700,8 +17938,8 @@ msgstr ""
 #: includes/Admin/views/company-editor.php:156
 #: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:71
 #: modules/accounting/assets/src/admin/components/userinfo/UserBasic.vue:30
-#: modules/crm/includes/functions-customer.php:1853
-#: modules/crm/includes/functions-customer.php:3301
+#: modules/crm/includes/functions-customer.php:1862
+#: modules/crm/includes/functions-customer.php:3310
 #: modules/crm/views/company/single.php:93
 #: modules/crm/views/contact/single.php:96
 #: modules/crm/views/js-templates/new-customer.php:183
@@ -17717,11 +17955,11 @@ msgstr ""
 msgid "Company Logo"
 msgstr ""
 
-#: includes/Admin/views/company-editor.php:207 includes/Scripts.php:182
+#: includes/Admin/views/company-editor.php:207 includes/Scripts.php:183
 msgid "Remove company logo"
 msgstr ""
 
-#: includes/Admin/views/company-editor.php:213 includes/Scripts.php:181
+#: includes/Admin/views/company-editor.php:213 includes/Scripts.php:182
 msgid "Upload company logo"
 msgstr ""
 
@@ -17823,31 +18061,48 @@ msgstr ""
 msgid "Loading"
 msgstr ""
 
-#: includes/Admin/views/erp-overview.php:3
+#: includes/Admin/views/erp-overview.php:4
 #: modules/crm/includes/Admin/AdminMenu.php:39
 #: modules/hrm/includes/Admin/AdminMenu.php:32
 msgid "Overview"
 msgstr ""
 
-#: includes/Admin/views/erp-overview.php:15
+#: includes/Admin/views/erp-overview.php:28
+msgid "Book a Call"
+msgstr ""
+
+#: includes/Admin/views/erp-overview.php:30
+msgid "Submit Feedback"
+msgstr ""
+
+#: includes/Admin/views/erp-overview.php:32
+msgid "Feedback"
+msgstr ""
+
+#: includes/Admin/views/erp-overview.php:34
+#: includes/Admin/views/erp-overview.php:36
+msgid "Contact Support"
+msgstr ""
+
+#: includes/Admin/views/erp-overview.php:51
 msgid "Latest ERP Blogs"
 msgstr ""
 
-#: includes/Admin/views/erp-overview.php:24
+#: includes/Admin/views/erp-overview.php:60
 msgid "No available blog right now."
 msgstr ""
 
-#: includes/Admin/views/erp-overview.php:29
+#: includes/Admin/views/erp-overview.php:65
 msgid "Stay up-to-date"
 msgstr ""
 
-#: includes/Admin/views/erp-overview.php:31
+#: includes/Admin/views/erp-overview.php:67
 msgid ""
 "Don't miss any updates of our new templates and extensions and all the "
 "astonishing offers we bring for you."
 msgstr ""
 
-#: includes/Admin/views/erp-overview.php:35
+#: includes/Admin/views/erp-overview.php:71
 #: modules/crm/includes/Subscription.php:164
 #: modules/crm/includes/SubscriptionWidget.php:51
 #: modules/crm/includes/SubscriptionWidget.php:177
@@ -17903,7 +18158,7 @@ msgid "Modules & Extensions"
 msgstr ""
 
 #: includes/Admin/views/modules.php:554 includes/Framework/Modules.php:51
-#: includes/Framework/views/status-report.php:48 includes/Scripts.php:170
+#: includes/Framework/views/status-report.php:48 includes/Scripts.php:171
 #: includes/WeDevsERPInstaller.php:2150 modules/hrm/HRM.php:330
 #: modules/hrm/views/dashboard.php:2
 msgid "HR Management"
@@ -17914,17 +18169,14 @@ msgid "Human Resource Management"
 msgstr ""
 
 #: includes/Admin/views/modules.php:570 includes/Framework/Modules.php:58
-#: includes/WeDevsERPInstaller.php:2158
 msgid "CR Management"
 msgstr ""
 
 #: includes/Admin/views/modules.php:572 includes/Framework/Modules.php:60
-#: includes/WeDevsERPInstaller.php:2160
 msgid "Customer Relationship Management"
 msgstr ""
 
 #: includes/Admin/views/modules.php:588 includes/Framework/Modules.php:67
-#: includes/WeDevsERPInstaller.php:2166 includes/WeDevsERPInstaller.php:2168
 msgid "Accounting Management"
 msgstr ""
 
@@ -17939,7 +18191,7 @@ msgid "Active"
 msgstr ""
 
 #: includes/Admin/views/modules.php:658
-#: modules/crm/includes/functions-customer.php:2018
+#: modules/crm/includes/functions-customer.php:2027
 #: modules/hrm/includes/functions-employee.php:499
 msgid "Inactive"
 msgstr ""
@@ -17961,7 +18213,7 @@ msgstr ""
 msgid "Deactivate"
 msgstr ""
 
-#: includes/Admin/views/modules.php:787 wp-erp.php:358
+#: includes/Admin/views/modules.php:787 wp-erp.php:360
 msgid "Docs"
 msgstr ""
 
@@ -18082,15 +18334,6 @@ msgstr ""
 msgid "New Transaction"
 msgstr ""
 
-#: includes/Admin/views/tools/general.php:64
-#: includes/Settings/assets/src/components/act/financial-year/AcFinancialYears.vue:42
-#: includes/Settings/assets/src/components/crm/contact-forms/CrmContactFormSingle.vue:94
-#: includes/Settings/assets/src/components/hr/leave-years/HRLeaveYears.vue:41
-#: includes/Settings/assets/src/components/layouts/BaseContentLayout.vue:121
-#: includes/Settings/assets/src/components/license/License.vue:34
-msgid "Save Changes"
-msgstr ""
-
 #: includes/Admin/views/tools/misc.php:3
 #: includes/Settings/assets/src/components/email/email-connect/MailgunEmail.vue:23
 #: includes/Settings/assets/src/components/email/email-connect/SmtpEmail.vue:22
@@ -18167,25 +18410,6 @@ msgstr ""
 msgid "Misc."
 msgstr ""
 
-#: includes/Admin/views/tools.php:37
-#: includes/Settings/assets/src/components/license/License.vue:62
-#: modules/accounting/assets/src/admin/components/transactions/TransactionsFilter.vue:33
-#: modules/accounting/assets/src/admin/components/transactions/expenses/ExpensesList.vue:70
-#: modules/accounting/assets/src/admin/components/transactions/expenses/ExpensesStats.vue:17
-#: modules/accounting/assets/src/admin/components/transactions/purchases/PurchasesList.vue:99
-#: modules/accounting/assets/src/admin/components/transactions/purchases/PurchasesStats.vue:17
-#: modules/accounting/assets/src/admin/components/transactions/sales/SalesList.vue:96
-#: modules/accounting/assets/src/admin/components/transactions/sales/SalesStats.vue:17
-#: modules/crm/includes/ContactSubscriberListTable.php:174
-#: modules/hrm/assets/js/requests.js:135 modules/hrm/assets/js/requests.js:172
-#: modules/hrm/assets/js/requests.js:181 modules/hrm/assets/js/requests.js:190
-#: modules/hrm/includes/EmployeeListTable.php:214
-#: modules/hrm/includes/LeaveRequestsListTable.php:77
-#: modules/hrm/views/employee/tab-leave.php:136
-#: modules/hrm/views/reporting/headcount.php:151
-msgid "Status"
-msgstr ""
-
 #: includes/Admin/views/tools.php:39
 msgid "Danger Zone"
 msgstr ""
@@ -18245,7 +18469,7 @@ msgstr ""
 msgid "Street Address 1"
 msgstr ""
 
-#: includes/Company.php:45 modules/crm/includes/functions-customer.php:3326
+#: includes/Company.php:45 modules/crm/includes/functions-customer.php:3335
 #: modules/crm/views/company/single.php:97
 #: modules/crm/views/contact/single.php:100
 #: modules/hrm/views/employee/tab-general.php:108
@@ -18347,14 +18571,6 @@ msgstr ""
 #: includes/Framework/ERP_Settings_Page.php:470
 #: includes/Settings/Template.php:495
 msgid "Delete this image?"
-msgstr ""
-
-#: includes/Framework/ERP_Settings_Page.php:474
-#: includes/Settings/Template.php:499
-#: includes/Settings/assets/src/components/base/ImagePicker.vue:7
-#: includes/Settings/assets/src/components/base/ImagePicker.vue:16
-#: modules/accounting/assets/src/admin/components/base/Media.vue:28
-msgid "Upload Image"
 msgstr ""
 
 #: includes/Framework/ERP_Settings_Page.php:736
@@ -18604,7 +18820,7 @@ msgstr ""
 #: includes/Framework/views/status-report.php:87
 #: modules/crm/includes/Admin/AdminMenu.php:47
 #: modules/crm/includes/Admin/Settings.php:48
-#: modules/crm/includes/functions-customer.php:4332
+#: modules/crm/includes/functions-customer.php:4341
 #: modules/crm/includes/functions-dashboard.php:298
 #: modules/crm/views/activities.php:8 modules/crm/views/company/single.php:198
 #: modules/crm/views/company.php:22 modules/crm/views/contact-groups.php:9
@@ -18634,7 +18850,7 @@ msgid "Total CRM Agent count."
 msgstr ""
 
 #: includes/Framework/views/status-report.php:102
-#: modules/crm/includes/functions-customer.php:4333
+#: modules/crm/includes/functions-customer.php:4342
 #: modules/crm/includes/functions-dashboard.php:327
 #: modules/crm/views/contact/single.php:204
 msgid "Companies"
@@ -18646,7 +18862,7 @@ msgstr ""
 
 #: includes/Framework/views/status-report.php:107
 #: modules/crm/includes/SubscriptionWidget.php:76
-#: modules/crm/includes/functions-customer.php:4335
+#: modules/crm/includes/functions-customer.php:4344
 msgid "Contact Groups"
 msgstr ""
 
@@ -18719,7 +18935,7 @@ msgid "Enable SMTP"
 msgstr ""
 
 #: includes/Framework/views/status-report.php:188
-#: includes/Settings/Email.php:588
+#: includes/Settings/Email.php:589
 msgid "Enable IMAP"
 msgstr ""
 
@@ -19160,7 +19376,7 @@ msgstr ""
 #: modules/crm/includes/ContactSubscriberListTable.php:170
 #: modules/crm/views/company/single.php:90
 #: modules/crm/views/js-templates/new-contact-group.php:5
-#: modules/hrm/includes/Employee.php:1446
+#: modules/hrm/includes/Employee.php:1508
 #: modules/hrm/includes/LeaveReportEmployeeBased.php:135
 #: modules/hrm/views/employee/tab-general.php:300
 #: modules/hrm/views/js-templates/dependents.php:5
@@ -19170,11 +19386,6 @@ msgstr ""
 
 #: includes/Framework/views/status-report.php:639
 msgid "The name of the current active theme."
-msgstr ""
-
-#: includes/Framework/views/status-report.php:643
-#: includes/Settings/assets/src/components/license/License.vue:60
-msgid "Version"
 msgstr ""
 
 #: includes/Framework/views/status-report.php:644
@@ -19303,19 +19514,19 @@ msgstr ""
 msgid "<strong>%s</strong>"
 msgstr ""
 
-#: includes/Scripts.php:180
+#: includes/Scripts.php:181
 msgid "Set company logo"
 msgstr ""
 
-#: includes/Scripts.php:183
+#: includes/Scripts.php:184
 msgid "Update Location"
 msgstr ""
 
-#: includes/Scripts.php:184
+#: includes/Scripts.php:185
 msgid "Create"
 msgstr ""
 
-#: includes/Scripts.php:185
+#: includes/Scripts.php:186
 #: modules/accounting/assets/src/admin/components/bill/BillCreate.vue:187
 #: modules/accounting/assets/src/admin/components/chart-accounts/AddChartAccounts.vue:7
 #: modules/accounting/assets/src/admin/components/check/CheckCreate.vue:192
@@ -19337,75 +19548,75 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
-#: includes/Scripts.php:186
+#: includes/Scripts.php:187
 msgid "You didn't save your changes!"
 msgstr ""
 
-#: includes/Scripts.php:187 modules/crm/CRM.php:236 modules/crm/CRM.php:257
+#: includes/Scripts.php:188 modules/crm/CRM.php:236 modules/crm/CRM.php:257
 #: modules/hrm/HRM.php:214
 msgid "Are you sure?"
 msgstr ""
 
-#: includes/Scripts.php:192
+#: includes/Scripts.php:193
 msgid "Allowed Files"
 msgstr ""
 
-#: includes/Settings/Ajax.php:150 includes/Settings/Ajax.php:213
-#: includes/Settings/Ajax.php:254 includes/Settings/Ajax.php:290
+#: includes/Settings/Ajax.php:150 includes/Settings/Ajax.php:214
+#: includes/Settings/Ajax.php:255 includes/Settings/Ajax.php:291
 #: modules/hrm/includes/AjaxHandler.php:1078
 msgid "You do not have sufficient permission to do this action"
 msgstr ""
 
-#: includes/Settings/Ajax.php:261
+#: includes/Settings/Ajax.php:262
 msgid "Invalid email template ID"
 msgstr ""
 
-#: includes/Settings/Ajax.php:276
+#: includes/Settings/Ajax.php:277
 msgid "Template updated successfully"
 msgstr ""
 
-#: includes/Settings/Ajax.php:369
+#: includes/Settings/Ajax.php:370
 msgid "ERP SMTP Test Mail"
 msgstr ""
 
-#: includes/Settings/Ajax.php:370 includes/Settings/Ajax.php:464
-#: includes/Settings/Ajax.php:525
+#: includes/Settings/Ajax.php:371 includes/Settings/Ajax.php:465
+#: includes/Settings/Ajax.php:526
 msgid "This is a test email by WP ERP."
 msgstr ""
 
-#: includes/Settings/Ajax.php:415
+#: includes/Settings/Ajax.php:416
 msgid "Test email has been sent successfully to %s"
 msgstr ""
 
-#: includes/Settings/Ajax.php:440
+#: includes/Settings/Ajax.php:441
 msgid "No private API key provided"
 msgstr ""
 
-#: includes/Settings/Ajax.php:446
+#: includes/Settings/Ajax.php:447
 msgid "No domain address provided"
 msgstr ""
 
-#: includes/Settings/Ajax.php:452
+#: includes/Settings/Ajax.php:453
 msgid "No region selected"
 msgstr ""
 
-#: includes/Settings/Ajax.php:463
+#: includes/Settings/Ajax.php:464
 msgid "ERP Mailgun Test Mail"
 msgstr ""
 
-#: includes/Settings/Ajax.php:500 includes/Settings/Ajax.php:548
+#: includes/Settings/Ajax.php:501 includes/Settings/Ajax.php:549
 msgid "Test email has been sent successfully to "
 msgstr ""
 
-#: includes/Settings/Ajax.php:524
+#: includes/Settings/Ajax.php:525
 msgid "ERP WP Default Test Mail"
 msgstr ""
 
-#: includes/Settings/Ajax.php:550
+#: includes/Settings/Ajax.php:551
 msgid "Failed to send test message to "
 msgstr ""
 
-#: includes/Settings/Ajax.php:639
+#: includes/Settings/Ajax.php:640
 msgid "Licenses saved succesfully"
 msgstr ""
 
@@ -19489,7 +19700,7 @@ msgstr ""
 msgid "Email outgoing settings for ERP."
 msgstr ""
 
-#: includes/Settings/Email.php:159 includes/Settings/Email.php:616
+#: includes/Settings/Email.php:159 includes/Settings/Email.php:617
 msgid "Mail Server"
 msgstr ""
 
@@ -19497,7 +19708,7 @@ msgstr ""
 msgid "SMTP host address."
 msgstr ""
 
-#: includes/Settings/Email.php:169 includes/Settings/Email.php:655
+#: includes/Settings/Email.php:169 includes/Settings/Email.php:656
 msgid "Port"
 msgstr ""
 
@@ -19505,39 +19716,39 @@ msgstr ""
 msgid "SSL: 465<br> TLS: 587"
 msgstr ""
 
-#: includes/Settings/Email.php:176 includes/Settings/Email.php:662
+#: includes/Settings/Email.php:176 includes/Settings/Email.php:663
 msgid "Authentication"
 msgstr ""
 
-#: includes/Settings/Email.php:179 includes/Settings/Email.php:671
+#: includes/Settings/Email.php:179 includes/Settings/Email.php:672
 msgid "Authentication type."
 msgstr ""
 
-#: includes/Settings/Email.php:181 includes/Settings/Email.php:668
+#: includes/Settings/Email.php:181 includes/Settings/Email.php:669
 msgid "None"
 msgstr ""
 
-#: includes/Settings/Email.php:182 includes/Settings/Email.php:666
+#: includes/Settings/Email.php:182 includes/Settings/Email.php:667
 msgid "SSL"
 msgstr ""
 
-#: includes/Settings/Email.php:183 includes/Settings/Email.php:667
+#: includes/Settings/Email.php:183 includes/Settings/Email.php:668
 msgid "TLS"
 msgstr ""
 
-#: includes/Settings/Email.php:188 includes/Settings/Email.php:626
+#: includes/Settings/Email.php:188 includes/Settings/Email.php:627
 msgid "Username"
 msgstr ""
 
-#: includes/Settings/Email.php:194 includes/Settings/Email.php:629
+#: includes/Settings/Email.php:194 includes/Settings/Email.php:630
 msgid "Your email id."
 msgstr ""
 
-#: includes/Settings/Email.php:198 includes/Settings/Email.php:636
+#: includes/Settings/Email.php:198 includes/Settings/Email.php:637
 msgid "Password"
 msgstr ""
 
-#: includes/Settings/Email.php:201 includes/Settings/Email.php:639
+#: includes/Settings/Email.php:201 includes/Settings/Email.php:640
 msgid "Your email password."
 msgstr ""
 
@@ -19574,7 +19785,7 @@ msgstr ""
 msgid "SMTP"
 msgstr ""
 
-#: includes/Settings/Email.php:330 includes/Settings/Email.php:773
+#: includes/Settings/Email.php:330 includes/Settings/Email.php:774
 msgid "Mailgun"
 msgstr ""
 
@@ -19609,9 +19820,9 @@ msgstr ""
 #: modules/crm/includes/ContactSubscriberListTable.php:171
 #: modules/crm/includes/Subscription.php:165
 #: modules/crm/includes/functions-customer.php:548
-#: modules/crm/includes/functions-customer.php:1813
-#: modules/crm/includes/functions-customer.php:3194
-#: modules/crm/includes/functions-customer.php:3286
+#: modules/crm/includes/functions-customer.php:1822
+#: modules/crm/includes/functions-customer.php:3203
+#: modules/crm/includes/functions-customer.php:3295
 #: modules/crm/views/contact/feeds.php:41
 #: modules/crm/views/js-templates/customer-add-schedules.php:94
 #: modules/crm/views/js-templates/new-customer.php:89
@@ -19620,40 +19831,17 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
-#: includes/Settings/Email.php:458
-#: includes/Settings/assets/src/components/email/notifications/EmailNotification.vue:164
-#: includes/Settings/assets/src/components/integration/Integration.vue:148
-#: modules/accounting/assets/src/admin/components/bill/BillCreate.vue:61
-#: modules/accounting/assets/src/admin/components/check/CheckCreate.vue:61
-#: modules/accounting/assets/src/admin/components/expense/ExpenseCreate.vue:75
-#: modules/accounting/assets/src/admin/components/opening-balance/OpeningBalance.vue:277
-#: modules/accounting/assets/src/admin/components/tax/NewTaxCategory.vue:23
-#: modules/accounting/assets/src/admin/components/tax/TaxCategories.vue:62
-#: modules/crm/includes/SubscriptionWidget.php:71
-#: modules/crm/views/js-templates/new-contact-group.php:16
-#: modules/hrm/includes/LeavePoliciesListTable.php:167
-#: modules/hrm/includes/LeavePolicyNameListTable.php:80
-#: modules/hrm/views/employee/tab-leave.php:134
-#: modules/hrm/views/js-templates/holiday.php:49
-#: modules/hrm/views/js-templates/new-dept.php:11
-#: modules/hrm/views/js-templates/new-designation.php:9
-#: modules/hrm/views/leave/holiday.php:97
-#: modules/hrm/views/leave/new-policy.php:120
-#: modules/hrm/views/leave/policy-name.php:50
-msgid "Description"
-msgstr ""
-
-#: includes/Settings/Email.php:526
+#: includes/Settings/Email.php:527
 #: includes/Settings/assets/src/components/email/notifications/EmailNotification.vue:46
 #: includes/Settings/assets/src/components/integration/Integration.vue:31
 msgid "Configure"
 msgstr ""
 
-#: includes/Settings/Email.php:557 includes/Settings/Email.php:578
+#: includes/Settings/Email.php:558 includes/Settings/Email.php:579
 msgid "IMAP/POP3 Options"
 msgstr ""
 
-#: includes/Settings/Email.php:568
+#: includes/Settings/Email.php:569
 #. translators: 1) opening tags of <section> and <p>, 2) closing tags of </p>
 #. and </section>
 msgid ""
@@ -19662,47 +19850,47 @@ msgid ""
 "extension. %2$s"
 msgstr ""
 
-#: includes/Settings/Email.php:580
+#: includes/Settings/Email.php:581
 msgid "Email incoming settings for ERP."
 msgstr ""
 
-#: includes/Settings/Email.php:607
+#: includes/Settings/Email.php:608
 msgid "Cron Schedule"
 msgstr ""
 
-#: includes/Settings/Email.php:610
+#: includes/Settings/Email.php:611
 msgid "Interval time to run cron."
 msgstr ""
 
-#: includes/Settings/Email.php:622
+#: includes/Settings/Email.php:623
 msgid "IMAP/POP3 host address."
 msgstr ""
 
-#: includes/Settings/Email.php:643
+#: includes/Settings/Email.php:644
 msgid "Protocol"
 msgstr ""
 
-#: includes/Settings/Email.php:646
+#: includes/Settings/Email.php:647
 msgid "Protocol type."
 msgstr ""
 
-#: includes/Settings/Email.php:648
+#: includes/Settings/Email.php:649
 msgid "IMAP"
 msgstr ""
 
-#: includes/Settings/Email.php:649
+#: includes/Settings/Email.php:650
 msgid "POP3"
 msgstr ""
 
-#: includes/Settings/Email.php:658
+#: includes/Settings/Email.php:659
 msgid "IMAP: 993<br> POP3: 995"
 msgstr ""
 
-#: includes/Settings/Email.php:701
+#: includes/Settings/Email.php:702
 msgid "Gmail / G suite Authentication"
 msgstr ""
 
-#: includes/Settings/Email.php:725
+#: includes/Settings/Email.php:726
 #. translators: 1) opening anchor tag with google developers link, 2) closing
 #. anchor tag, 3) opening anchor tag with doc link, 4) closing anchor tag
 msgid ""
@@ -19711,50 +19899,50 @@ msgid ""
 "get started"
 msgstr ""
 
-#: includes/Settings/Email.php:734
+#: includes/Settings/Email.php:735
 msgid "Client ID"
 msgstr ""
 
-#: includes/Settings/Email.php:737
+#: includes/Settings/Email.php:738
 msgid "Your APP Client ID"
 msgstr ""
 
-#: includes/Settings/Email.php:741
+#: includes/Settings/Email.php:742
 msgid "Client Secret"
 msgstr ""
 
-#: includes/Settings/Email.php:744
+#: includes/Settings/Email.php:745
 msgid "Your APP Client Secret"
 msgstr ""
 
-#: includes/Settings/Email.php:748
+#: includes/Settings/Email.php:749
 msgid "Redirect URL to use"
 msgstr ""
 
-#: includes/Settings/Email.php:751
+#: includes/Settings/Email.php:752
 msgid "Copy and Use this url when oAuth consent asks for Authorized Redirect URL"
 msgstr ""
 
-#: includes/Settings/Email.php:779
+#: includes/Settings/Email.php:780
 msgid "Enable Mailgun"
 msgstr ""
 
-#: includes/Settings/Email.php:790
+#: includes/Settings/Email.php:791
 msgid "Private API Key"
 msgstr ""
 
-#: includes/Settings/Email.php:793
+#: includes/Settings/Email.php:794
 msgid ""
 "Get private API key from your Mailgun account <a "
 "href=\"https://app.mailgun.com/settings/api_security\" "
 "target=\"_blank\">Mailgun account</a>"
 msgstr ""
 
-#: includes/Settings/Email.php:797
+#: includes/Settings/Email.php:798
 msgid "Domain"
 msgstr ""
 
-#: includes/Settings/Email.php:800
+#: includes/Settings/Email.php:801
 msgid ""
 "Get sending domain from your Mailgun account <a "
 "href=\"https://app.mailgun.com/mg/sending/domains\" "
@@ -19764,31 +19952,31 @@ msgid ""
 "Recipients\" target=\"_blank\">Learn More</a>"
 msgstr ""
 
-#: includes/Settings/Email.php:804
+#: includes/Settings/Email.php:805
 msgid "Region"
 msgstr ""
 
-#: includes/Settings/Email.php:807
+#: includes/Settings/Email.php:808
 msgid "Mailgun API Region"
 msgstr ""
 
-#: includes/Settings/Email.php:810
+#: includes/Settings/Email.php:811
 msgid "Europe (EU)"
 msgstr ""
 
-#: includes/Settings/Email.php:816
+#: includes/Settings/Email.php:817
 msgid "Limit"
 msgstr ""
 
-#: includes/Settings/Email.php:819
+#: includes/Settings/Email.php:820
 msgid "Hourly sending limit, That&apos;s 1 email per 1 second(s)"
 msgstr ""
 
-#: includes/Settings/Email.php:838
+#: includes/Settings/Email.php:839
 msgid "WP Mail"
 msgstr ""
 
-#: includes/Settings/Email.php:844
+#: includes/Settings/Email.php:845
 msgid "Enable WP Mail"
 msgstr ""
 
@@ -19816,11 +20004,6 @@ msgstr ""
 
 #: includes/Settings/General.php:89
 msgid "Switching testing or production mode"
-msgstr ""
-
-#: includes/Settings/Integration.php:15
-#: includes/Settings/assets/src/components/integration/Integration.vue:147
-msgid "Integration"
 msgstr ""
 
 #: includes/Settings/Integration.php:35
@@ -19887,11 +20070,6 @@ msgstr ""
 msgid "End date"
 msgstr ""
 
-#: includes/Settings/assets/src/components/base/Dropdown.vue:8
-#: modules/accounting/assets/src/admin/components/base/Dropdown.vue:8
-msgid "Dropdown"
-msgstr ""
-
 #: includes/Settings/assets/src/components/base/ShowErrors.vue:4
 #: modules/accounting/assets/src/admin/components/base/ShowErrors.vue:4
 msgid "Please complete these fields"
@@ -19901,7 +20079,6 @@ msgstr ""
 #: modules/accounting/assets/src/admin/components/base/SubmitButton.vue:12
 #: modules/accounting/assets/src/admin/components/people/PeopleTransaction.vue:34
 #: modules/accounting/assets/src/admin/components/transactions/TransactionsFilter.vue:71
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:284
 msgid "Submit"
 msgstr ""
 
@@ -19939,25 +20116,8 @@ msgstr ""
 msgid "Disconnect"
 msgstr ""
 
-#: includes/Settings/assets/src/components/email/email-connect/ImapEmail.vue:14
-#: includes/Settings/assets/src/components/email/email-connect/ImapEmail.vue:39
-msgid "Test Connection"
-msgstr ""
-
 #: includes/Settings/assets/src/components/email/email-connect/ImapEmail.vue:15
 msgid "Click on the Above Button Before Saving the Setting"
-msgstr ""
-
-#: includes/Settings/assets/src/components/email/email-connect/ImapEmail.vue:50
-msgid "Testing Connection"
-msgstr ""
-
-#: includes/Settings/assets/src/components/email/email-connect/ImapEmail.vue:69
-msgid " Test Connection"
-msgstr ""
-
-#: includes/Settings/assets/src/components/email/email-connect/ImapEmail.vue:75
-msgid " OK"
 msgstr ""
 
 #: includes/Settings/assets/src/components/email/email-connect/MailgunEmail.vue:14
@@ -20025,48 +20185,6 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-#: includes/Settings/assets/src/components/email/notifications/EmailNotification.vue:119
-#: includes/Settings/assets/src/components/email/templates/EmailTemplate.vue:83
-#: includes/Settings/assets/src/components/email/templates/EmailTemplate.vue:231
-#: includes/Settings/assets/src/components/integration/Integration.vue:99
-#: modules/accounting/assets/src/admin/components/email/SendMail.vue:48
-#: modules/accounting/assets/src/admin/components/people/ExportModal.vue:56
-#: modules/accounting/assets/src/admin/components/people/ImportModal.vue:61
-#: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:140
-#: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:252
-#: modules/accounting/assets/src/admin/components/people/PeopleTransaction.vue:33
-#: modules/accounting/assets/src/admin/components/product-category/ProductCategory.vue:51
-#: modules/accounting/assets/src/admin/components/products/ExportModal.vue:59
-#: modules/accounting/assets/src/admin/components/products/ImportModal.vue:158
-#: modules/accounting/assets/src/admin/components/transactions/TransactionsFilter.vue:67
-#: modules/crm/assets/js/crm-contacts.js:742
-#: modules/crm/assets/js/vue-table.js:402
-#: modules/crm/views/company/single.php:155
-#: modules/crm/views/contact/single.php:162
-#: modules/crm/views/js-templates/customer-email-note.php:66
-#: modules/crm/views/js-templates/customer-log-activity.php:77
-#: modules/crm/views/js-templates/customer-newnote.php:42
-#: modules/crm/views/js-templates/customer-schedule-note.php:141
-#: modules/crm/views/js-templates/customer-tasks-note.php:68
-#: modules/hrm/HRM.php:241 modules/hrm/assets/js/requests.js:582
-#: modules/hrm/includes/AnnouncementListTable.php:259
-#: modules/hrm/includes/EmployeeListTable.php:93
-#: modules/hrm/includes/LeaveRequestsListTable.php:666
-#: modules/hrm/includes/functions-employee.php:1323
-#: modules/hrm/includes/functions-employee.php:1408
-#: modules/hrm/views/requests.php:42
-msgid "Cancel"
-msgstr ""
-
-#: includes/Settings/assets/src/components/email/notifications/EmailNotification.vue:160
-#: includes/Settings/assets/src/components/email/templates/EmailTemplate.vue:18
-msgid "Template Name"
-msgstr ""
-
-#: includes/Settings/assets/src/components/email/notifications/EmailNotification.vue:168
-msgid "Disable / Enable"
-msgstr ""
-
 #: includes/Settings/assets/src/components/email/templates/EmailTemplate.vue:20
 #: includes/functions.php:3303
 msgid "Enable/Disable"
@@ -20078,53 +20196,6 @@ msgstr ""
 
 #: includes/Settings/assets/src/components/email/templates/EmailTemplate.vue:57
 msgid "Short Codes"
-msgstr ""
-
-#: includes/Settings/assets/src/components/email/templates/EmailTemplate.vue:227
-#: includes/Settings/assets/src/components/email/templates/EmailTemplate.vue:233
-#: modules/accounting/assets/src/admin/components/people/People.vue:97
-#: modules/accounting/assets/src/admin/components/people/PeopleTransaction.vue:109
-#: modules/accounting/assets/src/admin/components/product-category/ProductCategory.vue:94
-#: modules/accounting/assets/src/admin/components/tax/SingleTaxRate.vue:89
-#: modules/accounting/assets/src/admin/components/tax/TaxAgencies.vue:74
-#: modules/accounting/assets/src/admin/components/tax/TaxCategories.vue:74
-#: modules/accounting/assets/src/admin/components/tax/TaxRates.vue:84
-#: modules/accounting/assets/src/admin/components/tax/TaxZones.vue:78
-#: modules/crm/assets/js/crm-contacts.js:306
-#: modules/crm/assets/js/crm-contacts.js:1157
-#: modules/crm/includes/CampaignListTable.php:89
-#: modules/crm/includes/CampaignListTable.php:115
-#: modules/crm/includes/ContactGroupListTable.php:123
-#: modules/crm/includes/ContactGroupListTable.php:159
-#: modules/crm/includes/ContactSubscriberListTable.php:200
-#: modules/crm/includes/ContactSubscriberListTable.php:219
-#: modules/crm/includes/functions-localize.php:14
-#: modules/hrm/assets/js/requests.js:311
-#: modules/hrm/includes/DepartmentListTable.php:216
-#: modules/hrm/includes/DepartmentWalker.php:43
-#: modules/hrm/includes/DesignationListTable.php:85
-#: modules/hrm/includes/DesignationListTable.php:110
-#: modules/hrm/includes/EmployeeListTable.php:231
-#: modules/hrm/includes/EntitlementListTable.php:228
-#: modules/hrm/includes/EntitlementListTable.php:268
-#: modules/hrm/includes/LeavePoliciesListTable.php:214
-#: modules/hrm/includes/LeavePoliciesListTable.php:261
-#: modules/hrm/includes/LeavePolicyNameListTable.php:41
-#: modules/hrm/includes/LeavePolicyNameListTable.php:113
-#: modules/hrm/includes/LeaveRequestsListTable.php:274
-#: modules/hrm/includes/LeaveRequestsListTable.php:301
-#: modules/hrm/views/employee/tab-notes-row.php:19
-#: modules/hrm/views/employee/tab-notes.php:48
-#: modules/hrm/views/js-templates/row-dept.php:11
-#: modules/hrm/views/js-templates/row-desig.php:11
-#: modules/hrm/views/js-templates/row-employee.php:12
-#: modules/hrm/views/leave/holiday.php:114
-#: modules/hrm/views/leave/holiday.php:155
-msgid "Delete"
-msgstr ""
-
-#: includes/Settings/assets/src/components/email/templates/EmailTemplate.vue:228
-msgid "Are you sure to delete this ?"
 msgstr ""
 
 #: includes/Settings/assets/src/components/integration/Integration.vue:46
@@ -20139,40 +20210,12 @@ msgstr ""
 msgid "Test Dropbox Connection"
 msgstr ""
 
-#: includes/Settings/assets/src/components/layouts/BaseContentLayout.vue:76
-msgid "Select date"
-msgstr ""
-
 #: includes/Settings/assets/src/components/license/License.vue:28
 msgid "No extensions found."
 msgstr ""
 
-#: includes/Settings/assets/src/components/license/License.vue:59
-msgid "Extension"
-msgstr ""
-
-#: includes/Settings/assets/src/components/license/License.vue:61
-msgid "License Key"
-msgstr ""
-
-#: includes/Settings/assets/src/components/menu/SettingsSubMenu.vue:14
-#: modules/accounting/assets/src/admin/components/menu/AccountingMenu.vue:73
-msgid "More"
-msgstr ""
-
-#: includes/Settings/assets/src/components/searchbar/SearchBar.vue:5
-#: modules/accounting/assets/src/admin/components/people/PeopleSearch.vue:9
-#: modules/accounting/assets/src/admin/components/products/Search.vue:9
-#: modules/crm/views/contact-groups.php:20 modules/hrm/views/employee.php:36
-msgid "Search"
-msgstr ""
-
 #: includes/Settings/assets/src/components/searchbar/SearchBar.vue:30
 msgid "Sorry ! Nothings found for your query. Please try again !"
-msgstr ""
-
-#: includes/Settings/assets/src/components/select/MultiSelect.vue:18
-msgid "Oops! No item found."
 msgstr ""
 
 #: includes/Settings/assets/src/components/select/MultiSelect.vue:70
@@ -20182,18 +20225,6 @@ msgstr ""
 
 #: includes/Settings/assets/src/components/woocommerce/WooCommerce.vue:12
 msgid "Connect with WooCommerce"
-msgstr ""
-
-#: includes/Settings/assets/src/components/woocommerce/WooCommerce.vue:83
-msgid "Get WooCommerce Extension"
-msgstr ""
-
-#: includes/Settings/assets/src/components/woocommerce/WooCommerce.vue:85
-msgid "Activate WooCommerce"
-msgstr ""
-
-#: includes/Settings/assets/src/components/woocommerce/WooCommerce.vue:89
-msgid "Get WP ERP Pro"
 msgstr ""
 
 #: includes/Updates/BP/ERPACCTBGProcess1_5_0.php:251
@@ -20343,11 +20374,11 @@ msgstr ""
 msgid "You must need to fill up both first name and email fields"
 msgstr ""
 
-#: includes/functions-people.php:562 modules/hrm/includes/Employee.php:292
+#: includes/functions-people.php:562 modules/hrm/includes/Employee.php:294
 msgid "Please provide a valid first name"
 msgstr ""
 
-#: includes/functions-people.php:566 modules/hrm/includes/Employee.php:304
+#: includes/functions-people.php:566 modules/hrm/includes/Employee.php:306
 msgid "Please provide a valid last name"
 msgstr ""
 
@@ -20408,12 +20439,12 @@ msgid "Something went wrong, please try again"
 msgstr ""
 
 #: includes/functions-people.php:969
-#: modules/crm/includes/functions-customer.php:4100
-#: modules/crm/includes/functions-customer.php:4120
-#: modules/crm/includes/functions-customer.php:4139
-#: modules/crm/includes/functions-customer.php:4159
-#: modules/crm/includes/functions-customer.php:4200
-#: modules/crm/includes/functions-customer.php:4220
+#: modules/crm/includes/functions-customer.php:4109
+#: modules/crm/includes/functions-customer.php:4129
+#: modules/crm/includes/functions-customer.php:4148
+#: modules/crm/includes/functions-customer.php:4168
+#: modules/crm/includes/functions-customer.php:4209
+#: modules/crm/includes/functions-customer.php:4229
 msgid "People not exists"
 msgstr ""
 
@@ -21217,7 +21248,7 @@ msgstr ""
 msgid "Every 30 Minutes"
 msgstr ""
 
-#: includes/functions.php:1072 vendor/appsero/client/src/Insights.php:725
+#: includes/functions.php:1072
 msgid "Once Weekly"
 msgstr ""
 
@@ -21274,6 +21305,10 @@ msgstr ""
 
 #: includes/functions.php:4069
 msgid "Something went wrong when resetting. Please try again."
+msgstr ""
+
+#: includes/functions.php:4165 includes/functions.php:4167
+msgid "What's New"
 msgstr ""
 
 #: modules/accounting/Accounting.php:123
@@ -22952,8 +22987,8 @@ msgstr ""
 #: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:36
 #: modules/crm/includes/Subscription.php:177
 #: modules/crm/includes/SubscriptionWidget.php:181
-#: modules/crm/includes/functions-customer.php:2050
-#: modules/crm/includes/functions-customer.php:3271
+#: modules/crm/includes/functions-customer.php:2059
+#: modules/crm/includes/functions-customer.php:3280
 #: modules/crm/views/contact/single.php:90
 #: modules/crm/views/js-templates/new-customer.php:54
 #: modules/hrm/views/employee/tab-general.php:17
@@ -22965,8 +23000,8 @@ msgstr ""
 #: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:40
 #: modules/crm/includes/Subscription.php:183
 #: modules/crm/includes/SubscriptionWidget.php:182
-#: modules/crm/includes/functions-customer.php:2064
-#: modules/crm/includes/functions-customer.php:3276
+#: modules/crm/includes/functions-customer.php:2073
+#: modules/crm/includes/functions-customer.php:3285
 #: modules/crm/views/contact/single.php:91
 #: modules/crm/views/js-templates/new-customer.php:64
 #: modules/hrm/views/employee/tab-general.php:18
@@ -22986,8 +23021,8 @@ msgstr ""
 
 #: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:83
 #: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:84
-#: modules/crm/includes/functions-customer.php:1879
-#: modules/crm/includes/functions-customer.php:3311
+#: modules/crm/includes/functions-customer.php:1888
+#: modules/crm/includes/functions-customer.php:3320
 #: modules/crm/views/company/single.php:94
 #: modules/crm/views/contact/single.php:97
 msgid "Street 1"
@@ -22995,8 +23030,8 @@ msgstr ""
 
 #: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:87
 #: modules/accounting/assets/src/admin/components/people/PeopleModal.vue:88
-#: modules/crm/includes/functions-customer.php:1893
-#: modules/crm/includes/functions-customer.php:3316
+#: modules/crm/includes/functions-customer.php:1902
+#: modules/crm/includes/functions-customer.php:3325
 #: modules/crm/views/company/single.php:95
 #: modules/crm/views/contact/single.php:98
 msgid "Street 2"
@@ -25402,7 +25437,7 @@ msgstr ""
 #: modules/accounting/includes/functions/transactions.php:1315
 #: modules/accounting/includes/functions/transactions.php:1349
 #: modules/accounting/includes/functions/transactions.php:1380
-#: modules/crm/includes/functions-customer.php:1934
+#: modules/crm/includes/functions-customer.php:1943
 #: modules/crm/views/js-templates/new-customer.php:317
 #: modules/hrm/views/employee/empty-employee.php:133
 #: modules/hrm/views/employee/single.php:135
@@ -25536,11 +25571,11 @@ msgid "Cash & Bank Accounts"
 msgstr ""
 
 #: modules/accounting/includes/views/transactions/invoice-readonly.php:10
-#: modules/crm/includes/functions-customer.php:1871
-#: modules/crm/includes/functions-customer.php:1885
-#: modules/crm/includes/functions-customer.php:1899
-#: modules/crm/includes/functions-customer.php:1911
-#: modules/crm/includes/functions-customer.php:1924
+#: modules/crm/includes/functions-customer.php:1880
+#: modules/crm/includes/functions-customer.php:1894
+#: modules/crm/includes/functions-customer.php:1908
+#: modules/crm/includes/functions-customer.php:1920
+#: modules/crm/includes/functions-customer.php:1933
 msgid "from"
 msgstr ""
 
@@ -25791,13 +25826,13 @@ msgstr ""
 
 #: modules/crm/assets/js/crm-contacts.js:896
 #: modules/crm/assets/js/crm-contacts.js:918
-#: modules/crm/includes/functions-customer.php:2241
+#: modules/crm/includes/functions-customer.php:2250
 msgid "Own Search"
 msgstr ""
 
 #: modules/crm/assets/js/crm-contacts.js:904
 #: modules/crm/assets/js/crm-contacts.js:910
-#: modules/crm/includes/functions-customer.php:2247
+#: modules/crm/includes/functions-customer.php:2256
 msgid "Global Search"
 msgstr ""
 
@@ -25885,7 +25920,7 @@ msgstr ""
 msgid "No group found"
 msgstr ""
 
-#: modules/crm/assets/js/crm.js:212
+#: modules/crm/assets/js/crm.js:217
 msgid "Select"
 msgstr ""
 
@@ -26176,8 +26211,8 @@ msgstr ""
 #: modules/crm/includes/AjaxHandler.php:659
 #: modules/crm/includes/AjaxHandler.php:706
 #: modules/crm/includes/AjaxHandler.php:878
-#: modules/crm/includes/functions-customer.php:1500
-#: modules/crm/includes/functions-customer.php:3916
+#: modules/crm/includes/functions-customer.php:1509
+#: modules/crm/includes/functions-customer.php:3925
 msgid "No contact found"
 msgstr ""
 
@@ -26421,7 +26456,7 @@ msgstr ""
 msgid "Delete this Contact Group"
 msgstr ""
 
-#: modules/crm/includes/Contact.php:421
+#: modules/crm/includes/Contact.php:426
 msgid "Life stage does not exists"
 msgstr ""
 
@@ -26439,7 +26474,7 @@ msgstr ""
 
 #: modules/crm/includes/ContactForms/ERPSettingsContactForms.php:67
 #: modules/crm/includes/ContactGroupListTable.php:210
-#: modules/crm/includes/functions-customer.php:1958
+#: modules/crm/includes/functions-customer.php:1967
 #: modules/crm/views/company/single.php:204
 #: modules/crm/views/contact/single.php:210
 #: modules/crm/views/js-templates/customer-import-users.php:88
@@ -26514,12 +26549,12 @@ msgid "No contact group found."
 msgstr ""
 
 #: modules/crm/includes/ContactGroupListTable.php:88
-#: modules/crm/includes/functions-customer.php:1734
+#: modules/crm/includes/functions-customer.php:1743
 msgid "Subscribed"
 msgstr ""
 
 #: modules/crm/includes/ContactGroupListTable.php:89
-#: modules/crm/includes/functions-customer.php:1736
+#: modules/crm/includes/functions-customer.php:1745
 msgid "Unconfirmed"
 msgstr ""
 
@@ -26843,7 +26878,7 @@ msgid "First and Last names"
 msgstr ""
 
 #: modules/crm/includes/SubscriptionWidget.php:105
-#: modules/crm/includes/functions-customer.php:1984
+#: modules/crm/includes/functions-customer.php:1993
 #: modules/crm/views/import-user-to-crm.php:35
 #: modules/crm/views/js-templates/customer-import-users.php:70
 #: modules/crm/views/js-templates/customer-import.php:87
@@ -26864,8 +26899,8 @@ msgid "This Employee is CRM agent"
 msgstr ""
 
 #: modules/crm/includes/functions-customer.php:142
-#: modules/crm/includes/functions-customer.php:3164
-#: modules/crm/includes/functions-customer.php:3177
+#: modules/crm/includes/functions-customer.php:3173
+#: modules/crm/includes/functions-customer.php:3186
 msgid "Me"
 msgstr ""
 
@@ -26920,346 +26955,346 @@ msgstr ""
 msgid "Schedule"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1061
+#: modules/crm/includes/functions-customer.php:1070
 msgid "You have a schedule after %s %s at %s%s"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1062
+#: modules/crm/includes/functions-customer.php:1071
 msgid "ERP Schedule"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1450
+#: modules/crm/includes/functions-customer.php:1459
 msgid "No group selected"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1454
+#: modules/crm/includes/functions-customer.php:1463
 msgid "No contact founds"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1735
+#: modules/crm/includes/functions-customer.php:1744
 msgid "Unsubscribe"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1817
-#: modules/crm/includes/functions-customer.php:1831
-#: modules/crm/includes/functions-customer.php:1845
-#: modules/crm/includes/functions-customer.php:1859
-#: modules/crm/includes/functions-customer.php:1873
-#: modules/crm/includes/functions-customer.php:1887
-#: modules/crm/includes/functions-customer.php:1901
-#: modules/crm/includes/functions-customer.php:1926
-#: modules/crm/includes/functions-customer.php:1940
-#: modules/crm/includes/functions-customer.php:1952
-#: modules/crm/includes/functions-customer.php:1976
-#: modules/crm/includes/functions-customer.php:2056
-#: modules/crm/includes/functions-customer.php:2070
-#: modules/crm/includes/functions-customer.php:2095
+#: modules/crm/includes/functions-customer.php:1826
+#: modules/crm/includes/functions-customer.php:1840
+#: modules/crm/includes/functions-customer.php:1854
+#: modules/crm/includes/functions-customer.php:1868
+#: modules/crm/includes/functions-customer.php:1882
+#: modules/crm/includes/functions-customer.php:1896
+#: modules/crm/includes/functions-customer.php:1910
+#: modules/crm/includes/functions-customer.php:1935
+#: modules/crm/includes/functions-customer.php:1949
+#: modules/crm/includes/functions-customer.php:1961
+#: modules/crm/includes/functions-customer.php:1985
+#: modules/crm/includes/functions-customer.php:2065
+#: modules/crm/includes/functions-customer.php:2079
+#: modules/crm/includes/functions-customer.php:2104
 msgid "contains"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1818
-#: modules/crm/includes/functions-customer.php:1832
-#: modules/crm/includes/functions-customer.php:1846
-#: modules/crm/includes/functions-customer.php:1860
-#: modules/crm/includes/functions-customer.php:1874
-#: modules/crm/includes/functions-customer.php:1888
-#: modules/crm/includes/functions-customer.php:1902
-#: modules/crm/includes/functions-customer.php:1927
-#: modules/crm/includes/functions-customer.php:1941
-#: modules/crm/includes/functions-customer.php:1977
-#: modules/crm/includes/functions-customer.php:2057
-#: modules/crm/includes/functions-customer.php:2071
-#: modules/crm/includes/functions-customer.php:2096
+#: modules/crm/includes/functions-customer.php:1827
+#: modules/crm/includes/functions-customer.php:1841
+#: modules/crm/includes/functions-customer.php:1855
+#: modules/crm/includes/functions-customer.php:1869
+#: modules/crm/includes/functions-customer.php:1883
+#: modules/crm/includes/functions-customer.php:1897
+#: modules/crm/includes/functions-customer.php:1911
+#: modules/crm/includes/functions-customer.php:1936
+#: modules/crm/includes/functions-customer.php:1950
+#: modules/crm/includes/functions-customer.php:1986
+#: modules/crm/includes/functions-customer.php:2066
+#: modules/crm/includes/functions-customer.php:2080
+#: modules/crm/includes/functions-customer.php:2105
 msgid "not contains"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1819
-#: modules/crm/includes/functions-customer.php:1833
-#: modules/crm/includes/functions-customer.php:1847
-#: modules/crm/includes/functions-customer.php:1861
-#: modules/crm/includes/functions-customer.php:1928
-#: modules/crm/includes/functions-customer.php:1942
-#: modules/crm/includes/functions-customer.php:1978
-#: modules/crm/includes/functions-customer.php:2058
-#: modules/crm/includes/functions-customer.php:2072
-#: modules/crm/includes/functions-customer.php:2097
+#: modules/crm/includes/functions-customer.php:1828
+#: modules/crm/includes/functions-customer.php:1842
+#: modules/crm/includes/functions-customer.php:1856
+#: modules/crm/includes/functions-customer.php:1870
+#: modules/crm/includes/functions-customer.php:1937
+#: modules/crm/includes/functions-customer.php:1951
+#: modules/crm/includes/functions-customer.php:1987
+#: modules/crm/includes/functions-customer.php:2067
+#: modules/crm/includes/functions-customer.php:2081
+#: modules/crm/includes/functions-customer.php:2106
 msgid "begins with"
-msgstr ""
-
-#: modules/crm/includes/functions-customer.php:1820
-#: modules/crm/includes/functions-customer.php:1834
-#: modules/crm/includes/functions-customer.php:1848
-#: modules/crm/includes/functions-customer.php:1862
-#: modules/crm/includes/functions-customer.php:1929
-#: modules/crm/includes/functions-customer.php:1943
-#: modules/crm/includes/functions-customer.php:1979
-#: modules/crm/includes/functions-customer.php:2059
-#: modules/crm/includes/functions-customer.php:2073
-#: modules/crm/includes/functions-customer.php:2098
-msgid "ends with"
 msgstr ""
 
 #: modules/crm/includes/functions-customer.php:1829
 #: modules/crm/includes/functions-customer.php:1843
 #: modules/crm/includes/functions-customer.php:1857
-#: modules/crm/includes/functions-customer.php:1883
-#: modules/crm/includes/functions-customer.php:1897
-#: modules/crm/includes/functions-customer.php:1922
+#: modules/crm/includes/functions-customer.php:1871
 #: modules/crm/includes/functions-customer.php:1938
-#: modules/crm/includes/functions-customer.php:1974
+#: modules/crm/includes/functions-customer.php:1952
+#: modules/crm/includes/functions-customer.php:1988
+#: modules/crm/includes/functions-customer.php:2068
+#: modules/crm/includes/functions-customer.php:2082
+#: modules/crm/includes/functions-customer.php:2107
+msgid "ends with"
+msgstr ""
+
+#: modules/crm/includes/functions-customer.php:1838
+#: modules/crm/includes/functions-customer.php:1852
+#: modules/crm/includes/functions-customer.php:1866
+#: modules/crm/includes/functions-customer.php:1892
+#: modules/crm/includes/functions-customer.php:1906
+#: modules/crm/includes/functions-customer.php:1931
+#: modules/crm/includes/functions-customer.php:1947
+#: modules/crm/includes/functions-customer.php:1983
 msgid "has"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1830
-#: modules/crm/includes/functions-customer.php:1844
-#: modules/crm/includes/functions-customer.php:1858
-#: modules/crm/includes/functions-customer.php:1884
-#: modules/crm/includes/functions-customer.php:1898
-#: modules/crm/includes/functions-customer.php:1923
-#: modules/crm/includes/functions-customer.php:1939
-#: modules/crm/includes/functions-customer.php:1975
+#: modules/crm/includes/functions-customer.php:1839
+#: modules/crm/includes/functions-customer.php:1853
+#: modules/crm/includes/functions-customer.php:1867
+#: modules/crm/includes/functions-customer.php:1893
+#: modules/crm/includes/functions-customer.php:1907
+#: modules/crm/includes/functions-customer.php:1932
+#: modules/crm/includes/functions-customer.php:1948
+#: modules/crm/includes/functions-customer.php:1984
 msgid "has not"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1872
-#: modules/crm/includes/functions-customer.php:1886
-#: modules/crm/includes/functions-customer.php:1900
-#: modules/crm/includes/functions-customer.php:1912
-#: modules/crm/includes/functions-customer.php:1925
+#: modules/crm/includes/functions-customer.php:1881
+#: modules/crm/includes/functions-customer.php:1895
+#: modules/crm/includes/functions-customer.php:1909
+#: modules/crm/includes/functions-customer.php:1921
+#: modules/crm/includes/functions-customer.php:1934
 msgid "not from"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1907
+#: modules/crm/includes/functions-customer.php:1916
 msgid "Country/State"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1918
-#: modules/crm/includes/functions-customer.php:3331
+#: modules/crm/includes/functions-customer.php:1927
+#: modules/crm/includes/functions-customer.php:3340
 #: modules/crm/views/company/single.php:99
 #: modules/crm/views/contact/single.php:102
 msgid "Postal Code"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1948
-#: modules/crm/includes/functions-customer.php:4267
+#: modules/crm/includes/functions-customer.php:1957
+#: modules/crm/includes/functions-customer.php:4276
 msgid "Tags"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1962
+#: modules/crm/includes/functions-customer.php:1971
 msgid "in group"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1963
+#: modules/crm/includes/functions-customer.php:1972
 msgid "not in group"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1964
+#: modules/crm/includes/functions-customer.php:1973
 msgid "unsubscribed from"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1970
+#: modules/crm/includes/functions-customer.php:1979
 msgid "Others Fields"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1988
-#: modules/crm/includes/functions-customer.php:1999
-#: modules/crm/includes/functions-customer.php:2054
-#: modules/crm/includes/functions-customer.php:2068
-#: modules/crm/includes/functions-customer.php:2093
+#: modules/crm/includes/functions-customer.php:1997
+#: modules/crm/includes/functions-customer.php:2008
+#: modules/crm/includes/functions-customer.php:2063
+#: modules/crm/includes/functions-customer.php:2077
+#: modules/crm/includes/functions-customer.php:2102
 msgid "is"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1989
-#: modules/crm/includes/functions-customer.php:2000
-#: modules/crm/includes/functions-customer.php:2055
-#: modules/crm/includes/functions-customer.php:2069
-#: modules/crm/includes/functions-customer.php:2094
+#: modules/crm/includes/functions-customer.php:1998
+#: modules/crm/includes/functions-customer.php:2009
+#: modules/crm/includes/functions-customer.php:2064
+#: modules/crm/includes/functions-customer.php:2078
+#: modules/crm/includes/functions-customer.php:2103
 msgid "is not"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:1995
+#: modules/crm/includes/functions-customer.php:2004
 #: modules/crm/views/js-templates/new-customer.php:298
 msgid "Contact Source"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:2006
+#: modules/crm/includes/functions-customer.php:2015
 msgid "Contact age"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:2010
+#: modules/crm/includes/functions-customer.php:2019
 msgid "exactly"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:2011
+#: modules/crm/includes/functions-customer.php:2020
 msgid "greater"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:2012
+#: modules/crm/includes/functions-customer.php:2021
 msgid "less"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:2013
+#: modules/crm/includes/functions-customer.php:2022
 msgid "Between"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:2022
+#: modules/crm/includes/functions-customer.php:2031
 msgid "after"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:2023
+#: modules/crm/includes/functions-customer.php:2032
 msgid "before"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:2024
+#: modules/crm/includes/functions-customer.php:2033
 msgid "in between"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:2240
+#: modules/crm/includes/functions-customer.php:2249
 msgid "own_search"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:2246
+#: modules/crm/includes/functions-customer.php:2255
 msgid "global_search"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3209
+#: modules/crm/includes/functions-customer.php:3218
 msgid "Template name and body content are required"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3229
+#: modules/crm/includes/functions-customer.php:3238
 msgid "Template name is required"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3233
+#: modules/crm/includes/functions-customer.php:3242
 msgid "Template body is required"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3242
+#: modules/crm/includes/functions-customer.php:3251
 msgid "<strong>%s</strong> has been updated"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3250
+#: modules/crm/includes/functions-customer.php:3259
 msgid "<strong>%s</strong> has been created"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3398
-#: modules/crm/includes/functions-customer.php:3417
+#: modules/crm/includes/functions-customer.php:3407
+#: modules/crm/includes/functions-customer.php:3426
 msgid "No record found"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3439
+#: modules/crm/includes/functions-customer.php:3448
 msgid "No template found"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3489
-#: modules/crm/includes/functions-customer.php:3490
+#: modules/crm/includes/functions-customer.php:3498
+#: modules/crm/includes/functions-customer.php:3499
 msgid "Import into CRM"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3612
+#: modules/crm/includes/functions-customer.php:3621
 msgid "%s contacts created."
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3785
+#: modules/crm/includes/functions-customer.php:3794
 #: modules/hrm/includes/functions-employee.php:556
 msgid "Advertisement"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3786
+#: modules/crm/includes/functions-customer.php:3795
 msgid "Chat"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3787
+#: modules/crm/includes/functions-customer.php:3796
 msgid "Contact Form"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3788
+#: modules/crm/includes/functions-customer.php:3797
 msgid "Employee Referral"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3789
+#: modules/crm/includes/functions-customer.php:3798
 msgid "External Referral"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3790
+#: modules/crm/includes/functions-customer.php:3799
 msgid "Marketing campaign"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3791
+#: modules/crm/includes/functions-customer.php:3800
 msgid "Newsletter"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3792
+#: modules/crm/includes/functions-customer.php:3801
 msgid "OnlineStore"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3793
+#: modules/crm/includes/functions-customer.php:3802
 msgid "Optin Forms"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3794
+#: modules/crm/includes/functions-customer.php:3803
 msgid "Partner"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3795
+#: modules/crm/includes/functions-customer.php:3804
 msgid "Phone Call"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3796
+#: modules/crm/includes/functions-customer.php:3805
 msgid "Public Relations"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3797
+#: modules/crm/includes/functions-customer.php:3806
 msgid "Sales Mail Alias"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3798
+#: modules/crm/includes/functions-customer.php:3807
 msgid "Search Engine"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3799
+#: modules/crm/includes/functions-customer.php:3808
 msgid "Seminar-Internal"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3800
+#: modules/crm/includes/functions-customer.php:3809
 msgid "Seminar Partner"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3801
+#: modules/crm/includes/functions-customer.php:3810
 msgid "Social Media"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3802
+#: modules/crm/includes/functions-customer.php:3811
 msgid "Trade Show"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3803
+#: modules/crm/includes/functions-customer.php:3812
 msgid "Web Download"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3804
+#: modules/crm/includes/functions-customer.php:3813
 msgid "Web Research"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3912
+#: modules/crm/includes/functions-customer.php:3921
 msgid "You do not have permission to make WP User"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3926
+#: modules/crm/includes/functions-customer.php:3935
 msgid "No email found for creating wp user"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:4266
+#: modules/crm/includes/functions-customer.php:4275
 #: modules/crm/views/company/single.php:167
 #: modules/crm/views/contact/single.php:173
 msgid "Tag"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:4378
+#: modules/crm/includes/functions-customer.php:4387
 msgid "Schedules"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:4431
+#: modules/crm/includes/functions-customer.php:4440
 msgid "Unauthorized attempt!"
 msgstr ""
 
@@ -27899,6 +27934,7 @@ msgstr ""
 
 #: modules/crm/views/js-templates/customer-add-schedules.php:109
 #: modules/crm/views/js-templates/customer-schedule-note.php:101
+#: modules/hrm/includes/API/LeaveRequestsController.php:317
 #: modules/hrm/includes/AjaxHandler.php:357
 #: modules/hrm/includes/AjaxHandler.php:362
 #: modules/hrm/includes/AjaxHandler.php:1971
@@ -28222,7 +28258,7 @@ msgid "Select a field"
 msgstr ""
 
 #: modules/crm/views/js-templates/single-schedule-details.php:10
-msgid "assigned a task"
+msgid "assigned task"
 msgstr ""
 
 #: modules/crm/views/js-templates/single-schedule-details.php:12
@@ -28542,7 +28578,7 @@ msgstr ""
 #: modules/hrm/assets/js/requests.js:173 modules/hrm/assets/js/requests.js:182
 #: modules/hrm/includes/AjaxHandler.php:2298
 #: modules/hrm/includes/AjaxHandler.php:2406
-#: modules/hrm/includes/Employee.php:2414
+#: modules/hrm/includes/Employee.php:2488
 #: modules/hrm/includes/functions-leave.php:1993
 msgid "Pending"
 msgstr ""
@@ -28647,18 +28683,18 @@ msgstr ""
 #: modules/hrm/includes/API/EmployeesController.php:893
 #: modules/hrm/includes/API/EmployeesController.php:946
 #: modules/hrm/includes/API/EmployeesController.php:984
-#: modules/hrm/includes/API/EmployeesController.php:1051
-#: modules/hrm/includes/API/EmployeesController.php:1096
-#: modules/hrm/includes/API/EmployeesController.php:1151
-#: modules/hrm/includes/API/EmployeesController.php:1175
-#: modules/hrm/includes/API/EmployeesController.php:1202
-#: modules/hrm/includes/API/EmployeesController.php:1242
-#: modules/hrm/includes/API/EmployeesController.php:1293
-#: modules/hrm/includes/API/EmployeesController.php:1325
-#: modules/hrm/includes/API/EmployeesController.php:1374
-#: modules/hrm/includes/API/EmployeesController.php:1401
-#: modules/hrm/includes/API/EmployeesController.php:1431
-#: modules/hrm/includes/API/EmployeesController.php:1460
+#: modules/hrm/includes/API/EmployeesController.php:1110
+#: modules/hrm/includes/API/EmployeesController.php:1155
+#: modules/hrm/includes/API/EmployeesController.php:1210
+#: modules/hrm/includes/API/EmployeesController.php:1234
+#: modules/hrm/includes/API/EmployeesController.php:1261
+#: modules/hrm/includes/API/EmployeesController.php:1332
+#: modules/hrm/includes/API/EmployeesController.php:1383
+#: modules/hrm/includes/API/EmployeesController.php:1415
+#: modules/hrm/includes/API/EmployeesController.php:1464
+#: modules/hrm/includes/API/EmployeesController.php:1491
+#: modules/hrm/includes/API/EmployeesController.php:1521
+#: modules/hrm/includes/API/EmployeesController.php:1550
 msgid "Invalid Employee id."
 msgstr ""
 
@@ -28666,15 +28702,15 @@ msgstr ""
 msgid "Invalid/No module type"
 msgstr ""
 
-#: modules/hrm/includes/API/EmployeesController.php:1208
+#: modules/hrm/includes/API/EmployeesController.php:1267
 msgid "No financial year defined for current year."
 msgstr ""
 
-#: modules/hrm/includes/API/EmployeesController.php:1395
+#: modules/hrm/includes/API/EmployeesController.php:1485
 msgid "User do not have permission for the action."
 msgstr ""
 
-#: modules/hrm/includes/API/EmployeesController.php:1405
+#: modules/hrm/includes/API/EmployeesController.php:1495
 msgid "Invalid role format"
 msgstr ""
 
@@ -28683,8 +28719,8 @@ msgid "Invalid Type received"
 msgstr ""
 
 #: modules/hrm/includes/API/LeaveEntitlementsController.php:260
-#: modules/hrm/includes/API/LeaveRequestsController.php:729
-#: modules/hrm/includes/API/LeaveRequestsController.php:735
+#: modules/hrm/includes/API/LeaveRequestsController.php:890
+#: modules/hrm/includes/API/LeaveRequestsController.php:896
 msgid "Employee id for the resource."
 msgstr ""
 
@@ -28699,13 +28735,13 @@ msgstr ""
 
 #: modules/hrm/includes/API/LeaveEntitlementsController.php:278
 #: modules/hrm/includes/API/LeaveHolidaysController.php:285
-#: modules/hrm/includes/API/LeaveRequestsController.php:741
+#: modules/hrm/includes/API/LeaveRequestsController.php:902
 msgid "Start date for the resource."
 msgstr ""
 
 #: modules/hrm/includes/API/LeaveEntitlementsController.php:287
 #: modules/hrm/includes/API/LeaveHolidaysController.php:294
-#: modules/hrm/includes/API/LeaveRequestsController.php:750
+#: modules/hrm/includes/API/LeaveRequestsController.php:911
 msgid "End date for the resource."
 msgstr ""
 
@@ -28713,71 +28749,131 @@ msgstr ""
 msgid "Color for the resource."
 msgstr ""
 
-#: modules/hrm/includes/API/LeaveRequestsController.php:86
-#: modules/hrm/includes/API/LeaveRequestsController.php:129
+#: modules/hrm/includes/API/LeaveRequestsController.php:87
+#: modules/hrm/includes/API/LeaveRequestsController.php:130
 msgid "Comments for the approval."
 msgstr ""
 
-#: modules/hrm/includes/API/LeaveRequestsController.php:103
-#: modules/hrm/includes/API/LeaveRequestsController.php:154
+#: modules/hrm/includes/API/LeaveRequestsController.php:104
+#: modules/hrm/includes/API/LeaveRequestsController.php:155
 msgid "Reason for the rejection."
 msgstr ""
 
-#: modules/hrm/includes/API/LeaveRequestsController.php:121
+#: modules/hrm/includes/API/LeaveRequestsController.php:122
 msgid "Array of leave request IDs to approve."
 msgstr ""
 
-#: modules/hrm/includes/API/LeaveRequestsController.php:146
+#: modules/hrm/includes/API/LeaveRequestsController.php:147
 msgid "Array of leave request IDs to reject."
 msgstr ""
 
-#: modules/hrm/includes/API/LeaveRequestsController.php:172
+#: modules/hrm/includes/API/LeaveRequestsController.php:173
 msgid "Array of leave request IDs to delete."
 msgstr ""
 
-#: modules/hrm/includes/API/LeaveRequestsController.php:264
-#: modules/hrm/includes/API/LeaveRequestsController.php:307
+#: modules/hrm/includes/API/LeaveRequestsController.php:193
+msgid ""
+"Employee (user) id. Defaults to the current user; only leave managers may "
+"query others."
+msgstr ""
+
+#: modules/hrm/includes/API/LeaveRequestsController.php:199
+msgid "Leave entitlement (policy) id."
+msgstr ""
+
+#: modules/hrm/includes/API/LeaveRequestsController.php:205
+msgid "Start date (Y-m-d)."
+msgstr ""
+
+#: modules/hrm/includes/API/LeaveRequestsController.php:211
+msgid "End date (Y-m-d)."
+msgstr ""
+
+#: modules/hrm/includes/API/LeaveRequestsController.php:255
+msgid "You are not allowed to view leave duration for another employee."
+msgstr ""
+
+#: modules/hrm/includes/API/LeaveRequestsController.php:263
+#: modules/hrm/includes/AjaxHandler.php:1925
+msgid "Invalid date range"
+msgstr ""
+
+#: modules/hrm/includes/API/LeaveRequestsController.php:269
+#: modules/hrm/includes/AjaxHandler.php:1932
+msgid "Invalid leave policy."
+msgstr ""
+
+#: modules/hrm/includes/API/LeaveRequestsController.php:280
+#: modules/hrm/includes/AjaxHandler.php:1939
+#: modules/hrm/includes/functions-leave.php:1227
+#: modules/hrm/includes/functions-leave.php:1798
+#. translators: 1: financial year start, 2: financial year end
+msgid "Invalid leave duration. Please apply between %1$s and %2$s."
+msgstr ""
+
+#: modules/hrm/includes/API/LeaveRequestsController.php:291
+#: modules/hrm/includes/AjaxHandler.php:1946
+#: modules/hrm/includes/functions-leave.php:1234
+msgid "Existing Leave Record found within selected range!"
+msgstr ""
+
+#: modules/hrm/includes/API/LeaveRequestsController.php:300
+#: modules/hrm/includes/AjaxHandler.php:1955
+msgid "Sorry! You do not have any leave left under this leave policy"
+msgstr ""
+
+#: modules/hrm/includes/API/LeaveRequestsController.php:320
+#: modules/hrm/includes/AjaxHandler.php:1974
+msgid "(Sandwich rule applied)"
+msgstr ""
+
+#: modules/hrm/includes/API/LeaveRequestsController.php:408
+#: modules/hrm/includes/API/LeaveRequestsController.php:451
 msgid "Set entitlement to the employee first."
 msgstr ""
 
-#: modules/hrm/includes/API/LeaveRequestsController.php:296
+#: modules/hrm/includes/API/LeaveRequestsController.php:440
 msgid "Cannot edit approved or rejected leave requests."
 msgstr ""
 
-#: modules/hrm/includes/API/LeaveRequestsController.php:339
-#: modules/hrm/includes/API/LeaveRequestsController.php:466
+#: modules/hrm/includes/API/LeaveRequestsController.php:483
+#: modules/hrm/includes/API/LeaveRequestsController.php:610
 msgid "Leave request is already approved."
 msgstr ""
 
-#: modules/hrm/includes/API/LeaveRequestsController.php:373
-#: modules/hrm/includes/API/LeaveRequestsController.php:535
+#: modules/hrm/includes/API/LeaveRequestsController.php:517
+#: modules/hrm/includes/API/LeaveRequestsController.php:679
 msgid "Leave request is already rejected."
 msgstr ""
 
-#: modules/hrm/includes/API/LeaveRequestsController.php:379
-#: modules/hrm/includes/API/LeaveRequestsController.php:512
+#: modules/hrm/includes/API/LeaveRequestsController.php:523
+#: modules/hrm/includes/API/LeaveRequestsController.php:656
 msgid "Rejection reason is required."
 msgstr ""
 
-#: modules/hrm/includes/API/LeaveRequestsController.php:418
-#: modules/hrm/includes/API/LeaveRequestsController.php:599
+#: modules/hrm/includes/API/LeaveRequestsController.php:562
+#: modules/hrm/includes/API/LeaveRequestsController.php:743
 msgid "The leave request cannot be deleted."
 msgstr ""
 
-#: modules/hrm/includes/API/LeaveRequestsController.php:441
-#: modules/hrm/includes/API/LeaveRequestsController.php:506
-#: modules/hrm/includes/API/LeaveRequestsController.php:574
+#: modules/hrm/includes/API/LeaveRequestsController.php:585
+#: modules/hrm/includes/API/LeaveRequestsController.php:650
+#: modules/hrm/includes/API/LeaveRequestsController.php:718
 msgid "Invalid leave request IDs."
 msgstr ""
 
-#: modules/hrm/includes/API/LeaveRequestsController.php:458
-#: modules/hrm/includes/API/LeaveRequestsController.php:527
-#: modules/hrm/includes/API/LeaveRequestsController.php:589
+#: modules/hrm/includes/API/LeaveRequestsController.php:602
+#: modules/hrm/includes/API/LeaveRequestsController.php:671
+#: modules/hrm/includes/API/LeaveRequestsController.php:733
 msgid "Invalid leave request ID."
 msgstr ""
 
-#: modules/hrm/includes/API/LeaveRequestsController.php:759
+#: modules/hrm/includes/API/LeaveRequestsController.php:920
 msgid "Reason for the resource."
+msgstr ""
+
+#: modules/hrm/includes/API/LeaveRequestsController.php:928
+msgid "Attachments uploaded with the leave request."
 msgstr ""
 
 #: modules/hrm/includes/Admin/AdminMenu.php:27
@@ -29021,33 +29117,6 @@ msgstr ""
 #: modules/hrm/includes/AjaxHandler.php:1918
 #: modules/hrm/includes/AjaxHandler.php:2062
 msgid "Please select a policy"
-msgstr ""
-
-#: modules/hrm/includes/AjaxHandler.php:1925
-msgid "Invalid date range"
-msgstr ""
-
-#: modules/hrm/includes/AjaxHandler.php:1932
-msgid "Invalid leave policy."
-msgstr ""
-
-#: modules/hrm/includes/AjaxHandler.php:1939
-#: modules/hrm/includes/functions-leave.php:1227
-#: modules/hrm/includes/functions-leave.php:1798
-msgid "Invalid leave duration. Please apply between %1$s and %2$s."
-msgstr ""
-
-#: modules/hrm/includes/AjaxHandler.php:1946
-#: modules/hrm/includes/functions-leave.php:1234
-msgid "Existing Leave Record found within selected range!"
-msgstr ""
-
-#: modules/hrm/includes/AjaxHandler.php:1955
-msgid "Sorry! You do not have any leave left under this leave policy"
-msgstr ""
-
-#: modules/hrm/includes/AjaxHandler.php:1974
-msgid "(Sandwich rule applied)"
 msgstr ""
 
 #: modules/hrm/includes/AjaxHandler.php:2000
@@ -29489,51 +29558,51 @@ msgstr ""
 msgid "Leave Request Rejected"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:263
+#: modules/hrm/includes/Employee.php:265
 msgid "Employee with the employee id %s already exist. Please use different one."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:269
+#: modules/hrm/includes/Employee.php:271
 msgid "Employee with the employee email %s already exist. Please use different one."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:289
+#: modules/hrm/includes/Employee.php:291
 msgid "Please provide the first name."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:297
+#: modules/hrm/includes/Employee.php:299
 msgid "Please provide a valid middle name"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:301
+#: modules/hrm/includes/Employee.php:303
 msgid "Please provide the last name."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:309
+#: modules/hrm/includes/Employee.php:311
 msgid "Please provide a valid employee id"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:313
+#: modules/hrm/includes/Employee.php:315
 msgid "Please provide a valid email address."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:317
+#: modules/hrm/includes/Employee.php:319
 msgid "Please select a valid employee type"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:321
+#: modules/hrm/includes/Employee.php:323
 msgid "Please select a valid employee end date"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:325
+#: modules/hrm/includes/Employee.php:327
 msgid "Please select a valid employee hire date"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:329
+#: modules/hrm/includes/Employee.php:331
 msgid "Please select a valid employee status"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:333
+#: modules/hrm/includes/Employee.php:335
 msgid "Please select a valid employee department"
 msgstr ""
 
@@ -29593,165 +29662,165 @@ msgstr ""
 msgid "Cannot create an employee. Please check all the fields and try again."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1371
+#: modules/hrm/includes/Employee.php:1423
 #: modules/hrm/views/employee/tab-general.php:213
 #: modules/hrm/views/js-templates/education-form.php:5
 msgid "School Name"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1372
+#: modules/hrm/includes/Employee.php:1424
 #: modules/hrm/views/employee/tab-general.php:214
 #: modules/hrm/views/js-templates/education-form.php:15
 msgid "Degree"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1373
+#: modules/hrm/includes/Employee.php:1425
 msgid "Field"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1374
+#: modules/hrm/includes/Employee.php:1426
 msgid "Completion date"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1375
+#: modules/hrm/includes/Employee.php:1427
 #: modules/hrm/views/js-templates/education-form.php:51
 msgid "Result type"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1376
+#: modules/hrm/includes/Employee.php:1428
 #: modules/hrm/views/employee/tab-general.php:217
 msgid "Result"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1381
-#: modules/hrm/includes/Employee.php:1452
+#: modules/hrm/includes/Employee.php:1433
+#: modules/hrm/includes/Employee.php:1514
 msgid "%s is required."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1395
+#: modules/hrm/includes/Employee.php:1447
 msgid "Could not create education."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1447
+#: modules/hrm/includes/Employee.php:1509
 msgid "Relation"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1458
-#: modules/hrm/includes/Employee.php:1539
-#: modules/hrm/includes/Employee.php:2074
-#: modules/hrm/includes/Employee.php:2099
+#: modules/hrm/includes/Employee.php:1520
+#: modules/hrm/includes/Employee.php:1601
+#: modules/hrm/includes/Employee.php:2148
+#: modules/hrm/includes/Employee.php:2173
 msgid "Invalid date format"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1473
+#: modules/hrm/includes/Employee.php:1535
 msgid "Could not create dependent."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1523
+#: modules/hrm/includes/Employee.php:1585
 msgid "Missing Company Name"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1527
+#: modules/hrm/includes/Employee.php:1589
 msgid "Missing Job Title"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1531
+#: modules/hrm/includes/Employee.php:1593
 msgid "Missing From Date"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1535
+#: modules/hrm/includes/Employee.php:1597
 msgid "Missing To Date"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1548
+#: modules/hrm/includes/Employee.php:1610
 msgid "Could not create work experience."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1662
+#: modules/hrm/includes/Employee.php:1724
 msgid "This job history does not exist or does not belongs to the supplied user"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1700
+#: modules/hrm/includes/Employee.php:1762
 msgid "Invalid Employment Type"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1706
+#: modules/hrm/includes/Employee.php:1768
 msgid "Invalid Employment Status"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1744
-#: modules/hrm/includes/Employee.php:1870
-#: modules/hrm/includes/Employee.php:1972
+#: modules/hrm/includes/Employee.php:1806
+#: modules/hrm/includes/Employee.php:1944
+#: modules/hrm/includes/Employee.php:2046
 msgid ""
 "This date cannot be used for the current history. An old history already "
 "exists after this date."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1827
+#: modules/hrm/includes/Employee.php:1901
 msgid "Invalid Pay Type"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1831
+#: modules/hrm/includes/Employee.php:1905
 msgid ""
 "The pay rate is not valid! It should be an integer or a decimal place "
 "number with maximum 4 places."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1835
+#: modules/hrm/includes/Employee.php:1909
 msgid "Invalid Reason Type"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1929
+#: modules/hrm/includes/Employee.php:2003
 msgid "Invalid Designation Type"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1933
+#: modules/hrm/includes/Employee.php:2007
 msgid "Invalid Department Type"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1937
+#: modules/hrm/includes/Employee.php:2011
 msgid "Invalid Reporting To User"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2066
+#: modules/hrm/includes/Employee.php:2140
 msgid "Invalid Performance Type received"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2070
-#: modules/hrm/includes/Employee.php:2095
+#: modules/hrm/includes/Employee.php:2144
+#: modules/hrm/includes/Employee.php:2169
 msgid "Missing Date"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2081
+#: modules/hrm/includes/Employee.php:2155
 msgid "Invalid reporting to used."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2089
+#: modules/hrm/includes/Employee.php:2163
 msgid "Invalid reviewer user."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2105
+#: modules/hrm/includes/Employee.php:2179
 msgid "Invalid supervisor user."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2123
-#: modules/hrm/includes/Employee.php:2200
+#: modules/hrm/includes/Employee.php:2197
+#: modules/hrm/includes/Employee.php:2274
 msgid "This note does not exist or does not belongs to the supplied user"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2554
+#: modules/hrm/includes/Employee.php:2628
 #: modules/hrm/views/employee/tab-general.php:367
 #: modules/hrm/views/js-templates/employee-terminate.php:17
 msgid "Termination Type"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2556
+#: modules/hrm/includes/Employee.php:2630
 #: modules/hrm/views/employee/tab-general.php:368
 #: modules/hrm/views/js-templates/employee-terminate.php:30
 msgid "Termination Reason"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2558
+#: modules/hrm/includes/Employee.php:2632
 #: modules/hrm/views/employee/tab-general.php:369
 msgid "Eligible for Hire"
 msgstr ""
@@ -30812,66 +30881,66 @@ msgstr ""
 msgid "Unsupported module type"
 msgstr ""
 
-#: modules/hrm/includes/functions-employee.php:1160
+#: modules/hrm/includes/functions-employee.php:1169
 msgid "Grade"
 msgstr ""
 
-#: modules/hrm/includes/functions-employee.php:1161
+#: modules/hrm/includes/functions-employee.php:1170
 msgid "Pecentage"
 msgstr ""
 
-#: modules/hrm/includes/functions-employee.php:1270
+#: modules/hrm/includes/functions-employee.php:1279
 #. translators: %s: List of usernames
 msgid ""
 "The following users have associated Employee profiles in WP ERP HRM and "
 "cannot be deleted. Please delete the Employee profiles first:%s"
 msgstr ""
 
-#: modules/hrm/includes/functions-employee.php:1273
+#: modules/hrm/includes/functions-employee.php:1282
 msgid "Cannot Delete Users"
 msgstr ""
 
-#: modules/hrm/includes/functions-employee.php:1295
+#: modules/hrm/includes/functions-employee.php:1304
 #. translators: %s: List of usernames
 msgid "The following users have associated Employee profiles in WP ERP HRM:%s"
 msgstr ""
 
-#: modules/hrm/includes/functions-employee.php:1300
-#: modules/hrm/includes/functions-employee.php:1393
+#: modules/hrm/includes/functions-employee.php:1309
+#: modules/hrm/includes/functions-employee.php:1402
 msgid "What would you like to do?"
 msgstr ""
 
-#: modules/hrm/includes/functions-employee.php:1320
+#: modules/hrm/includes/functions-employee.php:1329
 msgid "Delete Employee Profiles and WordPress Users"
 msgstr ""
 
-#: modules/hrm/includes/functions-employee.php:1326
-#: modules/hrm/includes/functions-employee.php:1411
+#: modules/hrm/includes/functions-employee.php:1335
+#: modules/hrm/includes/functions-employee.php:1420
 msgid ""
 "Warning: This action cannot be undone. All employee data including leave "
 "records, notes, and history will be permanently deleted."
 msgstr ""
 
-#: modules/hrm/includes/functions-employee.php:1332
+#: modules/hrm/includes/functions-employee.php:1341
 msgid "Employee Profiles Found"
 msgstr ""
 
-#: modules/hrm/includes/functions-employee.php:1361
+#: modules/hrm/includes/functions-employee.php:1370
 msgid "You cannot delete yourself."
 msgstr ""
 
-#: modules/hrm/includes/functions-employee.php:1387
+#: modules/hrm/includes/functions-employee.php:1396
 #. translators: 1: username, 2: display name
 msgid ""
 "User <strong>%1$s</strong> (%2$s) has an associated Employee profile in WP "
 "ERP HRM."
 msgstr ""
 
-#: modules/hrm/includes/functions-employee.php:1405
+#: modules/hrm/includes/functions-employee.php:1414
 msgid "Delete Employee Profile and WordPress User"
 msgstr ""
 
-#: modules/hrm/includes/functions-employee.php:1417
+#: modules/hrm/includes/functions-employee.php:1426
 msgid "Employee Profile Found"
 msgstr ""
 
@@ -32406,299 +32475,54 @@ msgstr ""
 msgid "Select bulk action"
 msgstr ""
 
-#: vendor/lucatume/wp-browser/src/data/plugins/internationalized-plugin.php:11
-msgid "This is a dummy plugin"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/parsers.php:42
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/parsers.php:72
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/parsers.php:80
-msgid "There was an error when reading this WXR file"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/parsers.php:43
-msgid ""
-"Details are shown above. The importer will now try again with a different "
-"parser..."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/parsers.php:84
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/parsers.php:89
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/parsers.php:306
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/parsers.php:495
-msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:132
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:141
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:192
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:196
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:205
-msgid "Sorry, there has been an error."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:133
-msgid "The file does not exist, please try again."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:176
-msgid "All done."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:176
-msgid "Have fun!"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:177
-msgid "Remember to update the passwords and roles of imported users."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:197
-msgid ""
-"The export file could not be found at <code>%s</code>. It is likely that "
-"this was caused by a permissions problem."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:213
-msgid ""
-"This WXR file (version %s) may not be supported by this version of the "
-"importer. Please consider updating."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:238
-msgid ""
-"Failed to import author %s. Their posts will be attributed to the current "
-"user."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:264
-msgid "Assign Authors"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:265
-msgid ""
-"To make it easier for you to edit and save the imported content, you may "
-"want to reassign the author of the imported item to an existing user of "
-"this site. For example, you may want to import all the entries as "
-"<code>admin</code>s entries."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:267
-msgid ""
-"If a new user is created by WordPress, a new password will be randomly "
-"generated and the new user&#8217;s role will be set as %s. Manually "
-"changing the new user&#8217;s details will be necessary."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:277
-msgid "Import Attachments"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:280
-msgid "Download and import file attachments"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:297
-msgid "Import author:"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:308
-msgid "or create new user with login name:"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:311
-msgid "as a new user:"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:319
-msgid "assign posts to an existing user:"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:321
-msgid "or assign posts to an existing user:"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:372
-msgid ""
-"Failed to create new user for %s. Their posts will be attributed to the "
-"current user."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:424
-msgid "Failed to import category %s"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:467
-msgid "Failed to import post tag %s"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:516
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:738
-msgid "Failed to import %s %s"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:605
-msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:642
-msgid "%s &#8220;%s&#8221; already exists."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:704
-msgid "Failed to import %s &#8220;%s&#8221;"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:869
-msgid "Menu item skipped due to missing menu slug"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:876
-msgid "Menu item skipped due to invalid menu slug: %s"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:939
-msgid "Fetching attachments is not enabled"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:952
-msgid "Invalid file type"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:996
-msgid "Remote server did not respond"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:1002
-msgid "Remote server returned error response %1$d %2$s"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:1009
-msgid "Remote file is incorrect size"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:1014
-msgid "Zero size file downloaded"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:1020
-msgid "Remote file is too large, limit is %s"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:1119
-msgid "Import WordPress"
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:1126
-msgid ""
-"A new version of this importer is available. Please update to version %s to "
-"ensure compatibility with newer export files."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:1141
-msgid ""
-"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
-"the posts, pages, comments, custom fields, categories, and tags into this "
-"site."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:1142
-msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/plugins/wordpress-importer/wordpress-importer.php:1216
-msgid ""
-"Import <strong>posts, pages, comments, custom fields, categories, and "
-"tags</strong> from a WordPress export file."
-msgstr ""
-
-#: vendor/lucatume/wp-browser/src/data/themedir1/internationalized-theme/functions.php:7
-msgid "This is a dummy theme"
-msgstr ""
-
-#: vendor/wp-cli/core-command/src/Core_Command.php:749
-msgid "Wildcard DNS may not be configured correctly."
-msgstr ""
-
-#: vendor/wp-cli/entity-command/src/Site_Command.php:157
-msgid "Uncategorized"
-msgstr ""
-
-#: vendor/wp-cli/export-command/src/WP_Export_XML_Over_HTTP.php:20
-#: vendor/wp-cli/export-command/src/WP_Export_XML_Over_HTTP.php:25
-msgid "Export Error"
-msgstr ""
-
-#: vendor/wp-cli/extension-command/src/WP_CLI/CommandWithUpgrade.php:770
-msgid " Try again"
-msgstr ""
-
-#: vendor/wp-cli/extension-command/src/WP_CLI/CommandWithUpgrade.php:776
-msgid "API error. Try Again."
-msgstr ""
-
-#: vendor/wp-cli/media-command/src/Media_Command.php:159
-msgid "image"
-msgid_plural "images"
-msgstr[0] ""
-msgstr[1] ""
-
-#: vendor/wp-cli/wp-cli/php/utils-wp.php:247
-msgid "Inactive Widgets"
-msgstr ""
-
-#: vendor/wp-cli/wp-cli/php/utils-wp.php:250
-msgid "Drag widgets here to remove them from the sidebar but keep their settings."
-msgstr ""
-
-#: wp-erp.php:232
+#: wp-erp.php:233
 msgid "<h1>An Error Occured</h1>"
 msgstr ""
 
-#: wp-erp.php:233
+#: wp-erp.php:234
 msgid "<h2>Your installed PHP Version is: "
 msgstr ""
 
-#: wp-erp.php:234
+#: wp-erp.php:235
 msgid "<p>The <strong>ERP</strong> plugin requires PHP version <strong>"
 msgstr ""
 
-#: wp-erp.php:234
+#: wp-erp.php:235
 msgid "</strong> or greater"
 msgstr ""
 
-#: wp-erp.php:235
+#: wp-erp.php:236
 msgid "<p>The version of your PHP is "
 msgstr ""
 
-#: wp-erp.php:235
+#: wp-erp.php:236
 msgid "unsupported and old"
 msgstr ""
 
-#: wp-erp.php:236
+#: wp-erp.php:237
 msgid ""
 "You should update your PHP software or contact your host regarding this "
 "matter.</p>"
 msgstr ""
 
-#: wp-erp.php:239
+#: wp-erp.php:240
 msgid "Plugin Activation Error"
 msgstr ""
 
-#: wp-erp.php:359
+#: wp-erp.php:361
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: wp-erp.php:360
+#: wp-erp.php:362
 msgid "Get Support"
 msgstr ""
 
-#: wp-erp.php:427
+#: wp-erp.php:429
 #. translators: %s: review url
 msgid ""
-"If you like WPERP please leave us a <a href=\"%s\" target=\"_blank\" "
-"style=\"text-decoration:none\">★★★★★</a> rating. Thanking you from the team "
-"of WPERP in advance!"
+"If you like WP ERP please <a href=\"%s\" target=\"_blank\" "
+"class=\"erp-review-link\">leave us a ★★★★★ rating</a>. Thank you from the "
+"WP ERP team!"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
@@ -32731,18 +32555,4 @@ msgstr ""
 #: i18n/states/US.php:20
 msgctxt "US state of Georgia"
 msgid "Georgia"
-msgstr ""
-
-#: vendor/wp-cli/core-command/src/Core_Command.php:491
-#: vendor/wp-cli/core-command/src/Core_Command.php:565
-#. translators: placeholder is blog name
-#. translators: placeholder is user supplied title
-msgctxt "Default network name"
-msgid "%s Sites"
-msgstr ""
-
-#: vendor/wp-cli/entity-command/src/Site_Command.php:160
-#. translators: Default category slug
-msgctxt "Default category slug"
-msgid "Uncategorized"
 msgstr ""

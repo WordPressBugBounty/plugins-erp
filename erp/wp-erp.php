@@ -5,7 +5,7 @@
  * Plugin URI: https://wperp.com
  * Author: weDevs
  * Author URI: https://wedevs.com
- * Version: 1.17.3
+ * Version: 1.17.5
  * License: GPL2
  * Text Domain: erp
  * Domain Path: /i18n/languages/
@@ -42,6 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 use WeDevs\ERP\Emailer;
 use WeDevs\ERP\Scripts;
+use WeDevs\ERP\Headway\Headway;
 use WeDevs\ERP\Tracker;
 use WeDevs\ERP\Updates;
 use WeDevs\ERP\ERP_i18n;
@@ -60,7 +61,7 @@ use WeDevs\ERP\Admin\UserProfile;
 use WeDevs\ERP\WeDevsERPInstaller;
 
 require_once __DIR__ . '/vendor/autoload.php';
-define( 'WPERP_VERSION', '1.17.4' );
+define( 'WPERP_VERSION', '1.17.5' );
 define( 'WPERP_FILE', __FILE__ );
 define( 'WPERP_PATH', dirname( WPERP_FILE ) );
 define( 'WPERP_INCLUDES', WPERP_PATH . '/includes' );
@@ -301,6 +302,7 @@ final class WeDevs_ERP {
         new AdminPage();
         new UserProfile();
         new Scripts();
+        new Headway();
         new Updates();
         new ApiRegistrar();
         new Promotion();
