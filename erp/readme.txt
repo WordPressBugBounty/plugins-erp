@@ -1,11 +1,11 @@
-=== ERP: Complete HR, Accounting & CRM Suite with Recruitment and WooCommerce CRM Support ===
+=== ERP: Complete HR, Recruitment, Accounting & CRM Suite with WooCommerce CRM Support ===
 Contributors: tareq1988, nizamuddinbabu, wedevs
 Donate Link: https://tareq.co/donate
-Tags:  HR, CRM, Accounting, WooCommerce CRM, Recruitment, Job Listings, Inventory, ERP, Employee management, Leave management, Attendance, Reimbursement, WooCommerce Accounting, Document manager, Custom field builder, CRM integration
+Tags:  HR, CRM, Accounting, WooCommerce CRM, Recruitment, Job Listings, Inventory, ERP, Employee management, Leave management, Attendance, Reimbursement, WooCommerce Accounting, Document manager, Custom field builder, CRM integration, HRM
 Requires at least: 5.6
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.17.5
+Stable tag: 1.17.6
 License: GPLv2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,24 +14,24 @@ Self-hosted ERP for WordPress with HR, CRM, accounting, and recruitment. Run you
 
 == Description ==
 
-= The Ultimate Company/Business Management Solution For WordPress =
+= The Ultimate Company/Business Management Solution For WordPress With HRM, CRM, & Accounting =
 
 👉 Official Free Demo Link: [Official Demo of ERP](https://wperp.com/demo/)
 👉 Learn More About ERP (PRO): [All The Features of ERP PRO](https://wperp.com/pro/)
 
-= Supercharge Your Growing Business From Your WordPress Dashboard With Our All-in-One ERP Plugin =
+= Supercharge Your Growing Business With Our All-in-One ERP Plugin =
 
 [ERP](https://wperp.com/) is the only complete Enterprise Resource Planning (ERP) solution built specifically for WordPress. It helps you manage your business, employees, and finances all in one place, directly from your WordPress dashboard.
 
-You can manage HR, CRM, accounting, and even connect your WooCommerce store using powerful CRM tools to handle customer relationships more effectively.
+You can manage your entire HR related tasks, CRM, and accounting using the ERP plugin. You can also connect your WooCommerce store using powerful CRM tools to handle customer relationships more effectively.
 
-The WooCommerce CRM module helps you see customer activity, order history, and interactions, everything in one place.
+The WooCommerce CRM module of the ERP plugin helps you see customer activity, order history, and interactions, everything in one place.
 
 ERP is ideal for small to medium-sized businesses. It's designed to be simple and easy to use, with no technical expertise required. With just one-click activation, you can get started in minutes and begin managing your business more efficiently.
 
 The mobile app version of ERP is also available for both Android and iOS. If you are an ERP Pro user, you will get the mobile app included in a specific tier. 
 
-== Core Modules of ERP to Manage Your Business ==
+== Core Modules of the ERP Plugin to Manage Your Business ==
 
 ERP comes with three essential, pre-built modules that help you streamline your business operations directly from your WordPress dashboard:
 
@@ -58,7 +58,7 @@ ERP comes with three essential, pre-built modules that help you streamline your 
 * **Privacy Focused:** Your data is protected at every level of work.
 
 = 🔥What You Get with ERP Core (Free Version)🔥 =
-Here are some of the key benefits you get with ERP, the pioneer WordPress ERP solution:
+Here are some of the key benefits you get with our free ERP plugin, the pioneer WordPress ERP solution:
 
 * **Your Own Company Profile:** Set up and manage your company profile easily within the system.
 * **Full Control Over Operations:** Get complete control of your business processes from one place.
@@ -134,9 +134,9 @@ Free Features of [ERP Accounting Module](https://wperp.com/accounting/):
 * **Filter by Date:** Sort reports and transactions by date range.
 * **Print Support:** Print any report or transaction whenever needed.
 
-Getting started with ERP is only a matter of moments.
+Getting started with the ERP plugin is only a matter of moments.
 
-Check out the detailed [documentation](https://wperp.com/documentation/) created by us to help you run ERP in the best way.
+Check out the detailed [documentation](https://wperp.com/documentation/) created by us to help you run your HR, CRM, and Accounting in the best way.
 
 == 🔥ERP PRO – PREMIUM EXTENSIONS & FEATURES🔥 ==
 
@@ -169,7 +169,7 @@ Take your workflow to the next level with these premium extensions:
 * **[Hubspot Contacts Sync](https://wperp.com/downloads/hubspot-contacts-sync/)**: Sync HubSpot contacts and import them into your CRM. It helps you keep your contact database clean and up-to-date across both systems.
 * **[Zendesk Integration](https://wperp.com/downloads/zendesk-integration/)**: Automatically pull ticket submitters from Zendesk into your CRM. You can convert them into leads or customers, and manage their relationship from one dashboard.
 
-= Choose Other Premium Extensions That Fit Your Business Needs =
+= Choose Other Premium Extensions related to HR, CRM, and Accounting That Fit Your Business Needs =
 
 Need more control over how your business runs? Add any of these premium extensions to improve your workflow.
 
@@ -289,7 +289,7 @@ If you are unable to use any of the methods due to internet connectivity and fil
 ERP is completely free of cost, you can download and install the plugin right from your WordPress dashboard just like any other WordPress plugin.
 
 = Can I use only one module? =
-Yes, you definitely can! The whole plugin is divided into three parts- HR, CRM, and Accounting based on features and the source code are separate for each module. So you can turn on or off any module you like from the settings.
+Yes, you definitely can! The whole plugin is divided into three parts- HR, CRM, and Accounting, based on features, and the source code is separate for each module. So you can turn on or off any module you like from the settings.
 
 = Can I customize the plugin? =
 Absolutely! ERP and all its extensions are open-source and the source files are well-documented. So you can customize any feature you want. Our support service is always there to help you with information to get you started.
@@ -327,6 +327,14 @@ We strive to respond to all queries within 12 hours. Our response time may be ju
 It may take longer to respond to more advanced or technical queries. We promise to serve and support you in the best way possible, which can sometimes take time, but you will be assured of the best service.
 
 == Changelog ==
+= v1.17.6 → Jul 7, 2026
+--------------------------
+* [Fixed] Stored XSS in CRM schedule message and leave attachment exposure [#1613](https://github.com/wp-erp/wp-erp/pull/1613).
+* [Fixed] Added nonce verification and capability check to the check_user AJAX handler, and restricted returned user data to essential fields [#1618](https://github.com/wp-erp/wp-erp/pull/1618).
+* [Fixed] CRM agents could view other agents' contacts due to case-sensitive module active check [#1619](https://github.com/wp-erp/wp-erp/pull/1619).
+* [Fixed] Email sync regex warning and refactored host sanitization [#1571](https://github.com/wp-erp/wp-erp/pull/1571).
+* [Enhancement] CRM subscription form now supports email-only signups and renders HTML confirmation emails correctly when SMTP/Mailgun is not configured [#1620](https://github.com/wp-erp/wp-erp/pull/1620).
+
 = v1.17.5 → Jun 17, 2026
 --------------------------
 * [Fixed] Hardened CRM contact filters against SQL injection by using prepared statements.

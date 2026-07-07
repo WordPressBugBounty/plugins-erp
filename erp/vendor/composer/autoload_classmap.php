@@ -1328,6 +1328,7 @@ return array(
     'WeDevs\\ERP\\CRM\\Models\\SaveReplies' => $baseDir . '/modules/crm/includes/Models/SaveReplies.php',
     'WeDevs\\ERP\\CRM\\Models\\SaveSearch' => $baseDir . '/modules/crm/includes/Models/SaveSearch.php',
     'WeDevs\\ERP\\CRM\\Subscription' => $baseDir . '/modules/crm/includes/Subscription.php',
+    'WeDevs\\ERP\\CRM\\SubscriptionBlock' => $baseDir . '/modules/crm/includes/SubscriptionBlock.php',
     'WeDevs\\ERP\\CRM\\SubscriptionWidget' => $baseDir . '/modules/crm/includes/SubscriptionWidget.php',
     'WeDevs\\ERP\\Company' => $baseDir . '/includes/Company.php',
     'WeDevs\\ERP\\Countries' => $baseDir . '/includes/Countries.php',

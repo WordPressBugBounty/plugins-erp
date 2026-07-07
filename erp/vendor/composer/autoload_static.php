@@ -1724,6 +1724,7 @@ class ComposerStaticInit8c832cdc6459f9d95a738614bf88dd0b
         'WeDevs\\ERP\\CRM\\Models\\SaveReplies' => __DIR__ . '/../..' . '/modules/crm/includes/Models/SaveReplies.php',
         'WeDevs\\ERP\\CRM\\Models\\SaveSearch' => __DIR__ . '/../..' . '/modules/crm/includes/Models/SaveSearch.php',
         'WeDevs\\ERP\\CRM\\Subscription' => __DIR__ . '/../..' . '/modules/crm/includes/Subscription.php',
+        'WeDevs\\ERP\\CRM\\SubscriptionBlock' => __DIR__ . '/../..' . '/modules/crm/includes/SubscriptionBlock.php',
         'WeDevs\\ERP\\CRM\\SubscriptionWidget' => __DIR__ . '/../..' . '/modules/crm/includes/SubscriptionWidget.php',
         'WeDevs\\ERP\\Company' => __DIR__ . '/../..' . '/includes/Company.php',
         'WeDevs\\ERP\\Countries' => __DIR__ . '/../..' . '/includes/Countries.php',

@@ -4,6 +4,24 @@
  */
 
 /**
+ * Get sanitized HTTP host for use in CRM message-ids and inbound email regex.
+ *
+ * `esc_url_raw` percent-encodes characters like `:` in `host:port`, which
+ * breaks the message-id regex used to match inbound replies. Whitelist only
+ * characters valid in a host (incl. hyphen and IPv6 brackets) and the port
+ * separator, then strip everything else (CRLF, whitespace, etc.).
+ *
+ * @return string
+ */
+function erp_crm_get_server_host() {
+    if ( ! isset( $_SERVER['HTTP_HOST'] ) ) {
+        return '';
+    }
+
+    return preg_replace( '/[^a-zA-Z0-9:.\-\[\]]/', '', wp_unslash( $_SERVER['HTTP_HOST'] ) );
+}
+
+/**
  * Get an avatar
  *
  * @param  int  avatar size in pixels
@@ -643,7 +661,9 @@ function erp_crm_customer_prepare_schedule_postdata( $postdata ) {
         'id'         => ( isset( $postdata['id'] ) && ! empty( $postdata['id'] ) ) ? $postdata['id'] : '',
         'user_id'    => $postdata['user_id'],
         'created_by' => $postdata['created_by'],
-        'message'    => $postdata['message'],
+        // Sanitize the message before persisting to prevent stored XSS. wp_kses_post()
+        // keeps safe formatting markup while stripping <script>, event handlers, etc.
+        'message'    => isset( $postdata['message'] ) ? wp_kses_post( $postdata['message'] ) : '',
         'type'       => 'log_activity',
         'log_type'   => ( isset( $postdata['schedule_type'] ) && ! empty( $postdata['schedule_type'] ) ) ? $postdata['schedule_type'] : '',
         'start_date' => erp_current_datetime()->modify( $postdata['start_date'] . $start_time )->format( 'Y-m-d H:i:s' ),
@@ -953,7 +973,9 @@ function erp_crm_customer_get_single_activity_feed( $feed_id ) {
         }
 
         $data['contact']['types'] = wp_list_pluck( $data['contact']['types'], 'name' );
-        $data['message']          = stripslashes( $data['message'] );
+        // Sanitize on read so legacy rows stored before the save-side fix cannot
+        // execute script in the schedule-details popup (rendered via raw {{{ }}}).
+        $data['message']          = wp_kses_post( stripslashes( $data['message'] ) );
 
         if ( isset( $data['extra']['attachments'] ) ) {
             $data['extra']['attachments'] = erp_crm_process_attachment_data( $data['extra']['attachments'] );
@@ -2696,11 +2718,7 @@ function erp_crm_save_email_activity( $email, $inbound_email_address ) {
         $headers = '';
         $headers .= 'Content-Type: text/html; charset=UTF-8' . "\r\n";
 
-        $server_host = apply_filters(
-            'erp_crm_activity_server_host',
-            isset( $_SERVER['HTTP_HOST'] ) ? esc_url_raw( wp_unslash( $_SERVER['HTTP_HOST'] ) ) : ''
-        );
-        
+        $server_host = apply_filters( 'erp_crm_activity_server_host', erp_crm_get_server_host() );
         $message_id  = md5( uniqid( time() ) ) . '.' . $contact_id . '.' . $contact_owner_id . '.r2@' . $server_host;
 
         $custom_headers = [
@@ -2788,10 +2806,7 @@ function erp_crm_save_contact_owner_email_activity( $email, $inbound_email_addre
     $headers = '';
     $headers .= 'Content-Type: text/html; charset=UTF-8' . "\r\n";
 
-    $server_host = apply_filters(
-        'erp_crm_activity_server_host',
-        isset( $_SERVER['HTTP_HOST'] ) ? esc_url_raw( wp_unslash( $_SERVER['HTTP_HOST'] ) ) : ''
-    );
+    $server_host = apply_filters( 'erp_crm_activity_server_host', erp_crm_get_server_host() );
     $message_id  = md5( uniqid( time() ) ) . '.' . $save_data['user_id'] . '.' . $save_data['created_by'] . '.r1@' . $server_host;
 
     $custom_headers = [
@@ -3714,11 +3729,8 @@ function erp_crm_check_new_inbound_emails() {
 
         do_action( 'erp_crm_new_inbound_emails', $emails );
 
-        $server_host = apply_filters(
-            'erp_crm_activity_server_host',
-            isset( $_SERVER['HTTP_HOST'] ) ? esc_url_raw( wp_unslash( $_SERVER['HTTP_HOST'] ) ) : ''
-        );
-        $email_regexp = '([a-z0-9]+[.][0-9]+[.][0-9]+[.][r][1|2])@' . $server_host;
+        $server_host  = apply_filters( 'erp_crm_activity_server_host', erp_crm_get_server_host() );
+        $email_regexp = '([a-z0-9]+[.][0-9]+[.][0-9]+[.][r][1|2])@' . preg_quote( $server_host, '/' );
 
         $filtered_emails = [];
 
