@@ -2,9 +2,9 @@
 # This file is distributed under the GPL2.
 msgid ""
 msgstr ""
-"Project-Id-Version: ERP 1.17.6\n"
+"Project-Id-Version: ERP 1.17.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-erp\n"
-"POT-Creation-Date: 2026-07-07 10:56:06+00:00\n"
+"POT-Creation-Date: 2026-07-16 06:26:19+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16664,9 +16664,9 @@ msgstr ""
 msgid "Create Invoice"
 msgstr ""
 
-#: includes/Admin/Ajax.php:53 includes/Admin/Ajax.php:672
-#: includes/Admin/Ajax.php:814 includes/Admin/Ajax.php:1016
-#: includes/Admin/Ajax.php:1065 modules/crm/includes/AjaxHandler.php:122
+#: includes/Admin/Ajax.php:53 includes/Admin/Ajax.php:677
+#: includes/Admin/Ajax.php:819 includes/Admin/Ajax.php:1021
+#: includes/Admin/Ajax.php:1070 modules/crm/includes/AjaxHandler.php:122
 #: modules/crm/includes/AjaxHandler.php:243
 #: modules/crm/includes/AjaxHandler.php:289
 #: modules/crm/includes/AjaxHandler.php:403
@@ -16799,23 +16799,23 @@ msgstr ""
 msgid "You can only import your own contacts"
 msgstr ""
 
-#: includes/Admin/Ajax.php:595 includes/Admin/Ajax.php:603
+#: includes/Admin/Ajax.php:600 includes/Admin/Ajax.php:608
 msgid "Field/Items"
 msgstr ""
 
-#: includes/Admin/Ajax.php:596 includes/Admin/Ajax.php:604
+#: includes/Admin/Ajax.php:601 includes/Admin/Ajax.php:609
 msgid "Old Value"
 msgstr ""
 
-#: includes/Admin/Ajax.php:597 includes/Admin/Ajax.php:605
+#: includes/Admin/Ajax.php:602 includes/Admin/Ajax.php:610
 msgid "New Value"
 msgstr ""
 
-#: includes/Admin/Ajax.php:652
+#: includes/Admin/Ajax.php:657
 msgid "Log changes"
 msgstr ""
 
-#: includes/Admin/Ajax.php:667 includes/Framework/Traits/Ajax.php:19
+#: includes/Admin/Ajax.php:672 includes/Framework/Traits/Ajax.php:19
 #: modules/crm/includes/AjaxHandler.php:118
 #: modules/crm/includes/AjaxHandler.php:239
 #: modules/crm/includes/AjaxHandler.php:285
@@ -16864,59 +16864,59 @@ msgstr ""
 msgid "Error: Nonce verification failed"
 msgstr ""
 
-#: includes/Admin/Ajax.php:678 includes/Admin/Ajax.php:734
+#: includes/Admin/Ajax.php:683 includes/Admin/Ajax.php:739
 #: includes/Settings/Ajax.php:338 modules/hrm/includes/AjaxHandler.php:1380
 msgid "No email address provided"
 msgstr ""
 
-#: includes/Admin/Ajax.php:730 includes/Settings/Ajax.php:327
+#: includes/Admin/Ajax.php:735 includes/Settings/Ajax.php:327
 msgid "No host address provided"
 msgstr ""
 
-#: includes/Admin/Ajax.php:738 includes/Settings/Ajax.php:342
+#: includes/Admin/Ajax.php:743 includes/Settings/Ajax.php:342
 msgid "No email password provided"
 msgstr ""
 
-#: includes/Admin/Ajax.php:742 includes/Settings/Ajax.php:331
+#: includes/Admin/Ajax.php:747 includes/Settings/Ajax.php:331
 msgid "No port address provided"
 msgstr ""
 
-#: includes/Admin/Ajax.php:760
+#: includes/Admin/Ajax.php:765
 msgid "Your IMAP connection is established."
 msgstr ""
 
-#: includes/Admin/Ajax.php:796
+#: includes/Admin/Ajax.php:801
 msgid "No credential set yet !"
 msgstr ""
 
-#: includes/Admin/Ajax.php:989 includes/Admin/Ajax.php:1103
+#: includes/Admin/Ajax.php:994 includes/Admin/Ajax.php:1108
 #: includes/Promotion.php:257 modules/accounting/Accounting.php:138
 msgid "Invalid nonce"
 msgstr ""
 
-#: includes/Admin/Ajax.php:993 includes/Admin/Ajax.php:1108
+#: includes/Admin/Ajax.php:998 includes/Admin/Ajax.php:1113
 #: includes/Lib/WeFormsUpsell.php:312 includes/Lib/WeFormsUpsell.php:414
 #: includes/Promotion.php:261 modules/accounting/Accounting.php:142
 msgid "You have no permission to do that"
 msgstr ""
 
-#: includes/Admin/Ajax.php:1045
+#: includes/Admin/Ajax.php:1050
 msgid "Redirecting..."
 msgstr ""
 
-#: includes/Admin/Ajax.php:1048
+#: includes/Admin/Ajax.php:1053
 msgid "Invalid input."
 msgstr ""
 
-#: includes/Admin/Ajax.php:1071
+#: includes/Admin/Ajax.php:1076
 msgid "Invalid confirmation text. Please give valid confirmation text."
 msgstr ""
 
-#: includes/Admin/Ajax.php:1077
+#: includes/Admin/Ajax.php:1082
 msgid "Sorry, Something went wrong. Please try again !"
 msgstr ""
 
-#: includes/Admin/Ajax.php:1082
+#: includes/Admin/Ajax.php:1087
 msgid ""
 "Resetted WP ERP successfully. You will be redirected soon. Please Setup WP "
 "ERP again or Skip to continue."
@@ -32517,15 +32517,15 @@ msgstr ""
 msgid "Plugin Activation Error"
 msgstr ""
 
-#: wp-erp.php:361
+#: wp-erp.php:363
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: wp-erp.php:362
+#: wp-erp.php:365
 msgid "Get Support"
 msgstr ""
 
-#: wp-erp.php:429
+#: wp-erp.php:432
 #. translators: %s: review url
 msgid ""
 "If you like WP ERP please <a href=\"%s\" target=\"_blank\" "
