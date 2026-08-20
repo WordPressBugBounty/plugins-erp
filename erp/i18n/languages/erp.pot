@@ -2,9 +2,9 @@
 # This file is distributed under the GPL2.
 msgid ""
 msgstr ""
-"Project-Id-Version: ERP 1.17.8\n"
+"Project-Id-Version: ERP 1.17.9\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-erp\n"
-"POT-Creation-Date: 2026-08-13 10:35:25+00:00\n"
+"POT-Creation-Date: 2026-08-20 12:38:17+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16618,7 +16618,7 @@ msgid "All Deals"
 msgstr ""
 
 #: includes/Admin/AddProMenu.php:425
-#: modules/crm/includes/functions-customer.php:4355
+#: modules/crm/includes/functions-customer.php:4379
 msgid "Activities"
 msgstr ""
 
@@ -18395,7 +18395,7 @@ msgstr ""
 
 #: includes/Admin/views/tools.php:16 includes/Promotion.php:96
 #: includes/Promotion.php:233 includes/Promotion.php:236
-#: includes/functions.php:893 includes/functions.php:4280
+#: includes/functions.php:893 includes/functions.php:4357
 #: modules/accounting/includes/functions/transactions.php:970
 #: modules/accounting/includes/functions/transactions.php:1219
 msgid "%s"
@@ -18822,7 +18822,7 @@ msgstr ""
 #: includes/Framework/views/status-report.php:87
 #: modules/crm/includes/Admin/AdminMenu.php:47
 #: modules/crm/includes/Admin/Settings.php:48
-#: modules/crm/includes/functions-customer.php:4353
+#: modules/crm/includes/functions-customer.php:4377
 #: modules/crm/includes/functions-dashboard.php:298
 #: modules/crm/views/activities.php:8 modules/crm/views/company/single.php:198
 #: modules/crm/views/company.php:22 modules/crm/views/contact-groups.php:9
@@ -18852,7 +18852,7 @@ msgid "Total CRM Agent count."
 msgstr ""
 
 #: includes/Framework/views/status-report.php:102
-#: modules/crm/includes/functions-customer.php:4354
+#: modules/crm/includes/functions-customer.php:4378
 #: modules/crm/includes/functions-dashboard.php:327
 #: modules/crm/views/contact/single.php:204
 msgid "Companies"
@@ -18864,7 +18864,7 @@ msgstr ""
 
 #: includes/Framework/views/status-report.php:107
 #: modules/crm/includes/SubscriptionWidget.php:76
-#: modules/crm/includes/functions-customer.php:4356
+#: modules/crm/includes/functions-customer.php:4380
 msgid "Contact Groups"
 msgstr ""
 
@@ -20189,7 +20189,7 @@ msgid "Save"
 msgstr ""
 
 #: includes/Settings/assets/src/components/email/templates/EmailTemplate.vue:20
-#: includes/functions.php:3450
+#: includes/functions.php:3527
 msgid "Enable/Disable"
 msgstr ""
 
@@ -20442,12 +20442,12 @@ msgid "Something went wrong, please try again"
 msgstr ""
 
 #: includes/functions-people.php:969
-#: modules/crm/includes/functions-customer.php:4121
-#: modules/crm/includes/functions-customer.php:4141
-#: modules/crm/includes/functions-customer.php:4160
-#: modules/crm/includes/functions-customer.php:4180
-#: modules/crm/includes/functions-customer.php:4221
-#: modules/crm/includes/functions-customer.php:4241
+#: modules/crm/includes/functions-customer.php:4145
+#: modules/crm/includes/functions-customer.php:4165
+#: modules/crm/includes/functions-customer.php:4184
+#: modules/crm/includes/functions-customer.php:4204
+#: modules/crm/includes/functions-customer.php:4245
+#: modules/crm/includes/functions-customer.php:4265
 msgid "People not exists"
 msgstr ""
 
@@ -21298,19 +21298,19 @@ msgstr ""
 msgid "Your license key expires on %s."
 msgstr ""
 
-#: includes/functions.php:3984
+#: includes/functions.php:4061
 msgid "Sorry! You are not allowed to access this page."
 msgstr ""
 
-#: includes/functions.php:4136
+#: includes/functions.php:4213
 msgid "ERP data reset completed"
 msgstr ""
 
-#: includes/functions.php:4216
+#: includes/functions.php:4293
 msgid "Something went wrong when resetting. Please try again."
 msgstr ""
 
-#: includes/functions.php:4312 includes/functions.php:4314
+#: includes/functions.php:4389 includes/functions.php:4391
 msgid "What's New"
 msgstr ""
 
@@ -26215,7 +26215,7 @@ msgstr ""
 #: modules/crm/includes/AjaxHandler.php:706
 #: modules/crm/includes/AjaxHandler.php:878
 #: modules/crm/includes/functions-customer.php:1531
-#: modules/crm/includes/functions-customer.php:3937
+#: modules/crm/includes/functions-customer.php:3938
 msgid "No contact found"
 msgstr ""
 
@@ -27084,7 +27084,7 @@ msgid "Postal Code"
 msgstr ""
 
 #: modules/crm/includes/functions-customer.php:1979
-#: modules/crm/includes/functions-customer.php:4288
+#: modules/crm/includes/functions-customer.php:4312
 msgid "Tags"
 msgstr ""
 
@@ -27284,25 +27284,29 @@ msgstr ""
 msgid "Web Research"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3933
+#: modules/crm/includes/functions-customer.php:3934
 msgid "You do not have permission to make WP User"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:3947
+#: modules/crm/includes/functions-customer.php:3948
 msgid "No email found for creating wp user"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:4287
+#: modules/crm/includes/functions-customer.php:3953
+msgid "You are not allowed to create a user with the selected role"
+msgstr ""
+
+#: modules/crm/includes/functions-customer.php:4311
 #: modules/crm/views/company/single.php:167
 #: modules/crm/views/contact/single.php:173
 msgid "Tag"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:4399
+#: modules/crm/includes/functions-customer.php:4423
 msgid "Schedules"
 msgstr ""
 
-#: modules/crm/includes/functions-customer.php:4452
+#: modules/crm/includes/functions-customer.php:4476
 msgid "Unauthorized attempt!"
 msgstr ""
 
