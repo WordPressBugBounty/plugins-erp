@@ -354,7 +354,12 @@ function erp_acct_insert_invoice_details_and_tax( $invoice_data, $voucher_no, $c
 		if ( ! empty( $tax_rate_agency ) ) {
 			foreach ( $tax_rate_agency as $rate_agency ) {
 				/*==== calculate tax amount ====*/
-				$tax_amount = ( (float) $item['tax'] * (float) $rate_agency['tax_rate'] ) / (float) $item['tax_rate'];
+				$item_tax_rate = (float) $item['tax_rate'];
+
+				// The item rate is the divisor used to split the item tax across
+				// agencies. It can arrive as zero when the rate could not be
+				// resolved, which is fatal on PHP 8; nothing is taxable then.
+				$tax_amount = empty( $item_tax_rate ) ? 0 : ( (float) $item['tax'] * (float) $rate_agency['tax_rate'] ) / $item_tax_rate;
 
 				if ( array_key_exists( $rate_agency['agency_id'], $tax_agency_details ) ) {
 					$tax_agency_details[ $rate_agency['agency_id'] ] += $tax_amount;
@@ -778,6 +783,22 @@ function erp_acct_void_invoice( $invoice_no ) {
 		return;
 	}
 
+	// Voiding only reverses the invoice's own entries, so a payment received
+	// against it would stay in cash with nothing to offset it
+	$payments = (int) $wpdb->get_var(
+		$wpdb->prepare(
+			"SELECT COUNT(rec.id)
+            FROM {$wpdb->prefix}erp_acct_invoice_receipts_details AS rec_detail
+            INNER JOIN {$wpdb->prefix}erp_acct_invoice_receipts AS rec ON rec.voucher_no = rec_detail.voucher_no
+            WHERE rec_detail.invoice_no = %d AND rec.status <> 8",
+			$invoice_no
+		)
+	);
+
+	if ( $payments ) {
+		return new WP_Error( 'invoice-has-payments', __( 'This invoice has payments received against it. Please void those payments first.', 'erp' ), array( 'status' => 400 ) );
+	}
+
 	$wpdb->update(
 		$wpdb->prefix . 'erp_acct_invoices',
 		array(
@@ -787,7 +808,13 @@ function erp_acct_void_invoice( $invoice_no ) {
 	);
 
 	$wpdb->delete( $wpdb->prefix . 'erp_acct_ledger_details', array( 'trn_no' => $invoice_no ) );
-	$wpdb->delete( $wpdb->prefix . 'erp_acct_invoice_account_details', array( 'invoice_no' => $invoice_no ) );
+	$wpdb->delete(
+		$wpdb->prefix . 'erp_acct_invoice_account_details',
+		array(
+			'invoice_no' => $invoice_no,
+			'trn_no'     => $invoice_no,
+		)
+	);
 
 	$results = $wpdb->get_results(
 		$wpdb->prepare(
