@@ -451,12 +451,18 @@ class Employee {
                 return new WP_Error( 'cannot-create-employee', __( 'Cannot create an employee. Please check all the fields and try again.', 'erp' ) );
             }
         } elseif ( ! in_array( erp_hr_get_employee_role(), (array) $wp_user->roles ) ) {
+            // set_role() replaces every role: never turn an administrator into
+            // a plain employee on an HR manager's say.
+            if ( is_user_logged_in() && erp_hr_is_account_above_current_user( $wp_user->ID ) ) {
+                return new WP_Error( 'cannot-manage-account', __( 'You are not allowed to make this user an employee.', 'erp' ) );
+            }
+
             // set user role as employee
             $wp_user->set_role( erp_hr_get_employee_role() );
         }
 
-        // update user display name
-        if ( $wp_user ) {
+        // update user display name, unless the account ranks above the caller
+        if ( $wp_user && ! ( is_user_logged_in() && erp_hr_is_account_above_current_user( $wp_user->ID ) ) ) {
             $full_name =  $first_name . ' ' . $middle_name . ' ' . $last_name ;
             wp_update_user( array( 'ID' => $user_id, 'display_name' =>  $full_name ) );
         }
@@ -571,6 +577,23 @@ class Employee {
         $posted = array_map( 'strip_tags_deep', $data );
         $posted = erp_array_flatten( $posted );
         $posted = array_except( $posted, $restricted );
+
+        // Every posted key that is not a work field becomes user meta, so keep
+        // out the meta WordPress and WP ERP use internally. A self-service
+        // profile save could otherwise plant `erp_last_removed_role`, which a
+        // later restore hands back as a role, or overwrite capabilities.
+        $posted = array_filter( $posted, [ $this, 'is_writable_meta_key' ], ARRAY_FILTER_USE_KEY );
+
+        if ( ! empty( $data['additional'] ) && is_array( $data['additional'] ) ) {
+            $data['additional'] = array_filter( $data['additional'], [ $this, 'is_writable_meta_key' ], ARRAY_FILTER_USE_KEY );
+        }
+
+        // An administrator's WordPress account (login email, website, name) is
+        // not HR's to rewrite: the email is the password reset address. Their
+        // HR record still updates.
+        if ( is_user_logged_in() && erp_hr_is_account_above_current_user( $this->user_id ) ) {
+            unset( $posted['user_email'], $posted['user_url'], $posted['first_name'], $posted['last_name'] );
+        }
 
         //update user email
         if ( isset( $posted['user_email'] )
@@ -715,15 +738,24 @@ class Employee {
      */
     public function is_employee() {
         //exceptional case for admin
-        if ( in_array( 'administrator', $this->get_roles()['roles'], true ) ) {
+        // Read the roles straight off the user: get_roles() also resolves the
+        // editable-role list, which costs a user query on every call.
+        $wp_user = new WP_User( $this->user_id );
+
+        if ( in_array( 'administrator', (array) $wp_user->roles, true ) ) {
             return true;
         }
 
-        if ( $this->erp_user ) {
-            return true;
-        }
-
-        return false;
+        // `$this->erp_user` is *always* an Employee model instance — the
+        // constructor seeds an empty one before any lookup runs — so a bare
+        // truthiness check was true for every id, including ids with no row in
+        // `erp_hr_employees` at all. That made this method, and therefore the
+        // ~40 `if ( ! $employee->is_employee() )` guards built on it, answer
+        // "yes" unconditionally. `exists` is set by Eloquent only once the
+        // model has been hydrated from the table, which is what being an
+        // employee actually means. `withTrashed()` in the loader keeps
+        // soft-deleted employees hydrated, so they still count, as before.
+        return (bool) ( $this->erp_user && $this->erp_user->exists );
     }
 
     /**
@@ -868,7 +900,29 @@ class Employee {
             $name[] = $this->last_name;
         }
 
-        return implode( ' ', $name );
+        $full_name = implode( ' ', $name );
+
+        if ( '' !== $full_name ) {
+            return $full_name;
+        }
+
+        // An employee imported or created without first/last name meta has only a
+        // `display_name`. Returning '' for them made the record invisible in every
+        // consumer that labels a row by `full_name` — the legacy screens read
+        // `display_name` straight from the users table and so never showed the gap.
+        $user = $this->user_id ? get_userdata( $this->user_id ) : null;
+
+        if ( ! $user ) {
+            return '';
+        }
+
+        foreach ( [ $user->display_name, $user->user_login, $user->user_email ] as $fallback ) {
+            if ( '' !== (string) $fallback ) {
+                return (string) $fallback;
+            }
+        }
+
+        return '';
     }
 
     /**
@@ -2649,8 +2703,26 @@ class Employee {
             $args['comments'] = $comments;
         }
 
-        $this->update_employment_status( $args );
+        // A future date is only scheduled: the employee stays active until
+        // erp_hr_apply_scheduled_terminations() applies it on that day.
+        $terminate_day = erp_current_datetime()->modify( $args['terminate_date'] )->format( 'Y-m-d' );
 
+        if ( $terminate_day > erp_current_datetime()->format( 'Y-m-d' ) ) {
+            update_user_meta( $this->id, '_erp_hr_termination', $args );
+            update_user_meta( $this->id, '_erp_hr_termination_scheduled', $terminate_day );
+
+            erp_hrm_purge_cache( [ 'list' => 'employee', 'employee_id' => $this->id ] );
+
+            return $this;
+        }
+
+        $result = $this->update_employment_status( $args );
+
+        if ( is_wp_error( $result ) ) {
+            return $result;
+        }
+
+        delete_user_meta( $this->id, '_erp_hr_termination_scheduled' );
         update_user_meta( $this->id, '_erp_hr_termination', $args );
 
         erp_hrm_purge_cache( [ 'list' => 'employee', 'employee_id' => $this->id ] );
@@ -2669,6 +2741,33 @@ class Employee {
         $restricted_data = [];
 
         return apply_filters( 'erp_hr_employee_restricted_data', $restricted_data, $this->user_id, $this );
+    }
+
+    /**
+     * Whether posted employee data may be stored under this user meta key.
+     *
+     * Refused: protected meta (leading underscore), keys under the table
+     * prefix (`{prefix}capabilities`, `{prefix}user_level`, per-site keys on
+     * multisite), and internal keys such as `erp_last_removed_role`.
+     *
+     * @since 1.18.0
+     *
+     * @param string|int $key Meta key.
+     *
+     * @return bool
+     */
+    public function is_writable_meta_key( $key ) {
+        global $wpdb;
+
+        $key = (string) $key;
+
+        if ( '' === $key || is_protected_meta( $key, 'user' ) || 0 === strpos( $key, $wpdb->base_prefix ) ) {
+            return false;
+        }
+
+        $blocked = apply_filters( 'erp_hr_employee_blocked_meta_keys', [ 'erp_last_removed_role', 'session_tokens' ] );
+
+        return ! in_array( $key, (array) $blocked, true );
     }
 
     /**

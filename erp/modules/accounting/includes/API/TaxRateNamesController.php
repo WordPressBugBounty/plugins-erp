@@ -113,7 +113,7 @@ class TaxRateNamesController extends \WeDevs\ERP\API\REST_Controller {
      */
     public function get_tax_rate_names( $request ) {
         $args = [
-            'number'     => ! empty( $request['per_page'] ) ? (int) $request['per_page'] : 20,
+            'number'     => ! empty( $request['per_page'] ) ? (int) $request['per_page'] : -1, // no per_page: every row, as the dropdowns that call without one expect
             'offset'     => ( $request['per_page'] * ( $request['page'] - 1 ) ),
             'start_date' => empty( $request['start_date'] ) ? '' : $request['start_date'],
             'end_date'   => empty( $request['end_date'] ) ? gmdate( 'Y-m-d' ) : $request['end_date'],
@@ -359,7 +359,7 @@ class TaxRateNamesController extends \WeDevs\ERP\API\REST_Controller {
      * @return WP_REST_Response $response response data
      */
     public function prepare_item_for_response( $item, $request, $additional_fields = [] ) {
-        $data = array_merge( $item, $additional_fields );
+        $data = array_merge( (array) $item, $additional_fields );
 
         // Wrap the data in a response object
         $response = rest_ensure_response( $data );

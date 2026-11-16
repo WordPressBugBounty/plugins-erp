@@ -263,7 +263,7 @@ class BankAccountsController extends \WeDevs\ERP\API\REST_Controller {
         $args = [
             'order_by' => isset( $request['order_by'] ) ? $request['order_by'] : 'id',
             'order'    => isset( $request['order'] ) ? $request['order'] : 'DESC',
-            'number'   => isset( $request['per_page'] ) ? (int) $request['per_page'] : 20,
+            'number'   => isset( $request['per_page'] ) ? (int) $request['per_page'] : -1, // the transfers list calls without per_page
             'offset'   => ( $request['per_page'] * ( $request['page'] - 1 ) ),
         ];
 
@@ -471,8 +471,8 @@ class BankAccountsController extends \WeDevs\ERP\API\REST_Controller {
         $data = [
             'id'          => $item->id,
             'voucher'     => (int) $item->voucher_no,
-            'ac_from'     => $accounts[ $item->ac_from ],
-            'ac_to'       => $accounts[ $item->ac_to ],
+            'ac_from'     => ( null !== $item->ac_from && isset( $accounts[ $item->ac_from ] ) ) ? $accounts[ $item->ac_from ] : '',
+            'ac_to'       => ( null !== $item->ac_to && isset( $accounts[ $item->ac_to ] ) ) ? $accounts[ $item->ac_to ] : '',
             'trn_date'    => $item->trn_date,
             'particulars' => $item->particulars,
             'amount'      => $item->amount,

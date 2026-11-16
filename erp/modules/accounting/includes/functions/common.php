@@ -549,7 +549,7 @@ function erp_acct_exist_people( $email, $types = [] ) {
     $people = erp_get_people_by( 'email', $email );
 
     // this $email belongs to nobody
-    if ( ! $people ) {
+    if ( ! $people || is_wp_error( $people ) || empty( $people->types ) ) {
         return false;
     }
 
@@ -558,7 +558,7 @@ function erp_acct_exist_people( $email, $types = [] ) {
     }
 
     foreach ( $types as $type ) {
-        if ( in_array( $type, $people->types, true ) ) {
+        if ( in_array( $type, (array) $people->types, true ) ) {
             return $type;
         }
     }
@@ -677,4 +677,77 @@ function erp_acct_insert_bank_transaction_charge_into_ledger( $payment_data ) {
             'updated_by'  => $payment_data['updated_by'],
         )
     );
+}
+
+/**
+ * Sanitize the free-text particulars of transaction line items
+ *
+ * Bill lines send their particulars as `description`, the others as `particulars`.
+ *
+ * @since 1.17.12
+ *
+ * @param array $items
+ *
+ * @return array
+ */
+function erp_acct_sanitize_line_items_particulars( $items ) {
+    if ( ! is_array( $items ) ) {
+        return $items;
+    }
+
+    foreach ( $items as $key => $item ) {
+        if ( ! is_array( $item ) ) {
+            continue;
+        }
+
+        foreach ( [ 'particulars', 'description' ] as $field ) {
+            if ( isset( $item[ $field ] ) ) {
+                $items[ $key ][ $field ] = sanitize_textarea_field( $item[ $field ] );
+            }
+        }
+    }
+
+    return $items;
+}
+
+/**
+ * Build the body of an ORDER BY clause for an accounting list query.
+ *
+ * Column names and directions cannot be bound with `$wpdb->prepare()`: a
+ * `%s` placeholder turns them into string literals, which sort nothing (and
+ * a LIMIT bound the same way is silently dropped). Only a real column of
+ * `$table` is accepted, falling back to `$default`, and only ASC or DESC.
+ *
+ * @since 1.18.0
+ *
+ * @param string $orderby Requested column, optionally prefixed with `$alias.`.
+ * @param string $order   ASC or DESC (anything else is DESC).
+ * @param string $table   Full table name.
+ * @param string $default Column used when `$orderby` is not a column of `$table`.
+ * @param string $alias   Table alias used in the query, if any.
+ *
+ * @return string
+ */
+function erp_acct_sql_order_by( $orderby, $order, $table, $default = 'id', $alias = '' ) {
+    global $wpdb;
+
+    static $columns = [];
+
+    if ( ! isset( $columns[ $table ] ) ) {
+        $columns[ $table ] = (array) $wpdb->get_col( "SHOW COLUMNS FROM `{$table}`" ); // phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared
+    }
+
+    $orderby = (string) $orderby;
+
+    if ( $alias && 0 === strpos( $orderby, $alias . '.' ) ) {
+        $orderby = substr( $orderby, strlen( $alias ) + 1 );
+    }
+
+    if ( ! in_array( $orderby, $columns[ $table ], true ) ) {
+        $orderby = $default;
+    }
+
+    $order = 'ASC' === strtoupper( (string) $order ) ? 'ASC' : 'DESC';
+
+    return ( $alias ? $alias . '.' : '' ) . "`{$orderby}` {$order}";
 }

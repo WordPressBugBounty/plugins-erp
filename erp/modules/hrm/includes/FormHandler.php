@@ -410,6 +410,12 @@ class FormHandler {
 		$employee_table = new \WeDevs\ERP\HRM\EmployeeListTable();
 		$action         = $employee_table->current_action();
 
+		// Every employee can view the list, but removing, permanently deleting
+		// and restoring employees is the HR manager's job, as on the REST routes.
+		if ( in_array( $action, array( 'delete', 'permanent_delete', 'restore' ), true ) && ! current_user_can( 'erp_delete_employee' ) ) {
+			wp_die( esc_html__( 'You do not have sufficient permissions to do this action', 'erp' ), '', array( 'response' => 403 ) );
+		}
+
 		if ( $action ) {
 			$req_uri_bulk = ( isset( $_SERVER['REQUEST_URI'] ) ) ? sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '';
 
@@ -1110,6 +1116,11 @@ class FormHandler {
 		$enable_manager = isset( $_POST['enable_manager'] ) ? filter_var( sanitize_text_field( wp_unslash( $_POST['enable_manager'] ) ), FILTER_VALIDATE_BOOLEAN ) : false;
 
 		$user = get_user_by( 'id', $employee_id );
+
+		// An administrator's roles are not an HR manager's to change.
+		if ( ! $user || erp_hr_is_account_above_current_user( $user->ID ) ) {
+			wp_die( esc_html__( 'You do not have sufficient permissions to do this action', 'erp' ) );
+		}
 
 		if ( $enable_manager && ! user_can( $user, $hr_manager_role ) ) {
 			$user->add_role( $hr_manager_role );

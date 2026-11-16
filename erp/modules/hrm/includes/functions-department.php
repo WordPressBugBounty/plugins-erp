@@ -22,6 +22,10 @@ function erp_hr_create_department( $args = [] ) {
 
     $fields = wp_parse_args( $args, $defaults );
 
+    // Sanitize here so every writer (REST, AJAX, CSV import) stores plain text
+    $fields['title']       = sanitize_text_field( $fields['title'] );
+    $fields['description'] = sanitize_textarea_field( $fields['description'] );
+
     // validation
     if ( empty( $fields['title'] ) ) {
         return new WP_Error( 'no-name', __( 'No department name provided.', 'erp' ) );
@@ -241,7 +245,12 @@ function erp_hr_get_department_lead_by_user( $user_id ) {
         $department_lead = $department->get_lead();
     }
 
-    return empty( $department_lead ) ? 0 : $department_lead->id;
+    // An offboarded lead routes nothing: requests and reviews fall back to HR.
+    if ( empty( $department_lead ) || erp_hr_is_offboarded_user( $department_lead->id ) ) {
+        return 0;
+    }
+
+    return $department_lead->id;
 }
 
 /**

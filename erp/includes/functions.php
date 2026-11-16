@@ -715,6 +715,24 @@ function erp_extract_dates( $start_date, $end_date ) {
 		return new WP_Error( 'invalid-date', __( 'Invalid date provided', 'erp' ) );
 	}
 
+	/**
+	 * Longest range, in days, that erp_extract_dates() lists day by day.
+	 *
+	 * A leave or remote work request carries its own dates, so without a
+	 * limit one request for a range thousands of years long tied up the
+	 * server walking it. 0 turns the limit off.
+	 *
+	 * @since 1.18.0
+	 *
+	 * @param int $max_days Default 731 (two years).
+	 */
+	$max_days = (int) apply_filters( 'erp_extract_dates_max_days', 731 );
+
+	if ( $max_days > 0 && $diff->days + 1 > $max_days ) {
+		/* translators: %d: number of days */
+		return new WP_Error( 'date-range-too-long', sprintf( __( 'The date range is too long. Please choose at most %d days.', 'erp' ), $max_days ) );
+	}
+
 	$interval = DateInterval::createFromDateString( '1 day' );
 	$period   = new DatePeriod( $start_date, $interval, $end_date );
 
@@ -890,7 +908,7 @@ function erp_months_dropdown( $title = false ) {
 	}
 
 	for ( $m = 1; $m <= 12; $m++ ) {
-		$months[ $m ] = sprintf( __( '%s', 'erp' ), gmdate( 'F', mktime( 0, 0, 0, $m, 1 ) ) );
+		$months[ $m ] = date_i18n( 'F', mktime( 0, 0, 0, $m, 1 ) );
 	}
 
 	return $months;
@@ -2226,6 +2244,33 @@ function erp_is_module_active( $module_key ) {
 	return isset( $modules[ $module_key ] );
 }
 
+if ( ! function_exists( 'erp_csv_safe_cell' ) ) {
+	/**
+	 * Neutralise a CSV cell that a spreadsheet would run as a formula.
+	 *
+	 * A cell starting with =, +, -, @, a tab or a carriage return runs as a
+	 * formula when the file is opened in Excel or Sheets, so a name or comment
+	 * someone typed could run commands on the reader's machine. Such a cell is
+	 * prefixed with a quote so it shows as text. Plain numbers (-5, +880...)
+	 * and a lone placeholder like "-" are left alone.
+	 *
+	 * @since 1.18.0
+	 *
+	 * @param mixed $value Cell value.
+	 *
+	 * @return string
+	 */
+	function erp_csv_safe_cell( $value ) {
+		$value = (string) $value;
+
+		if ( strlen( $value ) > 1 && ! is_numeric( $value ) && in_array( $value[0], array( '=', '+', '-', '@', "\t", "\r" ), true ) ) {
+			$value = "'" . $value;
+		}
+
+		return $value;
+	}
+}
+
 /**
  * Make csv file from array and force download
  *
@@ -2251,27 +2296,27 @@ function erp_make_csv_file( $items, $file_name, $field_data = true, $type = '' )
 		function ( $column ) {
 			$column = ucwords( str_replace( '_', ' ', $column ) );
 
-			return $column;
+			return erp_csv_safe_cell( $column );
 		},
 		$columns
 	);
 
-	fputcsv( $output, $columns );
+	fputcsv( $output, $columns, ',', '"', '\\' );
 
 	if ( $field_data ) {
 		foreach ( $items as $item ) {
 			$csv_row = array_map(
 				function ( $item_val ) {
 					if ( is_array( $item_val ) ) {
-						return implode( ', ', $item_val );
+						return erp_csv_safe_cell( implode( ', ', $item_val ) );
 					}
 
-					return $item_val;
+					return erp_csv_safe_cell( $item_val );
 				},
 				$item
 			);
 
-			fputcsv( $output, $csv_row );
+			fputcsv( $output, $csv_row, ',', '"', '\\' );
 		}
 	}
 
@@ -2279,7 +2324,7 @@ function erp_make_csv_file( $items, $file_name, $field_data = true, $type = '' )
 
         $sample_data = get_sample_employee_data($items[0]);
         foreach ( $sample_data as $item ) {
-            fputcsv( $output, $item );
+            fputcsv( $output, $item, ',', '"', '\\' );
         }
     }
 	exit();
@@ -3009,11 +3054,9 @@ function erp_build_menu( $items, $active, $component, $dropdown = false ) {
 			admin_url( 'admin.php' )
 		);
 
-		$class     = $active === $item['slug'] ? 'active ' : '';
 		$pro_popup = '';
 		if ( ! empty( $item['pro_popup'] ) ) {
 			$pro_popup = '<span class="pro-popup">Pro</span>';
-			$class    .= ' pro-popup-main ';
 		}
 
 		if ( $dropdown ) {
@@ -3025,7 +3068,13 @@ function erp_build_menu( $items, $active, $component, $dropdown = false ) {
 				),
 				admin_url( 'admin.php' )
 			);
-			$class .= ( ! empty( $_GET['sub-section'] ) && $_GET['sub-section'] === $item['slug'] ) ? 'active ' : '';
+			$class = ( ! empty( $_GET['sub-section'] ) && $_GET['sub-section'] === $item['slug'] ) ? 'active ' : '';
+		} else {
+			$class = $active === $item['slug'] ? 'active ' : '';
+		}
+
+		if ( ! empty( $item['pro_popup'] ) ) {
+			$class .= ' pro-popup-main ';
 		}
 
 		if ( ! empty( $item['direct_link'] ) ) {
@@ -3454,13 +3503,8 @@ function add_enable_disable_section_to_email_column( $email ) {
 	$get_option_id    = $email->get_option_id();
 	$get_option_value = get_option( $get_option_id );
 
-	if ( isset( $get_option_value['is_enable'] ) ) {
-		if ( $get_option_value['is_enable'] === 'yes' ) {
-			$is_enable = ' checked';
-		}
-	} else {
-		$is_enable = '';
-	}
+	// Templates without a saved state are enabled, only an explicit 'no' turns one off
+	$is_enable = ( isset( $get_option_value['is_enable'] ) && 'no' === $get_option_value['is_enable'] ) ? '' : ' checked';
 	$can_not_be_disabled = apply_filters(
 		'email_settings_enable_filter',
 		array(
@@ -3501,28 +3545,23 @@ function add_enable_disable_option_save() {
 		return;
 	}
 
+	if ( ! current_user_can( 'manage_options' ) ) {
+		return;
+	}
+
 	if ( isset( $_POST['save_email_enable_or_disable'] ) && $_POST['save_email_enable_or_disable'] === 'save_email_enable_or_disable' ) {
 		$registered_email = array_keys( wperp()->emailer->get_emails() );
+		$is_enable_email  = isset( $_POST['isEnableEmail'] ) ? array_map( 'sanitize_text_field', wp_unslash( (array) $_POST['isEnableEmail'] ) ) : [];
 
 		foreach ( $registered_email as $remail ) {
 			$cur_email_init   = wperp()->emailer->get_email( $remail );
 			$cur_email_id     = 'erp_email_settings_' . $cur_email_init->id;
 			$cur_email_option = get_option( $cur_email_id );
 
-			if ( isset( $cur_email_option['is_enable'] ) ) {
-				unset( $cur_email_option['is_enable'] );
-				update_option( $cur_email_id, $cur_email_option );
-			}
-		}
-
-		if ( isset( $_POST['isEnableEmail'] ) ) {
-			$is_enable_email = array_map( 'sanitize_text_field', wp_unslash( $_POST['isEnableEmail'] ) );
-
-			foreach ( $is_enable_email as $key => $value ) {
-				$email_arr              = get_option( $key );
-				$email_arr['is_enable'] = 'yes';
-				update_option( $key, $email_arr );
-			}
+			// Store the state explicitly, a missing value means enabled
+			$cur_email_option              = is_array( $cur_email_option ) ? $cur_email_option : [];
+			$cur_email_option['is_enable'] = isset( $is_enable_email[ $cur_email_id ] ) ? 'yes' : 'no';
+			update_option( $cur_email_id, $cur_email_option );
 		}
 	}
 }
@@ -3595,13 +3634,14 @@ function filter_enabled_email( $email ) {
 	}
 	$get_email_settings = get_option( $get_option_id );
 
-	if ( isset( $get_email_settings['is_enable'] ) && $get_email_settings['is_enable'] === 'yes' ) {
+	// Only an explicit 'no' disables a template, templates without a saved state stay enabled
+	if ( ! isset( $get_email_settings['is_enable'] ) || 'no' !== $get_email_settings['is_enable'] ) {
 		return $email;
 	}
 	add_filter(
 		'erp_email_recipient_' . $email->id,
 		function ( $recipient, $object ) {
-			return $recipient;
+			return '';
 		},
 		10,
 		2
@@ -4140,7 +4180,8 @@ function erp_print_js() {
 		 *
 		 * @param string $js JavaScript code.
 		 */
-		echo esc_html( apply_filters( 'erp_queued_js', $js ) );
+		// The queued JS is built server-side and must be printed as a script, not escaped as text.
+		echo apply_filters( 'erp_queued_js', $js ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 		unset( $erp_queued_js );
 	}
@@ -4173,6 +4214,13 @@ function erp_reset_data() {
 			'erp_ac_agency',
 		);
 
+		// Temporarily remove hooks that prevent deletion of users with employee profiles
+		// These hooks are meant to prevent accidental deletion, but during reset we intentionally
+		// want to delete all ERP data including employee profiles
+		$restore_single = remove_action( 'delete_user', 'intercept_single_user_delete', 9 );
+		$restore_bulk   = remove_action( 'admin_init', 'intercept_bulk_wpuser_delete', 8 );
+		$restore_delete = remove_action( 'delete_user', 'erp_hr_employee_on_delete' );
+
 		// Delete users table data related to the employees/people
 		$users = $wpdb->get_results( "SELECT user_id FROM {$wpdb->prefix}erp_peoples WHERE user_id <> 0" );
 
@@ -4199,6 +4247,17 @@ function erp_reset_data() {
 			foreach ( $erp_roles as $erp_role ) {
 				$user->remove_role( $erp_role );
 			}
+		}
+
+		// Restore only the hooks that were attached (they are HR-module hooks).
+		if ( $restore_delete ) {
+			add_action( 'delete_user', 'erp_hr_employee_on_delete' );
+		}
+		if ( $restore_bulk ) {
+			add_action( 'admin_init', 'intercept_bulk_wpuser_delete', 8 );
+		}
+		if ( $restore_single ) {
+			add_action( 'delete_user', 'intercept_single_user_delete', 9 );
 		}
 
 		$tables = $wpdb->get_results(
@@ -4289,10 +4348,17 @@ function erp_reset_data() {
 		$plugin_wp_erp = end( $wp_erp_url ) . '/wp-erp.php';
 		deactivate_plugins( $plugin_wp_erp );
 
+		// Set a flag to prevent installer from recreating default data during reset.
+		// It holds a timestamp, so a reset that dies here cannot block the defaults forever.
+		update_option( 'erp_reset_in_progress', time() );
+
 		// Activate and add deafult modules
 		activate_plugin( $plugin_wp_erp );
 		$all_modules = wperp()->modules->get_modules();
 		update_option( 'erp_modules', $all_modules );
+
+		// Clear the reset flag after activation
+		delete_option( 'erp_reset_in_progress' );
 
 		// If ERP Pro is installed & activated, do the same for this
 		if ( function_exists( 'wp_erp_pro' ) ) {
@@ -4419,3 +4485,32 @@ function erp_load_headway_badge() {
     </script>
     <?php
 }
+
+/**
+ * Apply the legacy 2 MB upload cap to uploads the ERP React admin tags.
+ *
+ * The React admin uploads via the core `/wp/v2/media` endpoint and tags the
+ * request with an `X-ERP-Upload` header. Only those tagged requests are capped
+ * (so normal WP media is untouched), mirroring the old Vue/AjaxHandler 2 MB check.
+ *
+ * This is a consistency check for the React UI, not a security boundary: a
+ * request without the header (any user who can `upload_files` calling
+ * `/wp/v2/media` directly) gets the site's normal upload limits instead.
+ *
+ * @param array $file `$_FILES` entry being uploaded.
+ *
+ * @return array
+ */
+function erp_enforce_react_upload_size( $file ) {
+    if ( empty( $_SERVER['HTTP_X_ERP_UPLOAD'] ) ) {
+        return $file;
+    }
+
+    $limit = 2 * 1024 * 1024; // 2 MB — legacy value.
+    if ( isset( $file['size'] ) && (int) $file['size'] > $limit ) {
+        $file['error'] = __( 'File size cannot be greater than 2MB.', 'erp' );
+    }
+
+    return $file;
+}
+add_filter( 'wp_handle_upload_prefilter', 'erp_enforce_react_upload_size' );

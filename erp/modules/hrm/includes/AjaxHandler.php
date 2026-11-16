@@ -797,6 +797,8 @@ class AjaxHandler {
 			if ( ! current_user_can( 'erp_edit_employee', $user_id ) ) {
 				$this->send_error( __( 'You do not have sufficient permissions to do this action', 'erp' ) );
 			}
+
+			$posted = erp_hr_strip_restricted_employee_fields( $posted );
 		} elseif ( ! current_user_can( 'erp_create_employee' ) ) {
 				$this->send_error( __( 'You do not have sufficient permissions to do this action', 'erp' ) );
 		}
@@ -946,7 +948,7 @@ class AjaxHandler {
 		$user_id = isset( $_REQUEST['user_id'] ) ? intval( $_REQUEST['user_id'] ) : 0;
 
 		// Check permission
-		if ( ! current_user_can( 'erp_edit_employee', $user_id ) ) {
+		if ( ! current_user_can( 'erp_manage_jobinfo', $user_id ) ) {
 			$this->send_error( __( 'You do not have sufficient permissions to do this action', 'erp' ) );
 		}
 
@@ -1006,7 +1008,7 @@ class AjaxHandler {
 		$user_id = isset( $_REQUEST['user_id'] ) ? intval( $_REQUEST['user_id'] ) : 0;
 
 		// Check permission
-		if ( ! current_user_can( 'erp_edit_employee', $user_id ) ) {
+		if ( ! current_user_can( 'erp_manage_jobinfo', $user_id ) ) {
 			$this->send_error( __( 'You do not have sufficient permissions to do this action', 'erp' ) );
 		}
 
@@ -1058,6 +1060,15 @@ class AjaxHandler {
 				)
 			)
 		);
+
+		if ( empty( $history ) ) {
+			$this->send_error( __( 'No history found!', 'erp' ) );
+		}
+
+		// The HR nonce is given to every employee, so check the history owner too (self or HR manager)
+		if ( ! current_user_can( 'erp_view_jobinfo', (int) $history->user_id ) ) {
+			$this->send_error( __( 'You do not have sufficient permissions to do this action', 'erp' ) );
+		}
 
 		$history->date = erp_current_datetime()->modify( $history->date )->format( 'Y-m-d' );
 
@@ -1163,7 +1174,7 @@ class AjaxHandler {
 		$user_id    = isset( $_POST['user_id'] ) ? intval( $_POST['user_id'] ) : 0;
 
 		// Check permission
-		if ( ! current_user_can( 'erp_edit_employee', $user_id ) ) {
+		if ( ! current_user_can( 'erp_manage_jobinfo', $user_id ) ) {
 			$this->send_error( __( 'You do not have sufficient permissions to do this action', 'erp' ) );
 		}
 
@@ -1193,7 +1204,7 @@ class AjaxHandler {
 		$user_id = isset( $_POST['user_id'] ) ? intval( $_POST['user_id'] ) : 0;
 
 		// Check permission
-		if ( ! current_user_can( 'erp_edit_employee', $user_id ) ) {
+		if ( ! current_user_can( 'erp_manage_jobinfo', $user_id ) ) {
 			$this->send_error( __( 'You do not have sufficient permissions to do this action', 'erp' ) );
 		}
 
@@ -1362,6 +1373,7 @@ class AjaxHandler {
 		\WeDevs\ERP\HRM\Models\Employee::where( 'user_id', $id )->update( array( 'status' => 'active' ) );
 
 		delete_user_meta( $id, '_erp_hr_termination' );
+		delete_user_meta( $id, '_erp_hr_termination_scheduled' );
 
 		$this->send_success();
 	}
@@ -1541,6 +1553,11 @@ class AjaxHandler {
 	public function birthday_wish() {
 		$this->verify_hrm_nonce();
 
+		// The HR nonce is given to every employee, and this mails any user id, so keep it to HR managers
+		if ( ! current_user_can( erp_hr_get_manager_role() ) ) {
+			$this->send_error( __( 'You do not have sufficient permissions to do this action', 'erp' ) );
+		}
+
 		$employee_user_id = ( isset( $_POST['employee_user_id'] ) ) ? intval( wp_unslash( $_POST['employee_user_id'] ) ) : '';
 
 		// To prevent sending wish multiple time
@@ -1605,9 +1622,15 @@ class AjaxHandler {
 	public function employee_delete_performance() {
 		$this->verify_hrm_nonce();
 
-		$id      = isset( $_POST['id'] ) ? intval( $_POST['id'] ) : 0;
-		$user_id = isset( $_POST['user_id'] ) ? intval( $_POST['user_id'] ) : 0;
+		$id          = isset( $_POST['id'] ) ? intval( $_POST['id'] ) : 0;
+		$performance = \WeDevs\ERP\HRM\Models\Performance::find( $id );
 
+		if ( ! $performance ) {
+			$this->send_error( __( 'Performance review does not exist.', 'erp' ) );
+		}
+
+		// Check against the employee the review belongs to, not a user_id sent with the request
+		$user_id            = (int) $performance->employee_id;
 		$department_lead_id = erp_hr_get_department_lead_by_user( $user_id );
 
 		// Check permission
@@ -1618,7 +1641,7 @@ class AjaxHandler {
 			$this->send_error( __( 'You do not have sufficient permissions to do this action', 'erp' ) );
 		}
 
-		\WeDevs\ERP\HRM\Models\Performance::find( $id )->delete();
+		$performance->delete();
 
 		$this->send_success();
 	}
@@ -2194,6 +2217,11 @@ class AjaxHandler {
 		$policy  = isset( $_POST['leave_policy'] ) ? intval( $_POST['leave_policy'] ) : 'all';
 		$status  = isset( $_POST['status'] ) ? sanitize_text_field( wp_unslash( $_POST['status'] ) ) : 'all';
 
+		// The leave tab is only shown to the employee or an HR manager, so the request must match that
+		if ( ! current_user_can( 'erp_view_employee', $user_id ) ) {
+			$this->send_error( __( 'You do not have sufficient permissions to do this action', 'erp' ) );
+		}
+
 		$args = array(
 			'f_year'  => $year,
 			'user_id' => $user_id,
@@ -2274,7 +2302,8 @@ class AjaxHandler {
 
 		$holidays        = $holiday->get()->toArray();
 		$match_holidays  = array();
-		$filter_holidays = apply_filters( 'filter_holidays', array(), $start_date, $end_date );
+		// The viewer's own calendar: their shift weekend applies.
+		$filter_holidays = apply_filters( 'filter_holidays', array(), $start_date, $end_date, $user_id );
 
 		if ( empty( $filter_holidays ) ) {
 			$weekends  = array();

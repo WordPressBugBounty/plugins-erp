@@ -78,6 +78,15 @@ class WeDevsERPInstaller {
             set_transient( '_erp_activation_redirect', 1, 30 );
         }
 
+        // Stamp the default HR admin interface once: a brand-new install lands on
+        // the redesigned React admin after onboarding, an existing site stays on
+        // the UI it already knows until a user opts in from the switch banner.
+        // Values mirror UiEngineResolver::ENGINE_REACT / ENGINE_LEGACY (the HRM
+        // module is not loaded during activation, so they are literals here).
+        if ( false === get_option( 'erp_hr_ui_default_engine' ) ) {
+            update_option( 'erp_hr_ui_default_engine', is_null( $current_erp_version ) ? 'react' : 'vue' );
+        }
+
         // update to latest version
         $latest_version = erp_get_version();
         update_option( 'wp_erp_version', $latest_version );
@@ -626,6 +635,7 @@ Account Manager
                 leave_request_id bigint(20) UNSIGNED NOT NULL,
                 approval_status_id tinyint(3) UNSIGNED NOT NULL DEFAULT '0',
                 approved_by bigint(20) UNSIGNED DEFAULT NULL,
+                forward_to bigint(20) UNSIGNED DEFAULT NULL,
                 `message` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
                 created_at int(11) DEFAULT NULL,
                 updated_at int(11) DEFAULT NULL,
@@ -812,7 +822,8 @@ Account Manager
                 PRIMARY KEY (id),
                 KEY `user_id` (`user_id`),
                 KEY `post_id` (`post_id`),
-                KEY `status` (`status`)
+                KEY `status` (`status`),
+                KEY `user_status_post` (`user_id`,`status`,`post_id`)
             ) $charset_collate;",
 
             "CREATE TABLE `{$wpdb->prefix}erp_peoples` (
@@ -1762,7 +1773,8 @@ Account Manager
         }
 
         // Add Standard Preset Data for Department in erp_hr_depts
-        if ( ! $wpdb->get_var( "SELECT id FROM `{$wpdb->prefix}erp_hr_depts` LIMIT 0, 1" ) ) {
+        // Skip if reset is in progress to prevent recreating default data
+        if ( (int) get_option( 'erp_reset_in_progress', 0 ) < time() - 300 && ! $wpdb->get_var( "SELECT id FROM `{$wpdb->prefix}erp_hr_depts` LIMIT 0, 1" ) ) {
             $wpdb->query(
                 "INSERT INTO `{$wpdb->prefix}erp_hr_depts` (`id`, `title`, `created_at`, `updated_at`)
                 VALUES (1, 'General Management', '{$current_date}', '{$current_date}'),
@@ -1778,7 +1790,8 @@ Account Manager
         }
 
         // Add Standard Preset Data for Designation in erp_hr_designations
-        if ( ! $wpdb->get_var( "SELECT id FROM `{$wpdb->prefix}erp_hr_designations` LIMIT 0, 1" ) ) {
+        // Skip if reset is in progress to prevent recreating default data
+        if ( (int) get_option( 'erp_reset_in_progress', 0 ) < time() - 300 && ! $wpdb->get_var( "SELECT id FROM `{$wpdb->prefix}erp_hr_designations` LIMIT 0, 1" ) ) {
             $wpdb->query(
                 "INSERT INTO `{$wpdb->prefix}erp_hr_designations` (`id`, `title`, `created_at`, `updated_at`)
                 VALUES (1, 'President', '{$current_date}', '{$current_date}'),

@@ -11,7 +11,11 @@ use WeDevs\ERP\HRM\AjaxHandler;
 use WeDevs\ERP\HRM\FormHandler;
 use WeDevs\ERP\HRM\Announcement;
 use WeDevs\ERP\HRM\Admin\AdminMenu;
+use WeDevs\ERP\HRM\Admin\Enqueue;
+use WeDevs\ERP\HRM\Admin\UiEngineResolver;
+use WeDevs\ERP\HRM\Admin\WelcomeNotice;
 use WeDevs\ERP\HRM\Admin\UserProfile;
+use WeDevs\ERP\HRM\API\V2\Manager as V2Manager;
 use WeDevs\ERP\Framework\Traits\Hooker;
 
 /**
@@ -68,6 +72,21 @@ class HRM {
         define( 'WPERP_HRM_VIEWS', __DIR__ . '/views' );
         define( 'WPERP_HRM_JS_TMPL', WPERP_HRM_VIEWS . '/js-templates' );
         define( 'WPERP_HRM_ASSETS', plugins_url( '/assets', __FILE__ ) );
+        // Free HR version constant — pro gates against it via WPERP_HRM_MIN_VERSION.
+        if ( ! \defined( 'WPERP_HRM_VERSION' ) ) {
+            define( 'WPERP_HRM_VERSION', \defined( 'WPERP_VERSION' ) ? WPERP_VERSION : '1.0.0' );
+        }
+        // Minimum free HR version that ships the v2 REST + React admin contract.
+        // The React UI is introduced in 2.0.0; pro refuses to load its React
+        // bundles against an older free (see wp-erp-pro version guard).
+        if ( ! \defined( 'WPERP_HRM_MIN_VERSION' ) ) {
+            define( 'WPERP_HRM_MIN_VERSION', '2.0.0' );
+        }
+        // Minimum WP ERP Pro version that registers the HR v1 REST routes, which
+        // moved out of free. Older Pro keeps loading; only its REST features stop.
+        if ( ! \defined( 'WPERP_PRO_MIN_VERSION' ) ) {
+            define( 'WPERP_PRO_MIN_VERSION', '2.0.0' );
+        }
     }
 
     /**
@@ -107,6 +126,57 @@ class HRM {
         $this->action( 'admin_enqueue_scripts', 'admin_scripts' );
         $this->action( 'admin_footer', 'admin_js_templates' );
         $this->filter( 'erp_rest_api_controllers', 'load_hrm_rest_controllers' );
+
+        // Redesign — register the React engine resolver + the erp/v2 REST manager.
+        // The legacy admin_scripts() path stays intact; resolver picks engine per request.
+        UiEngineResolver::instance()->register_hooks();
+        WelcomeNotice::instance()->register_hooks();
+        V2Manager::init();
+
+        $this->action( 'admin_notices', 'outdated_pro_notice' );
+    }
+
+    /**
+     * Warn when an older WP ERP Pro is active.
+     *
+     * The HR v1 REST routes moved to Pro (WPERP_PRO_MIN_VERSION), so an older Pro
+     * loses the screens that call them until it is updated. This mirrors Pro's
+     * own check against WPERP_HRM_MIN_VERSION. Nothing is unloaded: an older Pro
+     * keeps running, only its REST features stop, so the site never fatals.
+     *
+     * A Pro build that ships the v1 routes (its route manager class exists) is
+     * never warned about, even when its version is still below the minimum, as
+     * a development build is until it is released. A Pro at or above the
+     * minimum without that class has incomplete files: it is asked to be
+     * reinstalled, not updated.
+     *
+     * @since 1.18.0
+     *
+     * @return void
+     */
+    public function outdated_pro_notice() {
+        if ( ! class_exists( 'WP_ERP_Pro' ) || class_exists( '\WeDevs\ERP_PRO\Feature\HRM\Api\V1\Manager' ) || ! current_user_can( 'update_plugins' ) ) {
+            return;
+        }
+
+        $installed = defined( 'ERP_PRO_PLUGIN_VERSION' ) ? (string) ERP_PRO_PLUGIN_VERSION : '';
+
+        if ( '' === $installed || version_compare( $installed, WPERP_PRO_MIN_VERSION, '<' ) ) {
+            $message = sprintf(
+                /* translators: 1: required WP ERP Pro version, 2: installed WP ERP Pro version. */
+                __( 'WP ERP needs WP ERP Pro %1$s or newer, and you have %2$s. Pro features that use the HR REST API (HR Frontend, Attendance, Document Manager, Recruitment and the mobile app) will not work until you update WP ERP Pro.', 'erp' ),
+                WPERP_PRO_MIN_VERSION,
+                '' !== $installed ? $installed : __( 'an older version', 'erp' )
+            );
+        } else {
+            $message = sprintf(
+                /* translators: %s: installed WP ERP Pro version. */
+                __( 'WP ERP Pro %s is missing its HR REST API files. Pro features that use it (HR Frontend, Attendance, Document Manager, Recruitment and the mobile app) will not work until you reinstall WP ERP Pro.', 'erp' ),
+                $installed
+            );
+        }
+
+        printf( '<div class="notice notice-warning"><p>%s</p></div>', esc_html( $message ) );
     }
 
     /**
@@ -116,6 +186,10 @@ class HRM {
      */
     private function init_filters() {
         add_filter( 'erp_settings_pages', [ $this, 'add_settings_page' ] );
+        // Registered here, not in Settings: the settings data request reads the
+        // fields without constructing the HR Settings page.
+        add_filter( 'default_option_erp_hr_ui_engine', [ Settings::class, 'default_ui_engine' ] );
+        add_filter( 'option_erp_hr_ui_engine', [ Settings::class, 'default_ui_engine' ] );
     }
 
     /**
@@ -154,6 +228,17 @@ class HRM {
     public function admin_scripts( $hook ) {
         if ( 'wp-erp_page_erp-hr' !== $hook ) {
             return;
+        }
+
+        // Redesign — React engine path. Returns early when the page renders
+        // the new React shell. Legacy enqueue body below stays byte-for-byte.
+        if ( UiEngineResolver::ENGINE_REACT === UiEngineResolver::instance()->resolve_engine( 'erp-hr' ) ) {
+            if ( Enqueue::for_page( 'erp-hr' ) ) {
+                return;
+            }
+            // Fall through to legacy enqueue if the React bundle is missing
+            // (build artifact absent / dev mode). Enqueue::for_page() emits a
+            // WP_DEBUG admin notice in that case.
         }
 
         $section     = isset( $_GET['section'] ) ? sanitize_text_field( wp_unslash( $_GET['section'] ) )        : 'dashboard';
@@ -303,15 +388,20 @@ class HRM {
 
         wp_localize_script( 'wp-erp-hr', 'wpErpHr', $localize_script );
 
-        wp_localize_script( 'erp-hr-requests', 'erpHrReq', [
-            'nonce'          => wp_create_nonce( 'wp-erp-hr-nonce' ),
-            'ajaxurl'        => admin_url( 'admin-ajax.php' ),
-            'adminurl'       => admin_url( 'admin.php' ),
-            'request_types'  => erp_hr_get_employee_requests_types(),
-            'employees'      => erp_hr_get_employees_dropdown_raw(),
-            'filterEmployee' => __( 'Employee', 'erp' ),
-            'clear'          => __( 'Clear', 'erp' )
-        ] );
+        // Only the Requests page uses this, and building it reads every leave
+        // request, so skip it on the other HR pages (wp_localize_script would
+        // drop it anyway, but only after the queries had run).
+        if ( wp_script_is( 'erp-hr-requests', 'enqueued' ) ) {
+            wp_localize_script( 'erp-hr-requests', 'erpHrReq', [
+                'nonce'          => wp_create_nonce( 'wp-erp-hr-nonce' ),
+                'ajaxurl'        => admin_url( 'admin-ajax.php' ),
+                'adminurl'       => admin_url( 'admin.php' ),
+                'request_types'  => erp_hr_get_employee_requests_types(),
+                'employees'      => erp_hr_get_employees_dropdown_raw(),
+                'filterEmployee' => __( 'Employee', 'erp' ),
+                'clear'          => __( 'Clear', 'erp' )
+            ] );
+        }
 
         wp_enqueue_style( 'wp-color-picker' );
         wp_enqueue_style( 'erp-select2' );
@@ -420,27 +510,20 @@ class HRM {
     /**
      * Load HRM rest controllers
      *
+     * The HR `erp/v1` routes moved to WP ERP Pro in 2.0.0: their clients are
+     * Pro features (the mobile app and the HR Frontend), and WP ERP's own
+     * screens use `erp/v2`. The filter stays for code that adds controllers
+     * through it.
+     *
      * @since 1.3.0
+     * @since 2.0.0 The HR v1 controllers are registered by WP ERP Pro.
      *
      * @param $controller
      *
      * @return array
      */
     public function load_hrm_rest_controllers( $controller ) {
-        $hrm_controller = [
-            '\WeDevs\ERP\HRM\API\EmployeesController',
-            '\WeDevs\ERP\HRM\API\DepartmentsController',
-            '\WeDevs\ERP\HRM\API\DesignationsController',
-            '\WeDevs\ERP\HRM\API\Birthdays_Controller',
-            '\WeDevs\ERP\HRM\API\HRMReportsController',
-            '\WeDevs\ERP\HRM\API\LeaveEntitlementsController',
-            '\WeDevs\ERP\HRM\API\LeaveHolidaysController',
-            '\WeDevs\ERP\HRM\API\LeavePoliciesController',
-            '\WeDevs\ERP\HRM\API\LeaveRequestsController',
-            '\WeDevs\ERP\HRM\API\AnnouncementsController',
-            '\WeDevs\ERP\HRM\API\CompanyController',
-        ];
-        $hrm_controller = apply_filters( 'erp_hrm_rest_api_controllers', $hrm_controller );
+        $hrm_controller = apply_filters( 'erp_hrm_rest_api_controllers', [] );
 
         return array_merge( $controller, $hrm_controller );
     }

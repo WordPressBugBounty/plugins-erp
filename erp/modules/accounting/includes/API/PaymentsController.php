@@ -324,11 +324,11 @@ class PaymentsController extends \WeDevs\ERP\API\REST_Controller {
         }
 
         if ( isset( $request['line_items'] ) ) {
-            $prepared_item['line_items'] = $request['line_items'];
+            $prepared_item['line_items'] = erp_acct_sanitize_line_items_particulars( $request['line_items'] );
         }
 
         if ( isset( $request['particulars'] ) ) {
-            $prepared_item['particulars'] = $request['particulars'];
+            $prepared_item['particulars'] = sanitize_textarea_field( $request['particulars'] );
         }
 
         if ( isset( $request['invoice_no'] ) ) {
@@ -416,10 +416,10 @@ class PaymentsController extends \WeDevs\ERP\API\REST_Controller {
             'transaction_charge'    => $item->transaction_charge,
             'ref'                   => $item->ref,
             'account'               => erp_acct_get_ledger_name_by_id( $item->trn_by_ledger_id ),
-            'line_items'            => $item->line_items,
+            'line_items'            => isset( $item->line_items ) ? $item->line_items : [],
             'attachments'           => maybe_unserialize( $item->attachments ),
             'status'                => erp_acct_get_trn_status_by_id( $item->status ),
-            'pdf_link'              => $item->pdf_link,
+            'pdf_link'              => isset( $item->pdf_link ) ? $item->pdf_link : '',
             'type'                  => ! empty( $item->type ) ? $item->type : 'payment',
             'particulars'           => $item->particulars,
             'created_at'            => $item->created_at,
