@@ -2,14 +2,14 @@
 # This file is distributed under the GPL2.
 msgid ""
 msgstr ""
-"Project-Id-Version: ERP 2.0.0\n"
+"Project-Id-Version: ERP 2.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-erp\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-16T09:17:34+00:00\n"
+"POT-Creation-Date: 2026-11-23T18:09:13+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: erp\n"
@@ -16401,7 +16401,7 @@ msgstr ""
 #: includes/Admin/AddProMenu.php:342
 #: modules/hrm/includes/Admin/AdminMenu.php:223
 #: modules/hrm/views/leave/calendar.php:58
-#: modules/hrm/assets/dist-react/966.js:2
+#: modules/hrm/assets/dist-react/813.js:2
 #: modules/hrm/assets/dist-react/employees.js:3
 msgid "Calendar"
 msgstr ""
@@ -16498,37 +16498,37 @@ msgstr ""
 #: modules/crm/includes/AjaxHandler.php:122
 #: modules/crm/includes/AjaxHandler.php:243
 #: modules/crm/includes/AjaxHandler.php:289
-#: modules/crm/includes/AjaxHandler.php:406
-#: modules/crm/includes/AjaxHandler.php:418
-#: modules/crm/includes/AjaxHandler.php:602
-#: modules/crm/includes/AjaxHandler.php:692
-#: modules/crm/includes/AjaxHandler.php:738
-#: modules/crm/includes/AjaxHandler.php:761
-#: modules/crm/includes/AjaxHandler.php:788
-#: modules/crm/includes/AjaxHandler.php:822
-#: modules/crm/includes/AjaxHandler.php:914
-#: modules/crm/includes/AjaxHandler.php:971
-#: modules/crm/includes/AjaxHandler.php:1015
-#: modules/crm/includes/AjaxHandler.php:1052
-#: modules/crm/includes/AjaxHandler.php:1080
-#: modules/crm/includes/AjaxHandler.php:1284
-#: modules/crm/includes/AjaxHandler.php:1315
-#: modules/crm/includes/AjaxHandler.php:1350
-#: modules/crm/includes/AjaxHandler.php:1373
-#: modules/crm/includes/AjaxHandler.php:1385
-#: modules/crm/includes/AjaxHandler.php:1648
-#: modules/crm/includes/AjaxHandler.php:1665
-#: modules/crm/includes/AjaxHandler.php:1687
-#: modules/crm/includes/AjaxHandler.php:1749
-#: modules/crm/includes/AjaxHandler.php:1818
-#: modules/crm/includes/AjaxHandler.php:1845
-#: modules/crm/includes/AjaxHandler.php:1863
-#: modules/crm/includes/AjaxHandler.php:1884
-#: modules/crm/includes/AjaxHandler.php:1911
-#: modules/crm/includes/AjaxHandler.php:1994
-#: modules/crm/includes/AjaxHandler.php:2034
-#: modules/crm/includes/AjaxHandler.php:2087
-#: modules/crm/includes/AjaxHandler.php:2117
+#: modules/crm/includes/AjaxHandler.php:408
+#: modules/crm/includes/AjaxHandler.php:420
+#: modules/crm/includes/AjaxHandler.php:604
+#: modules/crm/includes/AjaxHandler.php:694
+#: modules/crm/includes/AjaxHandler.php:740
+#: modules/crm/includes/AjaxHandler.php:763
+#: modules/crm/includes/AjaxHandler.php:790
+#: modules/crm/includes/AjaxHandler.php:824
+#: modules/crm/includes/AjaxHandler.php:916
+#: modules/crm/includes/AjaxHandler.php:973
+#: modules/crm/includes/AjaxHandler.php:1017
+#: modules/crm/includes/AjaxHandler.php:1054
+#: modules/crm/includes/AjaxHandler.php:1082
+#: modules/crm/includes/AjaxHandler.php:1286
+#: modules/crm/includes/AjaxHandler.php:1317
+#: modules/crm/includes/AjaxHandler.php:1352
+#: modules/crm/includes/AjaxHandler.php:1375
+#: modules/crm/includes/AjaxHandler.php:1387
+#: modules/crm/includes/AjaxHandler.php:1650
+#: modules/crm/includes/AjaxHandler.php:1667
+#: modules/crm/includes/AjaxHandler.php:1689
+#: modules/crm/includes/AjaxHandler.php:1751
+#: modules/crm/includes/AjaxHandler.php:1820
+#: modules/crm/includes/AjaxHandler.php:1847
+#: modules/crm/includes/AjaxHandler.php:1865
+#: modules/crm/includes/AjaxHandler.php:1886
+#: modules/crm/includes/AjaxHandler.php:1913
+#: modules/crm/includes/AjaxHandler.php:1996
+#: modules/crm/includes/AjaxHandler.php:2036
+#: modules/crm/includes/AjaxHandler.php:2089
+#: modules/crm/includes/AjaxHandler.php:2119
 #: modules/crm/includes/Subscription.php:258
 #: modules/crm/includes/functions-customer.php:3558
 #: modules/hrm/includes/AjaxHandler.php:173
@@ -16555,31 +16555,32 @@ msgstr ""
 #: modules/hrm/includes/AjaxHandler.php:1178
 #: modules/hrm/includes/AjaxHandler.php:1208
 #: modules/hrm/includes/AjaxHandler.php:1255
-#: modules/hrm/includes/AjaxHandler.php:1304
-#: modules/hrm/includes/AjaxHandler.php:1340
-#: modules/hrm/includes/AjaxHandler.php:1370
-#: modules/hrm/includes/AjaxHandler.php:1392
-#: modules/hrm/includes/AjaxHandler.php:1451
-#: modules/hrm/includes/AjaxHandler.php:1528
-#: modules/hrm/includes/AjaxHandler.php:1558
-#: modules/hrm/includes/AjaxHandler.php:1593
-#: modules/hrm/includes/AjaxHandler.php:1641
-#: modules/hrm/includes/AjaxHandler.php:1661
-#: modules/hrm/includes/AjaxHandler.php:1710
-#: modules/hrm/includes/AjaxHandler.php:1733
-#: modules/hrm/includes/AjaxHandler.php:1797
-#: modules/hrm/includes/AjaxHandler.php:1820
-#: modules/hrm/includes/AjaxHandler.php:1865
-#: modules/hrm/includes/AjaxHandler.php:1888
-#: modules/hrm/includes/AjaxHandler.php:1937
-#: modules/hrm/includes/AjaxHandler.php:2163
-#: modules/hrm/includes/AjaxHandler.php:2222
-#: modules/hrm/includes/AjaxHandler.php:2411
-#: modules/hrm/includes/AjaxHandler.php:2537
-#: modules/hrm/includes/AjaxHandler.php:2646
-#: modules/hrm/includes/AjaxHandler.php:2675
-#: modules/hrm/includes/AjaxHandler.php:2715
-#: modules/hrm/includes/AjaxHandler.php:2759
+#: modules/hrm/includes/AjaxHandler.php:1281
+#: modules/hrm/includes/AjaxHandler.php:1310
+#: modules/hrm/includes/AjaxHandler.php:1346
+#: modules/hrm/includes/AjaxHandler.php:1376
+#: modules/hrm/includes/AjaxHandler.php:1398
+#: modules/hrm/includes/AjaxHandler.php:1457
+#: modules/hrm/includes/AjaxHandler.php:1534
+#: modules/hrm/includes/AjaxHandler.php:1564
+#: modules/hrm/includes/AjaxHandler.php:1599
+#: modules/hrm/includes/AjaxHandler.php:1647
+#: modules/hrm/includes/AjaxHandler.php:1667
+#: modules/hrm/includes/AjaxHandler.php:1716
+#: modules/hrm/includes/AjaxHandler.php:1739
+#: modules/hrm/includes/AjaxHandler.php:1803
+#: modules/hrm/includes/AjaxHandler.php:1826
+#: modules/hrm/includes/AjaxHandler.php:1871
+#: modules/hrm/includes/AjaxHandler.php:1894
+#: modules/hrm/includes/AjaxHandler.php:1943
+#: modules/hrm/includes/AjaxHandler.php:2169
+#: modules/hrm/includes/AjaxHandler.php:2228
+#: modules/hrm/includes/AjaxHandler.php:2417
+#: modules/hrm/includes/AjaxHandler.php:2543
+#: modules/hrm/includes/AjaxHandler.php:2652
+#: modules/hrm/includes/AjaxHandler.php:2681
+#: modules/hrm/includes/AjaxHandler.php:2721
+#: modules/hrm/includes/AjaxHandler.php:2765
 #: modules/hrm/includes/FormHandler.php:206
 #: modules/hrm/includes/FormHandler.php:271
 #: modules/hrm/includes/FormHandler.php:326
@@ -16674,40 +16675,40 @@ msgstr ""
 #: modules/crm/includes/AjaxHandler.php:239
 #: modules/crm/includes/AjaxHandler.php:285
 #: modules/crm/includes/AjaxHandler.php:316
-#: modules/crm/includes/AjaxHandler.php:402
-#: modules/crm/includes/AjaxHandler.php:433
-#: modules/crm/includes/AjaxHandler.php:508
-#: modules/crm/includes/AjaxHandler.php:545
-#: modules/crm/includes/AjaxHandler.php:598
-#: modules/crm/includes/AjaxHandler.php:686
-#: modules/crm/includes/AjaxHandler.php:731
-#: modules/crm/includes/AjaxHandler.php:751
-#: modules/crm/includes/AjaxHandler.php:784
-#: modules/crm/includes/AjaxHandler.php:818
-#: modules/crm/includes/AjaxHandler.php:857
-#: modules/crm/includes/AjaxHandler.php:910
-#: modules/crm/includes/AjaxHandler.php:956
-#: modules/crm/includes/AjaxHandler.php:1010
-#: modules/crm/includes/AjaxHandler.php:1047
-#: modules/crm/includes/AjaxHandler.php:1075
-#: modules/crm/includes/AjaxHandler.php:1107
-#: modules/crm/includes/AjaxHandler.php:1124
-#: modules/crm/includes/AjaxHandler.php:1167
-#: modules/crm/includes/AjaxHandler.php:1206
-#: modules/crm/includes/AjaxHandler.php:1238
-#: modules/crm/includes/AjaxHandler.php:1279
-#: modules/crm/includes/AjaxHandler.php:1345
-#: modules/crm/includes/AjaxHandler.php:1644
-#: modules/crm/includes/AjaxHandler.php:1683
-#: modules/crm/includes/AjaxHandler.php:1745
-#: modules/crm/includes/AjaxHandler.php:1814
-#: modules/crm/includes/AjaxHandler.php:1841
-#: modules/crm/includes/AjaxHandler.php:1880
-#: modules/crm/includes/AjaxHandler.php:1907
-#: modules/crm/includes/AjaxHandler.php:1949
-#: modules/crm/includes/AjaxHandler.php:1990
-#: modules/crm/includes/AjaxHandler.php:2030
-#: modules/crm/includes/AjaxHandler.php:2083
+#: modules/crm/includes/AjaxHandler.php:404
+#: modules/crm/includes/AjaxHandler.php:435
+#: modules/crm/includes/AjaxHandler.php:510
+#: modules/crm/includes/AjaxHandler.php:547
+#: modules/crm/includes/AjaxHandler.php:600
+#: modules/crm/includes/AjaxHandler.php:688
+#: modules/crm/includes/AjaxHandler.php:733
+#: modules/crm/includes/AjaxHandler.php:753
+#: modules/crm/includes/AjaxHandler.php:786
+#: modules/crm/includes/AjaxHandler.php:820
+#: modules/crm/includes/AjaxHandler.php:859
+#: modules/crm/includes/AjaxHandler.php:912
+#: modules/crm/includes/AjaxHandler.php:958
+#: modules/crm/includes/AjaxHandler.php:1012
+#: modules/crm/includes/AjaxHandler.php:1049
+#: modules/crm/includes/AjaxHandler.php:1077
+#: modules/crm/includes/AjaxHandler.php:1109
+#: modules/crm/includes/AjaxHandler.php:1126
+#: modules/crm/includes/AjaxHandler.php:1169
+#: modules/crm/includes/AjaxHandler.php:1208
+#: modules/crm/includes/AjaxHandler.php:1240
+#: modules/crm/includes/AjaxHandler.php:1281
+#: modules/crm/includes/AjaxHandler.php:1347
+#: modules/crm/includes/AjaxHandler.php:1646
+#: modules/crm/includes/AjaxHandler.php:1685
+#: modules/crm/includes/AjaxHandler.php:1747
+#: modules/crm/includes/AjaxHandler.php:1816
+#: modules/crm/includes/AjaxHandler.php:1843
+#: modules/crm/includes/AjaxHandler.php:1882
+#: modules/crm/includes/AjaxHandler.php:1909
+#: modules/crm/includes/AjaxHandler.php:1951
+#: modules/crm/includes/AjaxHandler.php:1992
+#: modules/crm/includes/AjaxHandler.php:2032
+#: modules/crm/includes/AjaxHandler.php:2085
 #: modules/crm/includes/ContactForms/ERPSettingsContactForms.php:182
 #: modules/crm/includes/ContactForms/ERPSettingsContactForms.php:252
 #: modules/crm/includes/Subscription.php:253
@@ -16722,7 +16723,7 @@ msgstr ""
 #: includes/Admin/Ajax.php:755
 #: includes/Settings/Ajax.php:340
 #: modules/hrm/includes/API/V2/EmployeeUserController.php:116
-#: modules/hrm/includes/AjaxHandler.php:1398
+#: modules/hrm/includes/AjaxHandler.php:1404
 msgid "No email address provided"
 msgstr ""
 
@@ -16840,7 +16841,7 @@ msgstr ""
 
 #: includes/Admin/AuditlogListTable.php:101
 #: modules/hrm/assets/dist-react/170.js:1
-#: modules/hrm/assets/dist-react/966.js:1
+#: modules/hrm/assets/dist-react/813.js:1
 msgid "Today"
 msgstr ""
 
@@ -16855,8 +16856,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/490.js:3
 #: modules/hrm/assets/dist-react/503.js:7
 #: modules/hrm/assets/dist-react/575.js:12
+#: modules/hrm/assets/dist-react/813.js:2
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:2
 msgid "This Month"
 msgstr ""
 
@@ -17212,11 +17213,11 @@ msgstr ""
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/722.js:1
 #: modules/hrm/assets/dist-react/763.js:1
+#: modules/hrm/assets/dist-react/813.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
 #: modules/hrm/assets/dist-react/910.js:5
 #: modules/hrm/assets/dist-react/950.js:1
-#: modules/hrm/assets/dist-react/966.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 #: modules/hrm/assets/dist-react/employees.js:2
 msgid "All"
 msgstr ""
@@ -17322,7 +17323,7 @@ msgstr ""
 #: modules/crm/views/js-templates/new-customer.php:242
 #: modules/hrm/includes/AjaxHandler.php:508
 #: modules/hrm/includes/AjaxHandler.php:551
-#: modules/hrm/includes/AjaxHandler.php:2085
+#: modules/hrm/includes/AjaxHandler.php:2091
 #: modules/hrm/views/js-templates/compensation-history-edit.php:32
 #: modules/hrm/views/js-templates/compensation-history-edit.php:43
 #: modules/hrm/views/js-templates/compensation.php:32
@@ -17371,10 +17372,10 @@ msgstr ""
 #: modules/hrm/assets/dist-react/785.js:4
 #: modules/hrm/assets/dist-react/785.js:6
 #: modules/hrm/assets/dist-react/785.js:9
+#: modules/hrm/assets/dist-react/813.js:4
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:2
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:4
-#: modules/hrm/assets/dist-react/966.js:7
 #: modules/hrm/assets/dist-react/employees.js:2
 #: modules/hrm/assets/dist-react/onboarding.js:1
 msgid "- Select -"
@@ -18021,8 +18022,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/785.js:2
 #: modules/hrm/assets/dist-react/785.js:6
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "To"
 msgstr ""
 
@@ -18046,8 +18047,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/785.js:2
 #: modules/hrm/assets/dist-react/785.js:6
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 #: modules/hrm/assets/dist-react/employees.js:3
 msgid "From"
 msgstr ""
@@ -18164,7 +18165,7 @@ msgstr ""
 #: modules/hrm/views/reporting/gender-profile.php:168
 #: modules/hrm/assets/dist-react/139.js:1
 #: modules/hrm/assets/dist-react/406.js:1
-#: modules/hrm/assets/dist-react/966.js:2
+#: modules/hrm/assets/dist-react/813.js:2
 #: modules/hrm/assets/dist-react/employees.js:2
 #: modules/hrm/assets/dist-react/employees.js:3
 #: modules/hrm/assets/dist-react/onboarding.js:15
@@ -18176,8 +18177,8 @@ msgstr ""
 #: modules/hrm/includes/functions.php:592
 #: modules/hrm/views/dashboard-badge.php:67
 #: modules/hrm/assets/dist-react/139.js:1
+#: modules/hrm/assets/dist-react/813.js:2
 #: modules/hrm/assets/dist-react/950.js:1
-#: modules/hrm/assets/dist-react/966.js:2
 #: modules/hrm/assets/dist-react/employees.js:2
 #: modules/hrm/assets/dist-react/employees.js:3
 #: modules/hrm/assets/dist-react/onboarding.js:15
@@ -18196,9 +18197,9 @@ msgstr ""
 #: modules/hrm/assets/dist-react/490.js:1
 #: modules/hrm/assets/dist-react/633.js:3
 #: modules/hrm/assets/dist-react/633.js:5
+#: modules/hrm/assets/dist-react/813.js:1
+#: modules/hrm/assets/dist-react/813.js:2
 #: modules/hrm/assets/dist-react/950.js:1
-#: modules/hrm/assets/dist-react/966.js:1
-#: modules/hrm/assets/dist-react/966.js:2
 #: modules/hrm/assets/dist-react/employees.js:2
 msgid "Employees"
 msgstr ""
@@ -19126,7 +19127,7 @@ msgstr ""
 #: modules/crm/includes/ContactSubscriberListTable.php:170
 #: modules/crm/views/company/single.php:90
 #: modules/crm/views/js-templates/new-contact-group.php:5
-#: modules/hrm/includes/Employee.php:1562
+#: modules/hrm/includes/Employee.php:1579
 #: modules/hrm/includes/LeaveReportEmployeeBased.php:135
 #: modules/hrm/views/employee/tab-general.php:300
 #: modules/hrm/views/js-templates/dependents.php:5
@@ -19142,11 +19143,11 @@ msgstr ""
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/763.js:1
 #: modules/hrm/assets/dist-react/785.js:2
+#: modules/hrm/assets/dist-react/813.js:3
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:1
 #: modules/hrm/assets/dist-react/910.js:8
 #: modules/hrm/assets/dist-react/950.js:1
-#: modules/hrm/assets/dist-react/966.js:3
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Name"
 msgstr ""
 
@@ -19661,13 +19662,13 @@ msgstr ""
 #: modules/hrm/assets/dist-react/763.js:1
 #: modules/hrm/assets/dist-react/785.js:1
 #: modules/hrm/assets/dist-react/785.js:2
+#: modules/hrm/assets/dist-react/813.js:3
+#: modules/hrm/assets/dist-react/813.js:4
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:1
 #: modules/hrm/assets/dist-react/910.js:2
 #: modules/hrm/assets/dist-react/910.js:8
 #: modules/hrm/assets/dist-react/950.js:1
-#: modules/hrm/assets/dist-react/966.js:3
-#: modules/hrm/assets/dist-react/966.js:4
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Description"
 msgstr ""
 
@@ -19914,8 +19915,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/667.js:1
 #: modules/hrm/assets/dist-react/704.js:1
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "Start date"
 msgstr ""
 
@@ -19925,8 +19926,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/667.js:1
 #: modules/hrm/assets/dist-react/704.js:1
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "End date"
 msgstr ""
 
@@ -19953,8 +19954,8 @@ msgstr ""
 #: modules/hrm/views/leave/new-request.php:29
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/667.js:1
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 #: modules/hrm/assets/dist-react/onboarding.js:15
 msgid "Add New"
 msgstr ""
@@ -20173,6 +20174,10 @@ msgstr ""
 #: modules/hrm/assets/dist-react/785.js:9
 #: modules/hrm/assets/dist-react/785.js:12
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:3
+#: modules/hrm/assets/dist-react/813.js:4
+#: modules/hrm/assets/dist-react/813.js:5
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:1
 #: modules/hrm/assets/dist-react/910.js:2
 #: modules/hrm/assets/dist-react/910.js:3
@@ -20180,10 +20185,6 @@ msgstr ""
 #: modules/hrm/assets/dist-react/910.js:8
 #: modules/hrm/assets/dist-react/911.js:1
 #: modules/hrm/assets/dist-react/950.js:1
-#: modules/hrm/assets/dist-react/966.js:3
-#: modules/hrm/assets/dist-react/966.js:4
-#: modules/hrm/assets/dist-react/966.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 #: modules/hrm/assets/dist-react/employees.js:2
 #: modules/hrm/assets/dist-react/onboarding.js:3
 msgid "Cancel"
@@ -20507,91 +20508,91 @@ msgstr ""
 msgid "No value provided"
 msgstr ""
 
-#: includes/functions-people.php:583
+#: includes/functions-people.php:589
 msgid "No user type provided."
 msgstr ""
 
-#: includes/functions-people.php:588
+#: includes/functions-people.php:594
 msgid "The people type is invalid."
 msgstr ""
 
-#: includes/functions-people.php:596
+#: includes/functions-people.php:602
 msgid "You must need to fill up both first name and email fields"
 msgstr ""
 
-#: includes/functions-people.php:599
+#: includes/functions-people.php:605
 #: modules/hrm/includes/Employee.php:294
 msgid "Please provide a valid first name"
 msgstr ""
 
-#: includes/functions-people.php:603
+#: includes/functions-people.php:609
 #: modules/hrm/includes/Employee.php:306
 msgid "Please provide a valid last name"
 msgstr ""
 
-#: includes/functions-people.php:612
+#: includes/functions-people.php:618
 msgid "You must need to fill up both Company name and email fields"
 msgstr ""
 
-#: includes/functions-people.php:615
+#: includes/functions-people.php:621
 msgid "Please provide a valid company name"
 msgstr ""
 
-#: includes/functions-people.php:622
+#: includes/functions-people.php:628
 #: modules/crm/includes/Subscription.php:270
 msgid "Please provide a valid email address"
 msgstr ""
 
-#: includes/functions-people.php:626
+#: includes/functions-people.php:632
 msgid "Please select a valid life stage"
 msgstr ""
 
-#: includes/functions-people.php:630
+#: includes/functions-people.php:636
 #: modules/hrm/includes/Employee.php:385
 msgid "Please provide a valid phone number"
 msgstr ""
 
-#: includes/functions-people.php:634
+#: includes/functions-people.php:640
 #: modules/hrm/includes/Employee.php:393
 msgid "Please provide a valid date of birth"
 msgstr ""
 
-#: includes/functions-people.php:638
+#: includes/functions-people.php:644
 msgid "Please provide a valid age"
 msgstr ""
 
-#: includes/functions-people.php:642
+#: includes/functions-people.php:648
 #: modules/hrm/includes/Employee.php:381
 msgid "Please provide a valid mobile number"
 msgstr ""
 
-#: includes/functions-people.php:646
+#: includes/functions-people.php:652
 msgid "Please provide a valid website"
 msgstr ""
 
-#: includes/functions-people.php:650
+#: includes/functions-people.php:656
 msgid "Please provide a valid fax number"
 msgstr ""
 
-#: includes/functions-people.php:654
-#: modules/hrm/includes/Employee.php:416
+#: includes/functions-people.php:660
+#: modules/hrm/includes/Employee.php:421
 msgid "Please provide a valid city name"
 msgstr ""
 
-#: includes/functions-people.php:658
-#: modules/hrm/includes/Employee.php:420
+#: includes/functions-people.php:664
+#: modules/hrm/includes/Employee.php:425
 msgid "Please provide a valid postal code"
 msgstr ""
 
-#: includes/functions-people.php:662
+#: includes/functions-people.php:668
 msgid "Please select a valid contact source"
 msgstr ""
 
-#: includes/functions-people.php:713
+#: includes/functions-people.php:719
 msgid "Something went wrong, please try again"
 msgstr ""
 
-#: includes/functions-people.php:1024
+#: includes/functions-people.php:1030
 #: modules/crm/includes/functions-customer.php:4173
 #: modules/crm/includes/functions-customer.php:4193
 #: modules/crm/includes/functions-customer.php:4212
@@ -22786,8 +22787,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/490.js:3
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Financial Year"
 msgstr ""
 
@@ -22881,8 +22882,8 @@ msgstr ""
 #: modules/accounting/assets/src/admin/components/opening-balance/OpeningBalance.vue:535
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Financial year is required."
 msgstr ""
 
@@ -23032,9 +23033,9 @@ msgstr ""
 #: modules/hrm/assets/dist-react/633.js:3
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:4
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:4
 #: modules/hrm/assets/dist-react/onboarding.js:1
 msgid "Department"
 msgstr ""
@@ -23054,9 +23055,9 @@ msgstr ""
 #: modules/hrm/assets/dist-react/633.js:3
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:4
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:4
 #: modules/hrm/assets/dist-react/onboarding.js:1
 msgid "Designation"
 msgstr ""
@@ -23385,8 +23386,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:4
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Add new"
 msgstr ""
 
@@ -23829,7 +23830,7 @@ msgstr ""
 #: modules/hrm/assets/js/requests.js:323
 #: modules/hrm/assets/dist-react/139.js:1
 #: modules/hrm/assets/dist-react/633.js:5
-#: modules/hrm/assets/dist-react/966.js:1
+#: modules/hrm/assets/dist-react/813.js:1
 msgid "View"
 msgstr ""
 
@@ -24099,7 +24100,7 @@ msgid "Agency to is required."
 msgstr ""
 
 #: modules/accounting/assets/src/admin/components/tax/RecordPayTax.vue:255
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:203
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:204
 #: modules/hrm/assets/dist-react/573.js:4
 #: modules/hrm/assets/dist-react/573.js:9
 #: modules/hrm/assets/dist-react/785.js:4
@@ -25208,7 +25209,7 @@ msgstr ""
 
 #: modules/accounting/includes/Classes/AccountingTutorial.php:296
 #: modules/hrm/includes/Admin/AdminMenu.php:405
-#: modules/hrm/assets/dist-react/966.js:2
+#: modules/hrm/assets/dist-react/813.js:2
 msgid "Dismiss"
 msgstr ""
 
@@ -26226,8 +26227,8 @@ msgid "&mdash; Select Field &mdash;"
 msgstr ""
 
 #: modules/crm/assets/js/crm-contacts.js:2403
-#: modules/crm/includes/AjaxHandler.php:1056
-#: modules/crm/includes/AjaxHandler.php:1084
+#: modules/crm/includes/AjaxHandler.php:1058
+#: modules/crm/includes/AjaxHandler.php:1086
 msgid "No group found"
 msgstr ""
 
@@ -26452,308 +26453,308 @@ msgstr ""
 msgid "No company or contact found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:330
-#: modules/crm/includes/AjaxHandler.php:512
+#: modules/crm/includes/AjaxHandler.php:332
+#: modules/crm/includes/AjaxHandler.php:514
 msgid "You don't have any permission to add new contact"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:334
+#: modules/crm/includes/AjaxHandler.php:336
 msgid "You don't have any permission to edit this contact"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:413
+#: modules/crm/includes/AjaxHandler.php:415
 msgid "Cotact does not exists."
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:446
+#: modules/crm/includes/AjaxHandler.php:448
 msgid "You can't delete this contact as this contact has a relation with a company. Please make sure this contract is not assigned to any company before deleting."
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:450
+#: modules/crm/includes/AjaxHandler.php:452
 msgid "You can't delete this company as this company has a relation with a contact. Please make sure this company is not assigned to any contact before deleting."
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:464
+#: modules/crm/includes/AjaxHandler.php:466
 msgid "You don't have any permission to delete this contact"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:470
+#: modules/crm/includes/AjaxHandler.php:472
 msgid "Can not delete - You do not own this contact(s)"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:554
+#: modules/crm/includes/AjaxHandler.php:556
 msgid "Contact must be required"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:558
+#: modules/crm/includes/AjaxHandler.php:560
 msgid "Atleast one group must be selected"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:570
+#: modules/crm/includes/AjaxHandler.php:572
 msgid "Can not assign any group - You do not own this contact(s)"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:586
+#: modules/crm/includes/AjaxHandler.php:588
 msgid "Selected contact are successfully subscribed"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:610
+#: modules/crm/includes/AjaxHandler.php:612
 #: modules/hrm/includes/API/V2/EmployeeUserController.php:152
-#: modules/hrm/includes/AjaxHandler.php:1446
+#: modules/hrm/includes/AjaxHandler.php:1452
 msgid "User not found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:614
+#: modules/crm/includes/AjaxHandler.php:616
 msgid "Type not found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:624
+#: modules/crm/includes/AjaxHandler.php:626
 msgid "Please enter the first name before creating the contact."
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:628
+#: modules/crm/includes/AjaxHandler.php:630
 msgid "Please select a life stage before creating the contact."
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:700
+#: modules/crm/includes/AjaxHandler.php:702
 msgid "Company already assigned. Choose another company"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:704
+#: modules/crm/includes/AjaxHandler.php:706
 msgid "Contact already assigned. Choose another contact"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:708
-#: modules/crm/includes/AjaxHandler.php:755
-#: modules/crm/includes/AjaxHandler.php:927
+#: modules/crm/includes/AjaxHandler.php:710
+#: modules/crm/includes/AjaxHandler.php:757
+#: modules/crm/includes/AjaxHandler.php:929
 #: modules/crm/includes/functions-customer.php:1542
 #: modules/crm/includes/functions-customer.php:3966
 msgid "No contact found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:723
+#: modules/crm/includes/AjaxHandler.php:725
 msgid "Company has been added successfully"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:743
+#: modules/crm/includes/AjaxHandler.php:745
 msgid "Company has been updated successfully"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:922
+#: modules/crm/includes/AjaxHandler.php:924
 msgid "Please select a user"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:943
+#: modules/crm/includes/AjaxHandler.php:945
 msgid "Assign to agent successfully"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:960
+#: modules/crm/includes/AjaxHandler.php:962
 msgid "Contact not found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:964
+#: modules/crm/includes/AjaxHandler.php:966
 msgid "Contact type not found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:981
+#: modules/crm/includes/AjaxHandler.php:983
 msgid "Not allowed to crated user with the selected role"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1019
+#: modules/crm/includes/AjaxHandler.php:1021
 msgid "Contact Group Name must be required"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1035
+#: modules/crm/includes/AjaxHandler.php:1037
 msgid "Contact group save successfully"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1095
-#: modules/crm/includes/AjaxHandler.php:1226
+#: modules/crm/includes/AjaxHandler.php:1097
+#: modules/crm/includes/AjaxHandler.php:1228
 msgid "Contact group delete successfully"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1131
+#: modules/crm/includes/AjaxHandler.php:1133
 msgid "Contact not found. Try again"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1135
-#: modules/crm/includes/AjaxHandler.php:1180
+#: modules/crm/includes/AjaxHandler.php:1137
+#: modules/crm/includes/AjaxHandler.php:1182
 msgid "You don't have any permission to assign this contact in a group"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1145
+#: modules/crm/includes/AjaxHandler.php:1147
 msgid "Subscribed on"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1146
+#: modules/crm/includes/AjaxHandler.php:1148
 msgid "Unsubscribed on"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1176
+#: modules/crm/includes/AjaxHandler.php:1178
 msgid "No user data found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1194
+#: modules/crm/includes/AjaxHandler.php:1196
 msgid "Succesfully subscriber for this user"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1213
+#: modules/crm/includes/AjaxHandler.php:1215
 msgid "You don't have any permission to remove this contact from a group"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1217
+#: modules/crm/includes/AjaxHandler.php:1219
 msgid "No subscriber contact found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1221
+#: modules/crm/includes/AjaxHandler.php:1223
 msgid "No subscriber group found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1245
+#: modules/crm/includes/AjaxHandler.php:1247
 msgid "You don't have any permission to assign this contact"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1249
+#: modules/crm/includes/AjaxHandler.php:1251
 msgid "No subscriber user found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1254
+#: modules/crm/includes/AjaxHandler.php:1256
 msgid "Contact group edit successfully"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1288
+#: modules/crm/includes/AjaxHandler.php:1290
 msgid "No customer found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1300
+#: modules/crm/includes/AjaxHandler.php:1302
 msgid "Succesfully added social profiles"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1354
+#: modules/crm/includes/AjaxHandler.php:1356
 msgid "Customer not found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1358
+#: modules/crm/includes/AjaxHandler.php:1360
 msgid "Content must be required"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1381
+#: modules/crm/includes/AjaxHandler.php:1383
 msgid "Activity not found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1418
-#: modules/crm/includes/AjaxHandler.php:1540
-#: modules/crm/includes/AjaxHandler.php:1579
-#: modules/crm/includes/AjaxHandler.php:1616
+#: modules/crm/includes/AjaxHandler.php:1420
+#: modules/crm/includes/AjaxHandler.php:1542
+#: modules/crm/includes/AjaxHandler.php:1581
+#: modules/crm/includes/AjaxHandler.php:1618
 msgid "Somthing is wrong, Please try later"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1480
+#: modules/crm/includes/AjaxHandler.php:1482
 msgid "Can not send email, Please try again later"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1503
+#: modules/crm/includes/AjaxHandler.php:1505
 msgid "Something went wrong, Please try later"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1652
-#: modules/crm/includes/AjaxHandler.php:1659
+#: modules/crm/includes/AjaxHandler.php:1654
+#: modules/crm/includes/AjaxHandler.php:1661
 msgid "Feeds Not found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1671
+#: modules/crm/includes/AjaxHandler.php:1673
 msgid "Feed Deleted successfully"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1693
-#: modules/crm/includes/AjaxHandler.php:1755
+#: modules/crm/includes/AjaxHandler.php:1695
+#: modules/crm/includes/AjaxHandler.php:1757
 msgid "No data not found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1697
-#: modules/crm/includes/AjaxHandler.php:1824
+#: modules/crm/includes/AjaxHandler.php:1699
+#: modules/crm/includes/AjaxHandler.php:1826
 msgid "Search name not found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1701
+#: modules/crm/includes/AjaxHandler.php:1703
 msgid "Contact Type not found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1705
+#: modules/crm/includes/AjaxHandler.php:1707
 msgid "Search filters not found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1711
+#: modules/crm/includes/AjaxHandler.php:1713
 msgid "Query not found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1726
+#: modules/crm/includes/AjaxHandler.php:1728
 msgid "Segment name alreday exists."
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1732
+#: modules/crm/includes/AjaxHandler.php:1734
 msgid "Search does not save"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1759
+#: modules/crm/includes/AjaxHandler.php:1761
 msgid "Group name not found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1763
+#: modules/crm/includes/AjaxHandler.php:1765
 msgid "No search fields found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1781
+#: modules/crm/includes/AjaxHandler.php:1783
 msgid "Could not create group."
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1799
+#: modules/crm/includes/AjaxHandler.php:1801
 msgid "Successfully created group and assigned selected contacts to the group."
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1802
+#: modules/crm/includes/AjaxHandler.php:1804
 msgid "Could not import contacts to the group."
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1851
-#: modules/crm/includes/AjaxHandler.php:1857
+#: modules/crm/includes/AjaxHandler.php:1853
+#: modules/crm/includes/AjaxHandler.php:1859
 msgid "Search segment not found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1892
+#: modules/crm/includes/AjaxHandler.php:1894
 msgid "Schedule data no found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1932
-#: modules/crm/includes/AjaxHandler.php:1969
-#: modules/crm/includes/AjaxHandler.php:2014
+#: modules/crm/includes/AjaxHandler.php:1934
+#: modules/crm/includes/AjaxHandler.php:1971
+#: modules/crm/includes/AjaxHandler.php:2016
 msgid "Templates"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1955
-#: modules/crm/includes/AjaxHandler.php:2000
+#: modules/crm/includes/AjaxHandler.php:1957
+#: modules/crm/includes/AjaxHandler.php:2002
 msgid "Somthing wrong, Please try later"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:1978
+#: modules/crm/includes/AjaxHandler.php:1980
 msgid "No results found"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:2091
+#: modules/crm/includes/AjaxHandler.php:2093
 msgid "could not find contact id"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:2102
+#: modules/crm/includes/AjaxHandler.php:2104
 msgid "tags updated successfully"
 msgstr ""
 
-#: modules/crm/includes/AjaxHandler.php:2104
+#: modules/crm/includes/AjaxHandler.php:2106
 msgid "tags update failed please try again"
 msgstr ""
 
 #. translators: 1) opening <strong> tag, 2) closing <strong> tag, 3) line break
 #. tag, 4) line break tag, 5) list of file names
-#: modules/crm/includes/AjaxHandler.php:2157
+#: modules/crm/includes/AjaxHandler.php:2159
 msgid "%1$sThe attachments will not be uploaded.%2$s%3$sThe following files are not valid: %4$s%5$s"
 msgstr ""
 
@@ -28300,7 +28301,7 @@ msgstr ""
 #: modules/hrm/includes/API/V2/HolidaysController.php:545
 #: modules/hrm/includes/AjaxHandler.php:357
 #: modules/hrm/includes/AjaxHandler.php:362
-#: modules/hrm/includes/AjaxHandler.php:2026
+#: modules/hrm/includes/AjaxHandler.php:2032
 #: modules/hrm/includes/EntitlementListTable.php:167
 #: modules/hrm/includes/EntitlementListTable.php:187
 #: modules/hrm/includes/EntitlementListTable.php:189
@@ -28773,23 +28774,23 @@ msgstr ""
 #: modules/hrm/assets/dist-react/573.js:6
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/785.js:6
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Leave Policy"
 msgstr ""
 
 #: modules/hrm/HRM.php:278
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Create Policy"
 msgstr ""
 
 #: modules/hrm/HRM.php:279
 #: modules/hrm/views/leave/holiday.php:252
 #: modules/hrm/assets/dist-react/170.js:1
-#: modules/hrm/assets/dist-react/966.js:1
+#: modules/hrm/assets/dist-react/813.js:1
 msgid "Holiday"
 msgstr ""
 
@@ -28965,10 +28966,10 @@ msgstr ""
 #: modules/hrm/assets/dist-react/785.js:4
 #: modules/hrm/assets/dist-react/785.js:13
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
 #: modules/hrm/assets/dist-react/910.js:5
 #: modules/hrm/assets/dist-react/911.js:1
-#: modules/hrm/assets/dist-react/966.js:4
 #: modules/hrm/assets/dist-react/employees.js:2
 msgid "Employee"
 msgstr ""
@@ -28984,10 +28985,10 @@ msgstr ""
 #: modules/hrm/assets/dist-react/633.js:3
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/763.js:2
+#: modules/hrm/assets/dist-react/813.js:1
 #: modules/hrm/assets/dist-react/910.js:5
 #: modules/hrm/assets/dist-react/910.js:8
 #: modules/hrm/assets/dist-react/950.js:1
-#: modules/hrm/assets/dist-react/966.js:1
 msgid "Clear"
 msgstr ""
 
@@ -29054,9 +29055,9 @@ msgstr ""
 #: modules/hrm/assets/dist-react/785.js:8
 #: modules/hrm/assets/dist-react/785.js:13
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:5
 #: modules/hrm/assets/dist-react/910.js:3
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:5
 msgid "Reason"
 msgstr ""
 
@@ -29092,41 +29093,41 @@ msgstr ""
 #: modules/hrm/includes/API/V2/LeaveCalendarController.php:269
 #: modules/hrm/includes/API/V2/LeaveRequestsController.php:873
 #: modules/hrm/includes/API/V2/LeaveRequestsController.php:883
-#: modules/hrm/includes/AjaxHandler.php:2359
-#: modules/hrm/includes/AjaxHandler.php:2467
-#: modules/hrm/includes/Employee.php:2542
+#: modules/hrm/includes/AjaxHandler.php:2365
+#: modules/hrm/includes/AjaxHandler.php:2473
+#: modules/hrm/includes/Employee.php:2559
 #: modules/hrm/includes/functions-leave.php:2196
 #: modules/hrm/assets/dist-react/170.js:1
 #: modules/hrm/assets/dist-react/573.js:12
 #: modules/hrm/assets/dist-react/575.js:5
+#: modules/hrm/assets/dist-react/813.js:1
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:5
 #: modules/hrm/assets/dist-react/911.js:1
-#: modules/hrm/assets/dist-react/966.js:1
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Pending"
 msgstr ""
 
 #: modules/hrm/assets/js/requests.js:174
 #: modules/hrm/assets/js/requests.js:183
 #: modules/hrm/includes/API/V2/LeaveRequestsController.php:869
-#: modules/hrm/includes/AjaxHandler.php:2466
+#: modules/hrm/includes/AjaxHandler.php:2472
 #: modules/hrm/includes/functions-leave.php:2195
 #: modules/hrm/assets/dist-react/573.js:12
 #: modules/hrm/assets/dist-react/575.js:5
+#: modules/hrm/assets/dist-react/813.js:1
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:1
 msgid "Approved"
 msgstr ""
 
 #: modules/hrm/assets/js/requests.js:175
 #: modules/hrm/assets/js/requests.js:184
 #: modules/hrm/includes/API/V2/LeaveRequestsController.php:871
-#: modules/hrm/includes/AjaxHandler.php:2468
+#: modules/hrm/includes/AjaxHandler.php:2474
 #: modules/hrm/includes/functions-leave.php:2197
 #: modules/hrm/assets/dist-react/573.js:12
 #: modules/hrm/assets/dist-react/575.js:5
+#: modules/hrm/assets/dist-react/813.js:1
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:1
 msgid "Rejected"
 msgstr ""
 
@@ -29476,10 +29477,10 @@ msgid "Job-history row ID."
 msgstr ""
 
 #: modules/hrm/includes/API/V2/EmployeeJobHistoriesController.php:135
-#: modules/hrm/includes/Employee.php:1574
-#: modules/hrm/includes/Employee.php:1655
-#: modules/hrm/includes/Employee.php:2202
-#: modules/hrm/includes/Employee.php:2227
+#: modules/hrm/includes/Employee.php:1591
+#: modules/hrm/includes/Employee.php:1672
+#: modules/hrm/includes/Employee.php:2219
+#: modules/hrm/includes/Employee.php:2244
 msgid "Invalid date format"
 msgstr ""
 
@@ -29533,7 +29534,7 @@ msgid "Job title is required."
 msgstr ""
 
 #: modules/hrm/includes/API/V2/EmployeeJobHistoriesController.php:205
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:211
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:212
 #: modules/hrm/assets/dist-react/573.js:4
 #: modules/hrm/assets/dist-react/573.js:9
 #: modules/hrm/assets/dist-react/785.js:4
@@ -29552,9 +29553,9 @@ msgstr ""
 #: modules/hrm/includes/API/V2/EmployeeNotesController.php:145
 #: modules/hrm/includes/API/V2/EmployeeNotesController.php:176
 #: modules/hrm/includes/API/V2/EmployeeNotesController.php:216
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:150
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:268
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:340
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:151
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:269
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:341
 #: modules/hrm/includes/API/V2/EmployeePermissionController.php:198
 #: modules/hrm/includes/API/V2/EmployeePermissionController.php:221
 #: modules/hrm/includes/API/V2/EmployeePermissionController.php:227
@@ -29645,7 +29646,7 @@ msgid "Location ID (module=job)."
 msgstr ""
 
 #: modules/hrm/includes/API/V2/EmployeeLeaveController.php:155
-#: modules/hrm/includes/AjaxHandler.php:1987
+#: modules/hrm/includes/AjaxHandler.php:1993
 msgid "Invalid leave policy."
 msgstr ""
 
@@ -29665,7 +29666,7 @@ msgstr ""
 
 #. translators: %1$s start, %2$s end of financial year
 #: modules/hrm/includes/API/V2/EmployeeLeaveController.php:252
-#: modules/hrm/includes/AjaxHandler.php:1994
+#: modules/hrm/includes/AjaxHandler.php:2000
 #: modules/hrm/includes/functions-leave.php:1257
 #: modules/hrm/includes/functions-leave.php:1989
 msgid "Invalid leave duration. Please apply between %1$s and %2$s."
@@ -29680,8 +29681,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/573.js:6
 #: modules/hrm/assets/dist-react/575.js:5
 #: modules/hrm/assets/dist-react/785.js:6
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Leave reason field can not be blank."
 msgstr ""
 
@@ -29716,25 +29717,25 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:5
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/785.js:6
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "The end date must be on or after the start date."
 msgstr ""
 
 #: modules/hrm/includes/API/V2/EmployeeLeaveController.php:513
-#: modules/hrm/includes/AjaxHandler.php:1973
-#: modules/hrm/includes/AjaxHandler.php:2117
+#: modules/hrm/includes/AjaxHandler.php:1979
+#: modules/hrm/includes/AjaxHandler.php:2123
 msgid "Please select a policy"
 msgstr ""
 
 #: modules/hrm/includes/API/V2/EmployeeLeaveController.php:539
-#: modules/hrm/includes/AjaxHandler.php:2001
+#: modules/hrm/includes/AjaxHandler.php:2007
 #: modules/hrm/includes/functions-leave.php:1279
 msgid "Existing Leave Record found within selected range!"
 msgstr ""
 
 #: modules/hrm/includes/API/V2/EmployeeLeaveController.php:551
-#: modules/hrm/includes/AjaxHandler.php:2010
+#: modules/hrm/includes/AjaxHandler.php:2016
 msgid "Sorry! You do not have any leave left under this leave policy"
 msgstr ""
 
@@ -29767,11 +29768,11 @@ msgstr ""
 msgid "The note content."
 msgstr ""
 
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:168
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:169
 msgid "The performance record could not be saved."
 msgstr ""
 
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:206
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:207
 #: modules/hrm/assets/dist-react/99.js:1
 #: modules/hrm/assets/dist-react/573.js:4
 #: modules/hrm/assets/dist-react/573.js:9
@@ -29780,57 +29781,57 @@ msgstr ""
 msgid "Enter a valid date."
 msgstr ""
 
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:215
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:216
 msgid "Select a valid job knowledge rating."
 msgstr ""
 
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:216
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:217
 msgid "Select a valid work quality rating."
 msgstr ""
 
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:217
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:218
 msgid "Select a valid attendance rating."
 msgstr ""
 
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:218
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:219
 msgid "Select a valid communication rating."
 msgstr ""
 
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:219
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:220
 msgid "Select a valid dependability rating."
 msgstr ""
 
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:232
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:233
 #: modules/hrm/assets/dist-react/573.js:9
 #: modules/hrm/assets/dist-react/785.js:9
 msgid "Reviewer is required."
 msgstr ""
 
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:239
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:240
 #: modules/hrm/assets/dist-react/573.js:9
 #: modules/hrm/assets/dist-react/785.js:9
 msgid "Completion date is required."
 msgstr ""
 
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:242
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:243
 #: modules/hrm/assets/dist-react/573.js:9
 #: modules/hrm/assets/dist-react/785.js:9
 msgid "Enter a valid completion date."
 msgstr ""
 
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:245
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:246
 #: modules/hrm/assets/dist-react/573.js:9
 #: modules/hrm/assets/dist-react/785.js:9
 msgid "Completion date cannot be earlier than the set date."
 msgstr ""
 
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:248
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:249
 #: modules/hrm/assets/dist-react/573.js:9
 #: modules/hrm/assets/dist-react/785.js:9
 msgid "Supervisor is required."
 msgstr ""
 
-#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:276
+#: modules/hrm/includes/API/V2/EmployeePerformanceController.php:277
 msgid "The performance record could not be deleted."
 msgstr ""
 
@@ -30001,8 +30002,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/704.js:1
 #: modules/hrm/assets/dist-react/785.js:2
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "Name is required."
 msgstr ""
 
@@ -30036,7 +30037,7 @@ msgid "WP user ID to convert."
 msgstr ""
 
 #: modules/hrm/includes/API/V2/EmployeeUserController.php:160
-#: modules/hrm/includes/AjaxHandler.php:1473
+#: modules/hrm/includes/AjaxHandler.php:1479
 msgid "Employee already exist."
 msgstr ""
 
@@ -30125,9 +30126,9 @@ msgstr ""
 #: modules/hrm/includes/AjaxHandler.php:958
 #: modules/hrm/includes/AjaxHandler.php:1018
 #: modules/hrm/includes/AjaxHandler.php:1214
-#: modules/hrm/includes/AjaxHandler.php:1705
-#: modules/hrm/includes/AjaxHandler.php:1792
-#: modules/hrm/includes/AjaxHandler.php:1860
+#: modules/hrm/includes/AjaxHandler.php:1711
+#: modules/hrm/includes/AjaxHandler.php:1798
+#: modules/hrm/includes/AjaxHandler.php:1866
 #: modules/hrm/includes/functions-dashboard-widgets.php:153
 msgid "No employee found"
 msgstr ""
@@ -30480,7 +30481,7 @@ msgid "Filter by location ID."
 msgstr ""
 
 #: modules/hrm/includes/API/V2/FinancialYearsController.php:107
-#: modules/hrm/includes/AjaxHandler.php:2614
+#: modules/hrm/includes/AjaxHandler.php:2620
 msgid "Financial year is required"
 msgstr ""
 
@@ -30500,8 +30501,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/667.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 #, js-format
 msgid "Financial years %1$s and %2$s overlap. Each date can belong to one financial year only."
 msgstr ""
@@ -30664,7 +30665,7 @@ msgid "The date range must run forward and span at most %d days."
 msgstr ""
 
 #: modules/hrm/includes/API/V2/LeaveCalendarController.php:246
-#: modules/hrm/includes/AjaxHandler.php:2331
+#: modules/hrm/includes/AjaxHandler.php:2337
 msgid "Weekly Holiday"
 msgstr ""
 
@@ -30715,11 +30716,11 @@ msgstr ""
 #: modules/hrm/includes/AjaxHandler.php:683
 #: modules/hrm/includes/AjaxHandler.php:746
 #: modules/hrm/includes/AjaxHandler.php:775
-#: modules/hrm/includes/AjaxHandler.php:1365
-#: modules/hrm/includes/AjaxHandler.php:2199
-#: modules/hrm/includes/AjaxHandler.php:2445
-#: modules/hrm/includes/AjaxHandler.php:2497
-#: modules/hrm/includes/AjaxHandler.php:2557
+#: modules/hrm/includes/AjaxHandler.php:1371
+#: modules/hrm/includes/AjaxHandler.php:2205
+#: modules/hrm/includes/AjaxHandler.php:2451
+#: modules/hrm/includes/AjaxHandler.php:2503
+#: modules/hrm/includes/AjaxHandler.php:2563
 msgid "Something went wrong! Please try again later."
 msgstr ""
 
@@ -30768,13 +30769,13 @@ msgstr ""
 #: modules/hrm/includes/API/V2/LeavePoliciesController.php:400
 #: modules/hrm/includes/API/V2/LeaveTypesController.php:193
 #: modules/hrm/includes/API/V2/LeaveTypesController.php:229
-#: modules/hrm/includes/AjaxHandler.php:2723
+#: modules/hrm/includes/AjaxHandler.php:2729
 #: modules/hrm/includes/FormHandler.php:1219
 #: modules/hrm/assets/dist-react/575.js:8
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/763.js:1
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Name field should not be left empty"
 msgstr ""
 
@@ -30786,8 +30787,8 @@ msgstr ""
 #: modules/hrm/includes/API/V2/LeavePoliciesController.php:408
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "A policy needs at least one day."
 msgstr ""
 
@@ -30885,13 +30886,13 @@ msgstr ""
 
 #: modules/hrm/includes/API/V2/LeaveRequestsController.php:398
 #: modules/hrm/includes/FormHandler.php:354
-#: modules/hrm/includes/functions-leave.php:3871
+#: modules/hrm/includes/functions-leave.php:3879
 msgid "Approved from bulk action"
 msgstr ""
 
 #: modules/hrm/includes/API/V2/LeaveRequestsController.php:399
 #: modules/hrm/includes/FormHandler.php:359
-#: modules/hrm/includes/functions-leave.php:3872
+#: modules/hrm/includes/functions-leave.php:3880
 msgid "Rejected from bulk action"
 msgstr ""
 
@@ -30914,9 +30915,9 @@ msgstr ""
 #: modules/hrm/includes/API/V2/LeaveTypesController.php:176
 #: modules/hrm/includes/API/V2/LeaveTypesController.php:260
 #: modules/hrm/includes/API/V2/LeaveTypesController.php:287
-#: modules/hrm/includes/AjaxHandler.php:2652
-#: modules/hrm/includes/AjaxHandler.php:2685
-#: modules/hrm/includes/AjaxHandler.php:2766
+#: modules/hrm/includes/AjaxHandler.php:2658
+#: modules/hrm/includes/AjaxHandler.php:2691
+#: modules/hrm/includes/AjaxHandler.php:2772
 msgid "No valid leave type found!"
 msgstr ""
 
@@ -31048,8 +31049,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Add department"
 msgstr ""
 
@@ -31069,8 +31070,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Add designation"
 msgstr ""
 
@@ -31090,8 +31091,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Add policy"
 msgstr ""
 
@@ -31180,17 +31181,18 @@ msgstr ""
 msgid "Department filter: empty = all teams, -1 = no team, or a department id."
 msgstr ""
 
-#: modules/hrm/includes/API/V2/OrgChartController.php:290
+#: modules/hrm/includes/API/V2/OrgChartController.php:318
 #: modules/hrm/assets/dist-react/788.js:1
 msgid "All Teams"
 msgstr ""
 
 #. translators: %s: department title.
-#: modules/hrm/includes/API/V2/OrgChartController.php:306
+#: modules/hrm/includes/API/V2/OrgChartController.php:334
 msgid "%s Team"
 msgstr ""
 
-#: modules/hrm/includes/API/V2/OrgChartController.php:317
+#: modules/hrm/includes/API/V2/OrgChartController.php:345
+#: modules/hrm/assets/dist-react/788.js:1
 msgid "No Team"
 msgstr ""
 
@@ -31278,7 +31280,7 @@ msgid "<span class=\"erp-help\">Help</span>"
 msgstr ""
 
 #: modules/hrm/includes/Admin/AdminMenu.php:183
-#: modules/hrm/includes/AjaxHandler.php:2474
+#: modules/hrm/includes/AjaxHandler.php:2480
 #: modules/hrm/includes/Settings.php:57
 #: modules/hrm/includes/Settings.php:114
 #: modules/hrm/includes/functions.php:662
@@ -31290,7 +31292,7 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/785.js:4
 #: modules/hrm/assets/dist-react/785.js:12
-#: modules/hrm/assets/dist-react/966.js:1
+#: modules/hrm/assets/dist-react/813.js:1
 #: modules/hrm/assets/dist-react/employees.js:3
 msgid "Leave"
 msgstr ""
@@ -31439,72 +31441,72 @@ msgstr ""
 msgid "Invalid Employee received."
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:1521
+#: modules/hrm/includes/AjaxHandler.php:1527
 msgid "Announcement not found"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:1599
+#: modules/hrm/includes/AjaxHandler.php:1605
 msgid "No performance type selected"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:1605
+#: modules/hrm/includes/AjaxHandler.php:1611
 msgid "Could not find the employee"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:1629
+#: modules/hrm/includes/AjaxHandler.php:1635
 msgid "Performance review does not exist."
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:1683
-#: modules/hrm/includes/AjaxHandler.php:1770
-#: modules/hrm/includes/AjaxHandler.php:1838
+#: modules/hrm/includes/AjaxHandler.php:1689
+#: modules/hrm/includes/AjaxHandler.php:1776
+#: modules/hrm/includes/AjaxHandler.php:1844
 msgid "You have to be an employee to do this action"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:1945
+#: modules/hrm/includes/AjaxHandler.php:1951
 msgid "Policy has been deleted"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:1948
+#: modules/hrm/includes/AjaxHandler.php:1954
 msgid "Something went worng!"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:1967
-#: modules/hrm/includes/AjaxHandler.php:2113
+#: modules/hrm/includes/AjaxHandler.php:1973
+#: modules/hrm/includes/AjaxHandler.php:2119
 msgid "Please select an employee"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:1980
+#: modules/hrm/includes/AjaxHandler.php:1986
 msgid "Invalid date range"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2029
+#: modules/hrm/includes/AjaxHandler.php:2035
 #: modules/hrm/assets/dist-react/573.js:6
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/785.js:6
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "(Sandwich rule applied)"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2055
+#: modules/hrm/includes/AjaxHandler.php:2061
 #: modules/hrm/assets/dist-react/79.js:1
 msgid "Please select an employee."
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2059
+#: modules/hrm/includes/AjaxHandler.php:2065
 msgid "Please select a year."
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2064
+#: modules/hrm/includes/AjaxHandler.php:2070
 msgid "No entitlement found for selected year. Please contact with HR."
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2070
+#: modules/hrm/includes/AjaxHandler.php:2076
 msgid "Invalid year."
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2079
+#: modules/hrm/includes/AjaxHandler.php:2085
 #: modules/hrm/includes/LeavePolicyNameListTable.php:79
 #: modules/hrm/views/leave/new-policy.php:89
 #: modules/hrm/views/leave/policy-name.php:39
@@ -31512,13 +31514,13 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:5
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/763.js:1
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Leave Type"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2093
+#: modules/hrm/includes/AjaxHandler.php:2099
 #: modules/hrm/assets/dist-react/573.js:4
 #: modules/hrm/assets/dist-react/573.js:15
 #: modules/hrm/assets/dist-react/575.js:3
@@ -31526,82 +31528,82 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/785.js:4
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:5
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:3
 #: modules/hrm/assets/dist-react/910.js:5
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Employee is not entitled to any leave policy. Set leave entitlement to apply for leave."
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2131
+#: modules/hrm/includes/AjaxHandler.php:2137
 msgid "day available"
 msgid_plural "days are available"
 msgstr[0] ""
 msgstr[1] ""
 
-#: modules/hrm/includes/AjaxHandler.php:2133
+#: modules/hrm/includes/AjaxHandler.php:2139
 msgid "days are available"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2140
+#: modules/hrm/includes/AjaxHandler.php:2146
 msgid "day extra"
 msgid_plural "days extra"
 msgstr[0] ""
 msgstr[1] ""
 
-#: modules/hrm/includes/AjaxHandler.php:2167
+#: modules/hrm/includes/AjaxHandler.php:2173
 msgid "Leave reason field can not be blank"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2195
+#: modules/hrm/includes/AjaxHandler.php:2201
 msgid "Leave request has been submitted successfully!"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2239
+#: modules/hrm/includes/AjaxHandler.php:2245
 msgid "Invalid request permission."
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2417
-#: modules/hrm/includes/AjaxHandler.php:2543
+#: modules/hrm/includes/AjaxHandler.php:2423
+#: modules/hrm/includes/AjaxHandler.php:2549
 msgid "Invalid request type!"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2561
+#: modules/hrm/includes/AjaxHandler.php:2567
 msgid "No pending item found. Selected item(s) are already approved/rejected."
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2567
+#: modules/hrm/includes/AjaxHandler.php:2573
 msgid "1 %1$s item has been %2$s successfully"
 msgstr ""
 
 #. translators: 1) no of items, 2) item status, 3) action
-#: modules/hrm/includes/AjaxHandler.php:2572
+#: modules/hrm/includes/AjaxHandler.php:2578
 msgid "%1$d %2$s items have been %3$s successfully"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2630
+#: modules/hrm/includes/AjaxHandler.php:2636
 msgid "Settings saved successfully !"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2661
+#: modules/hrm/includes/AjaxHandler.php:2667
 msgid "Leave Type has been deleted"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2697
+#: modules/hrm/includes/AjaxHandler.php:2703
 msgid "No items were deleted as they are associated with policy"
 msgstr ""
 
 #. translators: number of items deleted
-#: modules/hrm/includes/AjaxHandler.php:2700
+#: modules/hrm/includes/AjaxHandler.php:2706
 msgid "%s items deleted successfully"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2742
+#: modules/hrm/includes/AjaxHandler.php:2748
 msgid "Leave Type has been updated"
 msgstr ""
 
-#: modules/hrm/includes/AjaxHandler.php:2744
+#: modules/hrm/includes/AjaxHandler.php:2750
 msgid "Leave Type has been created"
 msgstr ""
 
@@ -31621,7 +31623,7 @@ msgstr ""
 #: modules/hrm/includes/Announcement.php:147
 #: modules/hrm/includes/Announcement.php:173
 #: modules/hrm/views/employee/empty-employee.php:160
-#: modules/hrm/assets/dist-react/966.js:2
+#: modules/hrm/assets/dist-react/813.js:2
 msgid "Announcement"
 msgstr ""
 
@@ -31904,8 +31906,8 @@ msgstr ""
 #: modules/hrm/includes/PushNotification/NotificationHandler.php:52
 #: modules/hrm/views/leave/new-request.php:4
 #: modules/hrm/assets/dist-react/575.js:5
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "New Leave Request"
 msgstr ""
 
@@ -32038,21 +32040,26 @@ msgstr ""
 msgid "Please provide a valid user url"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:451
+#: modules/hrm/includes/Employee.php:415
+#: modules/hrm/includes/Employee.php:607
+msgid "The website can be at most 100 characters."
+msgstr ""
+
+#: modules/hrm/includes/Employee.php:456
 msgid "Cannot create an employee. Please check all the fields and try again."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:457
+#: modules/hrm/includes/Employee.php:463
 msgid "You are not allowed to make this user an employee."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1477
+#: modules/hrm/includes/Employee.php:1494
 #: modules/hrm/views/employee/tab-general.php:213
 #: modules/hrm/views/js-templates/education-form.php:5
 msgid "School Name"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1478
+#: modules/hrm/includes/Employee.php:1495
 #: modules/hrm/views/employee/tab-general.php:214
 #: modules/hrm/views/js-templates/education-form.php:15
 #: modules/hrm/assets/dist-react/573.js:2
@@ -32060,136 +32067,136 @@ msgstr ""
 msgid "Degree"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1479
+#: modules/hrm/includes/Employee.php:1496
 #: modules/hrm/assets/dist-react/573.js:2
 #: modules/hrm/assets/dist-react/785.js:2
 msgid "Field"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1480
+#: modules/hrm/includes/Employee.php:1497
 msgid "Completion date"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1481
+#: modules/hrm/includes/Employee.php:1498
 #: modules/hrm/views/js-templates/education-form.php:51
 msgid "Result type"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1482
+#: modules/hrm/includes/Employee.php:1499
 #: modules/hrm/views/employee/tab-general.php:217
 #: modules/hrm/assets/dist-react/573.js:2
 #: modules/hrm/assets/dist-react/785.js:2
 msgid "Result"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1487
-#: modules/hrm/includes/Employee.php:1568
+#: modules/hrm/includes/Employee.php:1504
+#: modules/hrm/includes/Employee.php:1585
 msgid "%s is required."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1501
+#: modules/hrm/includes/Employee.php:1518
 msgid "Could not create education."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1563
+#: modules/hrm/includes/Employee.php:1580
 #: modules/hrm/assets/dist-react/573.js:2
 #: modules/hrm/assets/dist-react/785.js:2
 msgid "Relation"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1589
+#: modules/hrm/includes/Employee.php:1606
 msgid "Could not create dependent."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1639
+#: modules/hrm/includes/Employee.php:1656
 msgid "Missing Company Name"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1643
+#: modules/hrm/includes/Employee.php:1660
 msgid "Missing Job Title"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1647
+#: modules/hrm/includes/Employee.php:1664
 msgid "Missing From Date"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1651
+#: modules/hrm/includes/Employee.php:1668
 msgid "Missing To Date"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1664
+#: modules/hrm/includes/Employee.php:1681
 msgid "Could not create work experience."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1778
+#: modules/hrm/includes/Employee.php:1795
 msgid "This job history does not exist or does not belongs to the supplied user"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1816
+#: modules/hrm/includes/Employee.php:1833
 msgid "Invalid Employment Type"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1822
+#: modules/hrm/includes/Employee.php:1839
 msgid "Invalid Employment Status"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1860
-#: modules/hrm/includes/Employee.php:1998
-#: modules/hrm/includes/Employee.php:2100
+#: modules/hrm/includes/Employee.php:1877
+#: modules/hrm/includes/Employee.php:2015
+#: modules/hrm/includes/Employee.php:2117
 msgid "This date cannot be used for the current history. An old history already exists after this date."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1955
+#: modules/hrm/includes/Employee.php:1972
 msgid "Invalid Pay Type"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1959
+#: modules/hrm/includes/Employee.php:1976
 msgid "The pay rate is not valid! It should be an integer or a decimal place number with maximum 4 places."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:1963
+#: modules/hrm/includes/Employee.php:1980
 msgid "Invalid Reason Type"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2057
+#: modules/hrm/includes/Employee.php:2074
 msgid "Invalid Designation Type"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2061
+#: modules/hrm/includes/Employee.php:2078
 msgid "Invalid Department Type"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2065
+#: modules/hrm/includes/Employee.php:2082
 msgid "Invalid Reporting To User"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2194
+#: modules/hrm/includes/Employee.php:2211
 msgid "Invalid Performance Type received"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2198
-#: modules/hrm/includes/Employee.php:2223
+#: modules/hrm/includes/Employee.php:2215
+#: modules/hrm/includes/Employee.php:2240
 msgid "Missing Date"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2209
+#: modules/hrm/includes/Employee.php:2226
 msgid "Invalid reporting to used."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2217
+#: modules/hrm/includes/Employee.php:2234
 msgid "Invalid reviewer user."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2233
+#: modules/hrm/includes/Employee.php:2250
 msgid "Invalid supervisor user."
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2251
-#: modules/hrm/includes/Employee.php:2328
+#: modules/hrm/includes/Employee.php:2268
+#: modules/hrm/includes/Employee.php:2345
 msgid "This note does not exist or does not belongs to the supplied user"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2682
+#: modules/hrm/includes/Employee.php:2699
 #: modules/hrm/views/employee/tab-general.php:367
 #: modules/hrm/views/js-templates/employee-terminate.php:17
 #: modules/hrm/assets/dist-react/573.js:2
@@ -32200,7 +32207,7 @@ msgstr ""
 msgid "Termination Type"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2684
+#: modules/hrm/includes/Employee.php:2701
 #: modules/hrm/views/employee/tab-general.php:368
 #: modules/hrm/views/js-templates/employee-terminate.php:30
 #: modules/hrm/assets/dist-react/573.js:2
@@ -32211,7 +32218,7 @@ msgstr ""
 msgid "Termination Reason"
 msgstr ""
 
-#: modules/hrm/includes/Employee.php:2686
+#: modules/hrm/includes/Employee.php:2703
 #: modules/hrm/views/employee/tab-general.php:369
 #: modules/hrm/assets/dist-react/573.js:2
 #: modules/hrm/assets/dist-react/785.js:2
@@ -32578,9 +32585,9 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:11
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/722.js:1
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Days"
 msgstr ""
 
@@ -32604,8 +32611,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/633.js:3
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:4
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 #: modules/hrm/assets/dist-react/onboarding.js:1
 msgid "Location"
 msgstr ""
@@ -32623,8 +32630,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/633.js:3
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:4
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 #: modules/hrm/assets/dist-react/onboarding.js:1
 msgid "Gender"
 msgstr ""
@@ -32646,8 +32653,8 @@ msgstr ""
 #: modules/hrm/includes/LeavePolicyNameListTable.php:31
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "No leave types found."
 msgstr ""
 
@@ -33144,12 +33151,12 @@ msgid "No one has birthdays this week!"
 msgstr ""
 
 #: modules/hrm/includes/functions-dashboard-widgets.php:137
-#: modules/hrm/assets/dist-react/966.js:2
+#: modules/hrm/assets/dist-react/813.js:2
 msgid "Contractual Employees"
 msgstr ""
 
 #: modules/hrm/includes/functions-dashboard-widgets.php:158
-#: modules/hrm/assets/dist-react/966.js:2
+#: modules/hrm/assets/dist-react/813.js:2
 msgid "Trainee Employees"
 msgstr ""
 
@@ -33170,7 +33177,7 @@ msgid "No announcement found"
 msgstr ""
 
 #: modules/hrm/includes/functions-dashboard-widgets.php:287
-#: modules/hrm/assets/dist-react/966.js:2
+#: modules/hrm/assets/dist-react/813.js:2
 msgid "Next Month"
 msgstr ""
 
@@ -33179,7 +33186,7 @@ msgid "No one is on vacation on this or next month"
 msgstr ""
 
 #: modules/hrm/includes/functions-dashboard-widgets.php:359
-#: modules/hrm/assets/dist-react/966.js:1
+#: modules/hrm/assets/dist-react/813.js:1
 msgid "Take a Leave"
 msgstr ""
 
@@ -33466,8 +33473,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/633.js:1
 #: modules/hrm/assets/dist-react/785.js:2
+#: modules/hrm/assets/dist-react/813.js:1
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:1
 msgid "Male"
 msgstr ""
 
@@ -33481,8 +33488,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/633.js:1
 #: modules/hrm/assets/dist-react/785.js:2
+#: modules/hrm/assets/dist-react/813.js:1
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:1
 msgid "Female"
 msgstr ""
 
@@ -33847,7 +33854,7 @@ msgstr ""
 msgid "No leave type found with the given id."
 msgstr ""
 
-#: modules/hrm/includes/functions-leave.php:3495
+#: modules/hrm/includes/functions-leave.php:3503
 msgid "Invalid post ID."
 msgstr ""
 
@@ -33879,8 +33886,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/667.js:1
 #: modules/hrm/assets/dist-react/704.js:1
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "Please give a financial year name on row #"
 msgstr ""
 
@@ -33888,8 +33895,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/667.js:1
 #: modules/hrm/assets/dist-react/704.js:1
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "Start and end date are required on row #"
 msgstr ""
 
@@ -33897,8 +33904,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/667.js:1
 #: modules/hrm/assets/dist-react/704.js:1
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "End date must be greater than start date on row #"
 msgstr ""
 
@@ -34161,8 +34168,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/633.js:3
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:4
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 #: modules/hrm/assets/dist-react/onboarding.js:1
 msgid "Employee Type"
 msgstr ""
@@ -34225,8 +34232,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/633.js:3
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:4
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 #: modules/hrm/assets/dist-react/onboarding.js:1
 msgid "Marital Status"
 msgstr ""
@@ -34546,7 +34553,7 @@ msgstr ""
 #: modules/hrm/views/employee/tab-leave.php:135
 #: modules/hrm/assets/dist-react/573.js:8
 #: modules/hrm/assets/dist-react/785.js:8
-#: modules/hrm/assets/dist-react/966.js:2
+#: modules/hrm/assets/dist-react/813.js:2
 msgid "Request"
 msgstr ""
 
@@ -35228,8 +35235,8 @@ msgstr ""
 #: modules/hrm/views/leave/new-policy.php:184
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Apply for existing employees"
 msgstr ""
 
@@ -35257,8 +35264,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/573.js:7
 #: modules/hrm/assets/dist-react/575.js:3
 #: modules/hrm/assets/dist-react/785.js:7
+#: modules/hrm/assets/dist-react/813.js:5
 #: modules/hrm/assets/dist-react/910.js:3
-#: modules/hrm/assets/dist-react/966.js:5
 msgid "Submit Request"
 msgstr ""
 
@@ -35279,8 +35286,8 @@ msgstr ""
 
 #: modules/hrm/views/leave/requests.php:3
 #: modules/hrm/assets/dist-react/575.js:8
+#: modules/hrm/assets/dist-react/813.js:1
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:1
 #: modules/hrm/assets/dist-react/employees.js:2
 msgid "Leave Requests"
 msgstr ""
@@ -35391,7 +35398,7 @@ msgstr ""
 #: modules/hrm/views/reporting/gender-profile.php:87
 #: modules/hrm/views/reporting/gender-profile.php:137
 #: modules/hrm/assets/dist-react/490.js:1
-#: modules/hrm/assets/dist-react/966.js:1
+#: modules/hrm/assets/dist-react/813.js:1
 msgid "Unspecified"
 msgstr ""
 
@@ -35405,7 +35412,7 @@ msgstr ""
 
 #: modules/hrm/views/reporting/headcount.php:2
 #: modules/hrm/assets/dist-react/490.js:1
-#: modules/hrm/assets/dist-react/966.js:1
+#: modules/hrm/assets/dist-react/813.js:1
 msgid "Headcount"
 msgstr ""
 
@@ -35658,11 +35665,11 @@ msgstr ""
 #: modules/hrm/assets/dist-react/139.js:1
 #: modules/hrm/assets/dist-react/170.js:1
 #: modules/hrm/assets/dist-react/575.js:5
+#: modules/hrm/assets/dist-react/813.js:1
+#: modules/hrm/assets/dist-react/813.js:2
+#: modules/hrm/assets/dist-react/813.js:4
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:1
-#: modules/hrm/assets/dist-react/966.js:2
-#: modules/hrm/assets/dist-react/966.js:4
-#: modules/hrm/assets/dist-react/966.js:7
 #: modules/hrm/assets/dist-react/employees.js:2
 #: modules/hrm/assets/dist-react/onboarding.js:4
 msgid "Loading…"
@@ -35682,8 +35689,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/785.js:1
 #: modules/hrm/assets/dist-react/785.js:4
 #: modules/hrm/assets/dist-react/785.js:9
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Search employees…"
 msgstr ""
 
@@ -35851,8 +35858,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Add location"
 msgstr ""
 
@@ -35863,8 +35870,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Add leave type"
 msgstr ""
 
@@ -35875,8 +35882,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Manage years"
 msgstr ""
 
@@ -36019,8 +36026,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/785.js:1
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "No employees found."
 msgstr ""
 
@@ -36039,8 +36046,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:1
 #: modules/hrm/assets/dist-react/785.js:4
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Search departments…"
 msgstr ""
 
@@ -36050,8 +36057,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:1
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "No departments found."
 msgstr ""
 
@@ -36075,14 +36082,14 @@ msgstr ""
 #: modules/hrm/assets/dist-react/785.js:2
 #: modules/hrm/assets/dist-react/785.js:4
 #: modules/hrm/assets/dist-react/785.js:9
+#: modules/hrm/assets/dist-react/813.js:3
+#: modules/hrm/assets/dist-react/813.js:4
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:1
 #: modules/hrm/assets/dist-react/910.js:2
 #: modules/hrm/assets/dist-react/910.js:5
 #: modules/hrm/assets/dist-react/910.js:8
 #: modules/hrm/assets/dist-react/950.js:1
-#: modules/hrm/assets/dist-react/966.js:3
-#: modules/hrm/assets/dist-react/966.js:4
-#: modules/hrm/assets/dist-react/966.js:7
 #: modules/hrm/assets/dist-react/onboarding.js:1
 msgid "Saving…"
 msgstr ""
@@ -36247,8 +36254,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:4
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Search locations…"
 msgstr ""
 
@@ -36547,7 +36554,7 @@ msgid "Could not load the announcement."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/139.js:1
-#: modules/hrm/assets/dist-react/966.js:2
+#: modules/hrm/assets/dist-react/813.js:2
 #: modules/hrm/assets/dist-react/employees.js:2
 msgid "No announcements yet."
 msgstr ""
@@ -36557,7 +36564,7 @@ msgid "Announcements sent to you will show up here."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/139.js:1
-#: modules/hrm/assets/dist-react/966.js:2
+#: modules/hrm/assets/dist-react/813.js:2
 #: modules/hrm/assets/dist-react/employees.js:2
 msgid "(unread)"
 msgstr ""
@@ -36790,7 +36797,7 @@ msgid "No leave in this period."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/170.js:1
-#: modules/hrm/assets/dist-react/966.js:4
+#: modules/hrm/assets/dist-react/813.js:4
 msgid "Could not load the calendar."
 msgstr ""
 
@@ -36823,10 +36830,10 @@ msgstr ""
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/785.js:2
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
 #: modules/hrm/assets/dist-react/910.js:5
 #: modules/hrm/assets/dist-react/950.js:1
-#: modules/hrm/assets/dist-react/966.js:4
 #: modules/hrm/assets/dist-react/employees.js:2
 msgid "Search…"
 msgstr ""
@@ -37004,8 +37011,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/503.js:1
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/704.js:1
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "Start date is required."
 msgstr ""
 
@@ -37254,20 +37261,20 @@ msgstr ""
 
 #: modules/hrm/assets/dist-react/573.js:2
 #: modules/hrm/assets/dist-react/785.js:2
-#: modules/hrm/assets/dist-react/966.js:3
+#: modules/hrm/assets/dist-react/813.js:3
 #, js-format
 msgid "Happy birthday, %s!"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/573.js:2
 #: modules/hrm/assets/dist-react/785.js:2
-#: modules/hrm/assets/dist-react/966.js:3
+#: modules/hrm/assets/dist-react/813.js:3
 msgid "Happy birthday!"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/573.js:2
 #: modules/hrm/assets/dist-react/785.js:2
-#: modules/hrm/assets/dist-react/966.js:3
+#: modules/hrm/assets/dist-react/813.js:3
 msgid "Celebrate again"
 msgstr ""
 
@@ -37640,8 +37647,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/573.js:4
 #: modules/hrm/assets/dist-react/575.js:3
 #: modules/hrm/assets/dist-react/785.js:4
+#: modules/hrm/assets/dist-react/813.js:5
 #: modules/hrm/assets/dist-react/910.js:3
-#: modules/hrm/assets/dist-react/966.js:5
 msgid "Invalid leave dates."
 msgstr ""
 
@@ -37649,8 +37656,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/573.js:6
 #: modules/hrm/assets/dist-react/575.js:5
 #: modules/hrm/assets/dist-react/785.js:6
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 #, js-format
 msgid "%1$s (%2$s available)"
 msgstr ""
@@ -37665,32 +37672,32 @@ msgstr ""
 #: modules/hrm/assets/dist-react/573.js:6
 #: modules/hrm/assets/dist-react/575.js:5
 #: modules/hrm/assets/dist-react/785.js:6
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Could not submit the leave request."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/573.js:6
 #: modules/hrm/assets/dist-react/575.js:5
 #: modules/hrm/assets/dist-react/785.js:6
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Please select a policy and date range."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/573.js:6
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/785.js:6
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Checking dates…"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/573.js:6
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/785.js:6
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 #, js-format
 msgid "%d working day"
 msgstr ""
@@ -37698,8 +37705,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/573.js:6
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/785.js:6
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 #, js-format
 msgid "%d working days"
 msgstr ""
@@ -37708,8 +37715,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/573.js:7
 #: modules/hrm/assets/dist-react/575.js:3
 #: modules/hrm/assets/dist-react/785.js:7
+#: modules/hrm/assets/dist-react/813.js:5
 #: modules/hrm/assets/dist-react/910.js:3
-#: modules/hrm/assets/dist-react/966.js:5
 #, js-format
 msgid "%s day is over the balance and will be unpaid."
 msgstr ""
@@ -37717,8 +37724,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/573.js:7
 #: modules/hrm/assets/dist-react/575.js:3
 #: modules/hrm/assets/dist-react/785.js:7
+#: modules/hrm/assets/dist-react/813.js:5
 #: modules/hrm/assets/dist-react/910.js:3
-#: modules/hrm/assets/dist-react/966.js:5
 #, js-format
 msgid "%s days are over the balance and will be unpaid."
 msgstr ""
@@ -37726,16 +37733,16 @@ msgstr ""
 #: modules/hrm/assets/dist-react/573.js:7
 #: modules/hrm/assets/dist-react/575.js:3
 #: modules/hrm/assets/dist-react/785.js:7
+#: modules/hrm/assets/dist-react/813.js:5
 #: modules/hrm/assets/dist-react/910.js:3
-#: modules/hrm/assets/dist-react/966.js:5
 msgid "This employee has no leave entitlement for the selected year. Use the links above to create a policy and assign it, then come back."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/573.js:7
 #: modules/hrm/assets/dist-react/575.js:3
 #: modules/hrm/assets/dist-react/785.js:7
+#: modules/hrm/assets/dist-react/813.js:5
 #: modules/hrm/assets/dist-react/910.js:3
-#: modules/hrm/assets/dist-react/966.js:5
 msgid "Why can’t I submit?"
 msgstr ""
 
@@ -37747,8 +37754,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/785.js:7
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:5
 #: modules/hrm/assets/dist-react/910.js:3
-#: modules/hrm/assets/dist-react/966.js:5
 msgid "Submitting…"
 msgstr ""
 
@@ -37841,8 +37848,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/573.js:9
 #: modules/hrm/assets/dist-react/575.js:8
 #: modules/hrm/assets/dist-react/785.js:9
+#: modules/hrm/assets/dist-react/813.js:1
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:1
 msgid "Leave request submitted."
 msgstr ""
 
@@ -38333,362 +38340,362 @@ msgstr ""
 #: modules/hrm/assets/dist-react/573.js:15
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "1. Create or check a leave policy"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/573.js:15
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "2. Assign the policy to this employee"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/573.js:15
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "You have no leave entitlement for this year yet. Please contact your HR manager."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/573.js:15
 #: modules/hrm/assets/dist-react/575.js:12
 #: modules/hrm/assets/dist-react/785.js:15
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "More information"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/704.js:1
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "New Financial Year"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/704.js:1
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "Leave entitlements and policies are scoped to a financial year."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/704.js:1
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "End date must be after the start date."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/704.js:1
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "End date is required."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/704.js:1
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "The financial year was saved but could not be selected. Reopen the form."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/704.js:1
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "Could not create the financial year."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/704.js:1
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "e.g. 2026-2027"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/704.js:1
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "Add Financial Year"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:1
 #: modules/hrm/assets/dist-react/667.js:1
 #: modules/hrm/assets/dist-react/704.js:1
+#: modules/hrm/assets/dist-react/813.js:3
 #: modules/hrm/assets/dist-react/910.js:1
-#: modules/hrm/assets/dist-react/966.js:3
 msgid "Duplicate financial year name"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/763.js:1
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Search leave types…"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "No financial years found."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Color"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Leave type, financial year, days and the scope filters are fixed once a policy is created."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
 #: modules/hrm/assets/dist-react/950.js:1
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Search designations…"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "No designations found."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "No locations found."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Applicable After (days)"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Apply to new employees automatically"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Entitle existing matching employees to this policy now."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Edit Leave Policy"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Add Leave Policy"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "A policy grants a number of leave days for a financial year, optionally scoped to a department, designation, type, gender or marital status."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "No leave type exists yet. A policy gives days of one leave type, so add one first: use Add new next to Leave type, or open the Leave Types page."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Create a leave type"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "No financial year exists yet. A policy counts days within one, so add it first: use Add new next to Financial year, or open the Financial Years page."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Add a financial year"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "No financial year exists yet. Please contact your HR manager."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Leave type is required."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Days is required."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Update Policy"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Could not create the leave type."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
 #: modules/hrm/assets/dist-react/704.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Could not load leave policies."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Leave cannot be requested yet because no financial year covers today."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Leave cannot be requested yet because no financial year exists. Use Add New next to Financial Year, or open the Financial Years page."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "Leave cannot be requested yet because no leave year is set up. Please contact your HR manager."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "A half-day request covers the From date only."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:2
+#: modules/hrm/assets/dist-react/813.js:4
 #: modules/hrm/assets/dist-react/910.js:2
-#: modules/hrm/assets/dist-react/966.js:4
 msgid "0.5 working day"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:3
+#: modules/hrm/assets/dist-react/813.js:5
 #: modules/hrm/assets/dist-react/910.js:3
-#: modules/hrm/assets/dist-react/966.js:5
 msgid "Supporting Documents"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:3
+#: modules/hrm/assets/dist-react/813.js:5
 #: modules/hrm/assets/dist-react/910.js:3
-#: modules/hrm/assets/dist-react/966.js:5
 #, js-format
 msgid "%d file(s) selected"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:3
+#: modules/hrm/assets/dist-react/813.js:5
 #: modules/hrm/assets/dist-react/910.js:3
-#: modules/hrm/assets/dist-react/966.js:5
 msgid "Could not load the form."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:5
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "No leave policy for this year. Add one."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:5
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Select a financial year first"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:5
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Select an employee first"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:5
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Apply for your leave."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:5
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Apply for leave on behalf of an employee."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:5
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "No financial year yet. Add one."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:5
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Could not load the policy form."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:5
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Please select an employee, policy and date range."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:5
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:5
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Could not create the leave policy."
 msgstr ""
 
@@ -38844,8 +38851,8 @@ msgid "Change or clear the search and filters to see more requests."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:8
+#: modules/hrm/assets/dist-react/813.js:1
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:1
 msgid "No leave requests yet."
 msgstr ""
 
@@ -38914,8 +38921,8 @@ msgstr ""
 #: modules/hrm/assets/dist-react/575.js:8
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/763.js:1
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Edit Leave Type"
 msgstr ""
 
@@ -38923,32 +38930,32 @@ msgstr ""
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/763.js:1
 #: modules/hrm/assets/dist-react/763.js:2
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Add Leave Type"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:8
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/763.js:1
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Leave types are the categories employees can request leave against (e.g. Casual, Sick)."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:8
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/763.js:1
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Update Leave Type"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/575.js:8
 #: modules/hrm/assets/dist-react/704.js:2
 #: modules/hrm/assets/dist-react/763.js:1
+#: modules/hrm/assets/dist-react/813.js:7
 #: modules/hrm/assets/dist-react/910.js:8
-#: modules/hrm/assets/dist-react/966.js:7
 msgid "Create Leave Type"
 msgstr ""
 
@@ -39270,7 +39277,7 @@ msgid "Import another file"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/633.js:5
-#: modules/hrm/assets/dist-react/966.js:2
+#: modules/hrm/assets/dist-react/813.js:2
 #: modules/hrm/assets/dist-react/onboarding.js:3
 msgid "Done"
 msgstr ""
@@ -39585,6 +39592,195 @@ msgstr ""
 msgid "The chart is drawn from your departments, their leads and who reports to whom. Add departments and employees to see it."
 msgstr ""
 
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Headcount Trend"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Gender Distribution"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "No employee data."
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Employees by Department"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "No department data."
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Show weather"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Partly cloudy"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Overcast"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Fog"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Drizzle"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Rain"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Snow"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Thunderstorm"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Cloudy"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Sent"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Wish"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Nothing to show."
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Team Calendar"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "My Calendar"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Previous month"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Next month"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+#, js-format
+msgid "+%d more"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:1
+msgid "Finish setting up WP ERP"
+msgstr ""
+
+#. translators: 1: completed step count, 2: total step count.
+#: modules/hrm/assets/dist-react/813.js:2
+#, js-format
+msgid "%1$d of %2$d done"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Run setup wizard"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Dismiss setup checklist"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Setup progress"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "To do"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Could not load the dashboard."
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Birthday wish sent!"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Could not send the birthday wish."
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Birthdays"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "No birthdays in the next 7 days."
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Upcoming Holidays"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "No holidays in the next 30 days."
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Public Holiday"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+#, js-format
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Refresh dashboard"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Present Today"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Birthdays This Week"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Who’s Out"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Nobody is on leave this or next month."
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "About to End"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Latest Announcements"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+#: modules/hrm/assets/dist-react/employees.js:2
+msgid "View all"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/813.js:2
+msgid "Could not open the announcement."
+msgstr ""
+
 #: modules/hrm/assets/dist-react/911.js:1
 msgid "Could not load forward leaves."
 msgstr ""
@@ -39716,207 +39912,6 @@ msgstr ""
 
 #: modules/hrm/assets/dist-react/950.js:1
 msgid "Could not delete the designation."
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Good morning"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Good afternoon"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Good evening"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Headcount Trend"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Gender Distribution"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "No employee data."
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Employees by Department"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "No department data."
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Show weather"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Partly cloudy"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Overcast"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Fog"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Drizzle"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Rain"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Snow"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Thunderstorm"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Cloudy"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Sent"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Wish"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Nothing to show."
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Team Calendar"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "My Calendar"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Previous month"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Next month"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-#, js-format
-msgid "+%d more"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:1
-msgid "Finish setting up WP ERP"
-msgstr ""
-
-#. translators: 1: completed step count, 2: total step count.
-#: modules/hrm/assets/dist-react/966.js:2
-#, js-format
-msgid "%1$d of %2$d done"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Run setup wizard"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Dismiss setup checklist"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Setup progress"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "To do"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Could not load the dashboard."
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Birthday wish sent!"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Could not send the birthday wish."
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Birthdays"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "No birthdays in the next 7 days."
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Upcoming Holidays"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "No holidays in the next 30 days."
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Public Holiday"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-#, js-format
-msgid "%1$s, %2$s"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Refresh dashboard"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Present Today"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Birthdays This Week"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Who’s Out"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Nobody is on leave this or next month."
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "About to End"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Latest Announcements"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-#: modules/hrm/assets/dist-react/employees.js:2
-msgid "View all"
-msgstr ""
-
-#: modules/hrm/assets/dist-react/966.js:2
-msgid "Could not open the announcement."
 msgstr ""
 
 #: modules/hrm/assets/dist-react/employees.js:1
@@ -40068,6 +40063,18 @@ msgstr ""
 
 #: modules/hrm/assets/dist-react/employees.js:2
 msgid "Scheduled"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/employees.js:2
+msgid "Good morning"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/employees.js:2
+msgid "Good afternoon"
+msgstr ""
+
+#: modules/hrm/assets/dist-react/employees.js:2
+msgid "Good evening"
 msgstr ""
 
 #: modules/hrm/assets/dist-react/employees.js:2

@@ -409,6 +409,11 @@ class Employee {
             // Extract only the Protocol+domain from the URL as per WordPress recommendation.
             $parsed_url = wp_parse_url( $data['personal']['user_url'] );
             $data['personal']['user_url'] = $parsed_url['scheme'] . '://' . $parsed_url['host'];
+
+            // `wp_users.user_url` holds 100 characters, measured as stored.
+            if ( mb_strlen( esc_url_raw( $data['personal']['user_url'] ) ) > 100 ) {
+                return new WP_Error( 'invalid-user-url', __( 'The website can be at most 100 characters.', 'erp' ) );
+            }
         }
 
 
@@ -451,9 +456,10 @@ class Employee {
                 return new WP_Error( 'cannot-create-employee', __( 'Cannot create an employee. Please check all the fields and try again.', 'erp' ) );
             }
         } elseif ( ! in_array( erp_hr_get_employee_role(), (array) $wp_user->roles ) ) {
-            // set_role() replaces every role: never turn an administrator into
-            // a plain employee on an HR manager's say.
-            if ( is_user_logged_in() && erp_hr_is_account_above_current_user( $wp_user->ID ) ) {
+            // set_role() replaces every role, so only for an account the caller
+            // has the say over: never an administrator, an editor or another
+            // manager whose capabilities an HR manager does not hold.
+            if ( is_user_logged_in() && ! erp_hr_can_manage_wp_account( $wp_user->ID ) ) {
                 return new WP_Error( 'cannot-manage-account', __( 'You are not allowed to make this user an employee.', 'erp' ) );
             }
 
@@ -595,6 +601,12 @@ class Employee {
             unset( $posted['user_email'], $posted['user_url'], $posted['first_name'], $posted['last_name'] );
         }
 
+        // `wp_users.user_url` holds 100 characters and `wp_update_user()` refuses
+        // a longer one. Refuse it before anything is written, measured as stored.
+        if ( ! empty( $posted['user_url'] ) && mb_strlen( esc_url_raw( (string) $posted['user_url'] ) ) > 100 ) {
+            return new WP_Error( 'invalid-user-url', __( 'The website can be at most 100 characters.', 'erp' ) );
+        }
+
         //update user email
         if ( isset( $posted['user_email'] )
              && $posted['user_email'] !== $this->wp_user->user_email
@@ -615,10 +627,15 @@ class Employee {
         // Persist it there and unset it from the posted array so the
         // personal-meta loop below does not also write it to user_meta.
         if ( \array_key_exists( 'user_url', $posted ) ) {
-            wp_update_user( [
+            $result = wp_update_user( [
                 'ID'       => $this->user_id,
                 'user_url' => (string) $posted['user_url'],
             ] );
+
+            if ( is_wp_error( $result ) ) {
+                return $result;
+            }
+
             unset( $posted['user_url'] );
         }
 
@@ -2761,13 +2778,19 @@ class Employee {
 
         $key = (string) $key;
 
-        if ( '' === $key || is_protected_meta( $key, 'user' ) || 0 === strpos( $key, $wpdb->base_prefix ) ) {
+        // MySQL compares meta_key ignoring case, accents and zero-width characters,
+        // so a key that only looks different would still overwrite the real row.
+        if ( sanitize_key( $key ) !== strtolower( $key ) ) {
+            return false;
+        }
+
+        if ( '' === $key || is_protected_meta( $key, 'user' ) || 0 === stripos( $key, $wpdb->base_prefix ) ) {
             return false;
         }
 
         $blocked = apply_filters( 'erp_hr_employee_blocked_meta_keys', [ 'erp_last_removed_role', 'session_tokens' ] );
 
-        return ! in_array( $key, (array) $blocked, true );
+        return ! in_array( strtolower( $key ), (array) $blocked, true );
     }
 
     /**

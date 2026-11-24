@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'wp-erp/wp-erp',
-        'pretty_version' => 'v2.0.0',
-        'version' => '2.0.0.0',
-        'reference' => '28575953a0f0d194fa4482de8f0d5a8417394a0f',
+        'pretty_version' => 'v2.0.1',
+        'version' => '2.0.1.0',
+        'reference' => 'f7430df56938d4c7e05ea6e74cc196138970bfb8',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -573,9 +573,9 @@
             'dev_requirement' => false,
         ),
         'wp-erp/wp-erp' => array(
-            'pretty_version' => 'v2.0.0',
-            'version' => '2.0.0.0',
-            'reference' => '28575953a0f0d194fa4482de8f0d5a8417394a0f',
+            'pretty_version' => 'v2.0.1',
+            'version' => '2.0.1.0',
+            'reference' => 'f7430df56938d4c7e05ea6e74cc196138970bfb8',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
